@@ -1,0 +1,67 @@
+{{/* File: templates/base.html */}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>{{ .Title }}</title>
+  <link rel="stylesheet" href="/base.css" />
+  <script src="/static/js/main.js"></script>
+</head>
+
+<body>
+  <!-- ─── HEADER CONTAINER ─── -->
+  <header class="header-container">
+    <!-- 1) Narrow video strip -->
+    <div class="video-strip">
+      <video
+        class="video-element"
+        src="/aerial.mov"
+        autoplay
+        muted
+        loop
+        playsinline
+      ></video>
+      <!-- 2) Title overlaid on top of the video -->
+      <div class="title-overlay">
+        Advancing technologies, empowering people. 
+        Discover how we shape smarter, safer, more resilient and sustainable systems across industries.
+      </div>
+    </div>
+
+    <!-- 3) Banner under the video strip -->
+    <div class="banner">
+      <h1>American Advanced Technology</h1>
+    </div>
+
+    <!-- 4) Orange nav bar overlapping the video strip -->
+    <nav class="nav-bar">
+      <a href="/">Home</a>
+      <a href="/service">Service</a>
+      <a href="/research">Research</a>
+      <a href="/training">Training</a>
+      <a href="/products">Products</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ─── MAIN CONTENT BLOCK ─── -->
+  <main>
+    {{ block "content" . }}{{ end }}
+  </main>
+
+  <!-- ─── FOOTER (bottom bar) ─── -->
+  <div class="bottom-bar">
+    <!-- Company name (clickable) -->
+    <div class="company-name">
+      <a href="/">American Advanced Technology</a>
+    </div>
+
+    <!-- Footer links -->
+    <footer class="site-footer">
+      <a href="/tou">Terms of Use</a> |
+      <a href="/privacy">Privacy</a>
+    </footer>
+  </div>
+</body>
+</html>

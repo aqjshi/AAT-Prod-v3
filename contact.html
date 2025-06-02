@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>{{ .Title }}</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="/static/js/main.js"></script>
+</head>
+
+<body>
+  <!-- ─── HEADER CONTAINER ─── -->
+  <header class="header-container">
+    <!-- 1) Narrow video strip -->
+    <div class="video-strip">
+      <video
+      
+        class="video-element"
+        autoplay
+        muted
+        loop
+        playsinline
+      >    <source src="/aerial.mp4" type="video/mp4" /></video>
+      <!-- 2) Title overlaid on top of the video -->
+      <div class="title-overlay">
+        Advancing technologies, empowering people. 
+        Discover how we shape smarter, safer, more resilient and sustainable systems across industries.
+      </div>
+    </div>
+
+    <!-- 3) Banner under the video strip -->
+    <div class="banner">
+      <h1>American Advanced Technology</h1>
+    </div>
+
+    <!-- 4) Orange nav bar overlapping the video strip -->
+    <nav class="nav-bar">
+      <a href="/">Home</a>
+      <a href="/service">Service</a>
+      <a href="/research">Research</a>
+      <a href="/training">Training</a>
+      <a href="/product">Product</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </header>
+  <div class="section" style="background-color: #ffffff; color: #000000; font-style: normal; padding: 1rem;">
+        <h1 class="page-title">Contact</h1>
+
+    <h2 style="font-size: 18px; margin: 0; font-style: normal;">American Advanced Technology</h2>
+
+    <p style="margin: 0.5rem 0; font-style: normal;">
+      Suite T‑ST<br>
+      7801 Norfolk Ave.<br>
+      Bethesda, MD 20814
+    </p>
+
+    <p style="margin-top: 1rem; font-style: normal;">
+      <strong>Office:</strong> 240‑338‑8915<br>
+      <strong>Email:</strong>
+      <a href="mailto:customer_service@aat.com" style="color: inherit; text-decoration: none;">customer_service@aat.com</a>
+    </p>
+  </div>
+  <!-- ─── FOOTER (bottom bar) ─── -->
+  <div class="bottom-bar">
+    <!-- Company name (clickable) -->
+    <div class="company-name">
+      <a href="/">American Advanced Technology</a>
+    </div>
+
+    <!-- Footer links -->
+    <footer class="site-footer">
+      <a href="/tou">Terms of Use</a> |
+      <a href="/privacy">Privacy</a>
+    </footer>
+  </div>
+</body>
+</html>

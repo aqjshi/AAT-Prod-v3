@@ -1,0 +1,761 @@
+[
+  {
+    "id": 1,
+    "keyword_title": "Building Information Modeling (BIM)",
+    "texts": [],
+    "nextpage_texts": [
+      "Revit LOD 350 based BIM models for facilities and infrastructure assets. "
+    ],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_1_0.png"
+    ],
+    "image_credits": [
+      "https://www.chronos-studeos.com/stories/the-importance-of-adopting-bim-as-a-starting-place-for-architects/"
+    ]
+  },
+  {
+    "id": 2,
+    "keyword_title": "3D Scanning",
+    "texts": [],
+    "nextpage_texts": [
+      "3D Laser Scanning",
+      "LiDAR Technology",
+      "3D Photogrammetry"
+    ],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [
+      "hivevp.com/photogrammetry-vs-3d-laser-scanning/"
+    ],
+    "image_paths": [
+      "static\\images\\home_2_0.png"
+    ],
+    "image_credits": [
+      "https://www.dfrobot.com/blog-1644.html"
+    ]
+  },
+  {
+    "id": 3,
+    "keyword_title": "Digital Image Correlation",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [
+      "www.limess.com/en/products/q400-digital-image-correlation"
+    ],
+    "image_paths": [
+      "static\\images\\home_3_0.png"
+    ],
+    "image_credits": [
+      "https://appliedresearch.illinois.edu/research-cores/materials-and-manufacturing"
+    ]
+  },
+  {
+    "id": 4,
+    "keyword_title": "High-Precision 3D Stereo Imaging",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_4_0.png"
+    ],
+    "image_credits": [
+      "https://ascelibrary.org/doi/10.1061/%28ASCE%29CP.1943-5487.0000625"
+    ]
+  },
+  {
+    "id": 5,
+    "keyword_title": "Augmented Reality ",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_5_0.png"
+    ],
+    "image_credits": [
+      "https://gamepill.com/exploring-the-world-through-ar-glasses/"
+    ]
+  },
+  {
+    "id": 6,
+    "keyword_title": "Digital Twin",
+    "texts": [],
+    "nextpage_texts": [
+      "BIM-based Digital Twin asset models",
+      "3D laser scanning based Digital Twin asset models",
+      "Real-time Digital Twin for continuous monitoring",
+      "Visibility into the actual condition to guide early interventions",
+      "Real-time operational system anomalies detection",
+      "Unreal/Omniverse/Cesium-based Digital Twin"
+    ],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_6_0.png"
+    ],
+    "image_credits": [
+      "https://www.nlc.org/wp-content/uploads/2021/06/ARPA-BROWN-BAG-WATER-SLIDES.pdf"
+    ]
+  },
+  {
+    "id": 7,
+    "keyword_title": "Geographical Information System (GIS) and Smart Mapping",
+    "texts": [],
+    "nextpage_texts": [
+      "Assist with ArcGIS Utility Network (UN) implementation to modernize geo-referenced linear and vertical asset mapping and enable spatial analysis and integration into operational systems."
+    ],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_7_0.png"
+    ],
+    "image_credits": [
+      "https://pro.arcgis.com/en/pro-app/latest/help/data/utility-network/what-is-a-utility-network-.htm"
+    ]
+  },
+  {
+    "id": 8,
+    "keyword_title": "Asset Management",
+    "texts": [],
+    "nextpage_texts": [
+      "Infrastructure and facility asset management (e.g., water, sewer, stormwater, transit, Metro subway, transportation, energy, power, telecommunication)",
+      "Cityworks (Trimble Unity)",
+      "AgileAsset"
+    ],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [
+      "www.softwareadvice.com/cmms/agileassets-profile/"
+    ],
+    "image_paths": [
+      "static\\images\\home_8_0.png"
+    ],
+    "image_credits": [
+      "https://cogentibs.com/partners-alliances/https://www.knoxvilletn.gov/archived_news_stories/2016/high-_tech_vans_collect_traffic_sign_data_for_city"
+    ]
+  },
+  {
+    "id": 9,
+    "keyword_title": "Inspection",
+    "texts": [],
+    "nextpage_texts": [
+      "Pavement inspection",
+      "Bridge inspection",
+      "Tunnel inspection",
+      "Culvert inspection"
+    ],
+    "nextpage_image_paths": [
+      "https://jmt.com/wp-content/uploads/2018/11/Bridge-Inspection-brochure-FOR-WEB.pdf"
+    ],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_9_0.png"
+    ],
+    "image_credits": [
+      "https://www.knoxvilletn.gov/archived_news_stories/2016/high-_tech_vans_collect_traffic_sign_data_for_city"
+    ]
+  },
+  {
+    "id": 10,
+    "keyword_title": "Monitoring",
+    "texts": [],
+    "nextpage_texts": [
+      "Low-cost monitoring of large-scale networks",
+      "Water quality monitoring",
+      "Main break monitoring",
+      "Low-pressure monitoring",
+      "Real-time process monitoring for performance opportunities",
+      "Real-time energy monitoring for optimization opportunities",
+      "Air quality monitoring",
+      "Particulate matter monitoring",
+      "Carbon emission monitoring",
+      "Vehicle emission monitoring",
+      "Methane detection and monitoring",
+      "Fire detection and monitoring",
+      "Water level monitoring",
+      "Environmental health and safety management",
+      "Traffic monitoring",
+      "Pedestrian monitoring"
+    ],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_10_0.png"
+    ],
+    "image_credits": [
+      "https://www.mdpi.com/2076-3263/11/1/24"
+    ]
+  },
+  {
+    "id": 11,
+    "keyword_title": "Condition Assessment",
+    "texts": [],
+    "nextpage_texts": [
+      "Water, sewer, stormwater, transit, Metro subway, transportation, energy, power, telecommunication facilities and infrastructure",
+      "Linear and vertical asset inventory",
+      "Scoring criteria",
+      "Condition assessment (e.g., valve, hydrant, rail-track, tunnel, bridge, road)"
+    ],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [
+      "store.awwa.org/M77-Condition-Assessment-of-Water-Mains"
+    ],
+    "image_paths": [
+      "static\\images\\home_11_0.png"
+    ],
+    "image_credits": [
+      "https://www.investopedia.com/terms/a/asset-condition-assessment.asp"
+    ]
+  },
+  {
+    "id": 12,
+    "keyword_title": "Drone Application",
+    "texts": [],
+    "nextpage_texts": [
+      "Surveying",
+      "Geomatics",
+      "Photography",
+      "Information Technology"
+    ],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_12_0.png"
+    ],
+    "image_credits": [
+      "https://www.provideocoalition.com/dji-launches-mavic-3-pro-cine/"
+    ]
+  },
+  {
+    "id": 13,
+    "keyword_title": "Remote Sensing",
+    "texts": [],
+    "nextpage_texts": [
+      "Sensor (water, air, vibration, temperature, emission, displacement, optical, hyper-spectrum, etc.)",
+      "Sensor network",
+      "Optical and wireless communication",
+      "Implementing Internet of Things (IoT) across all processes"
+    ],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_13_0.png"
+    ],
+    "image_credits": [
+      "https://www.researchgate.net/figure/500-year-joint-seismic-tsunami-connectivity-maps-showing-a-the-probability-that-each_fig3_353154768"
+    ]
+  },
+  {
+    "id": 14,
+    "keyword_title": "Internet of Things (IoT) Sensor",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_14_0.png"
+    ],
+    "image_credits": [
+      "https://schoolofdisruption.com/exponential-technologies/internet-of-things/"
+    ]
+  },
+  {
+    "id": 15,
+    "keyword_title": "Information Technology",
+    "texts": [],
+    "nextpage_texts": [
+      "Dashboard Design and Development",
+      "Day-to-day operations dashboards",
+      "Real-time dashboards for tracking project progress, financials, and operational metrics",
+      "Incident management dashboard",
+      "Web Design and Development",
+      "App Design and Development",
+      "Data Warehouse and Cloud",
+      "Software design and development",
+      "High-performance computing (HPC)"
+    ],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_15_0.png"
+    ],
+    "image_credits": [
+      "https://www.fedex.com/en-cn/business-insights/tech-innovation/how-delivery-works-in-our-on-demand-economy.html"
+    ]
+  },
+  {
+    "id": 16,
+    "keyword_title": "Data Center",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_16_0.png"
+    ],
+    "image_credits": [
+      "https://blog.womenincloudnative.com/the-evolution-of-cloud-computing-from-data-centers-to-aws"
+    ]
+  },
+  {
+    "id": 17,
+    "keyword_title": "Artificial Intelligence (AI)",
+    "texts": [],
+    "nextpage_texts": [
+      "Statistical Analysis",
+      "Machine Learning",
+      "Artificial Intelligence (AI)",
+      "Implementing AI across all processes such as AI in Medicine"
+    ],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_17_0.png"
+    ],
+    "image_credits": [
+      "https://incubator.ucf.edu/what-is-artificial-intelligence-ai-and-why-people-should-learn-about-it/"
+    ]
+  },
+  {
+    "id": 18,
+    "keyword_title": "Financial Risk Management",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [
+      "www.westfordonline.com/blogs/financial-risk-management-strategies/"
+    ],
+    "image_paths": [
+      "static\\images\\home_18_0.png"
+    ],
+    "image_credits": [
+      "https://github.com/Anveshdeo/Financial-Risk-Management-using-ML/blob/main/README.md"
+    ]
+  },
+  {
+    "id": 19,
+    "keyword_title": "High-Performance Computing",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_19_0.png"
+    ],
+    "image_credits": [
+      ""
+    ]
+  },
+  {
+    "id": 20,
+    "keyword_title": "Data-Driven Decision Making",
+    "texts": [],
+    "nextpage_texts": [
+      "Data Visualization",
+      "Advanced Data Analytics",
+      "Development of proactive models for enhancing business intelligence and opportunities",
+      "AI-based lead service line identification model",
+      "Integrate DOEE Developed Integrated Flood Model (IFM) for Flood Response",
+      "AI-based total residual chlorine (TRC) model",
+      "AI-based transient and acoustic alert system"
+    ],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_20_0.png"
+    ],
+    "image_credits": [
+      "https://www.az-apps.com/"
+    ]
+  },
+  {
+    "id": 21,
+    "keyword_title": "Optimization",
+    "texts": [],
+    "nextpage_texts": [
+      "Optimize asset maintenance activities through real-time asset performance tracking",
+      "Capacity optimization",
+      "Optimal routing"
+    ],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [
+      "Systems optimization for enhancing opportunities, improving efficiency, safety, resilience and sustainability, reducing cost, non-revenue water and carbon emission"
+    ],
+    "image_paths": [
+      "static\\images\\home_21_0.png"
+    ],
+    "image_credits": [
+      "https://ops.fhwa.dot.gov/freight/freight_analysis/nat_freight_stats/docs/05factsfigures/fig2_4.htm"
+    ]
+  },
+  {
+    "id": 22,
+    "keyword_title": "Project Management",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_22_0.png"
+    ],
+    "image_credits": [
+      "https://www.timetoast.com/timelines/history-theory-and-practice-of-management"
+    ]
+  },
+  {
+    "id": 23,
+    "keyword_title": "Construction Safety ",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_23_0.png"
+    ],
+    "image_credits": [
+      "https://www.ishn.com/articles/112413-how-we-lose-safety-judgment-skill-development"
+    ]
+  },
+  {
+    "id": 24,
+    "keyword_title": "Transportation Safety",
+    "texts": [],
+    "nextpage_texts": [
+      "Traffic Safety",
+      "Work Zone Safety"
+    ],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_24_0.png"
+    ],
+    "image_credits": [
+      "https://www.nttrdirectory.com/blog/truck-driver-safety-essential-strategies-for-fleet-managers-repair-shops"
+    ]
+  },
+  {
+    "id": 25,
+    "keyword_title": "Cognitive and Neurobehavior of Driving",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_25_0.png"
+    ],
+    "image_credits": [
+      "https://www.cazbike.org/list-of-cell-phone-related-driving-restrictions/"
+    ]
+  },
+  {
+    "id": 26,
+    "keyword_title": "Traffic Congestion Prediction and Mitigation",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_26_0.png"
+    ],
+    "image_credits": [
+      "https://ops.fhwa.dot.gov/freewaymgmt/publications/frwy_mgmt_handbook/chapter13_02.htm"
+    ]
+  },
+  {
+    "id": 27,
+    "keyword_title": "Traffic Simulation",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [
+      "Source: NGSIM, Cambridge Systematics, Inc."
+    ],
+    "image_paths": [
+      "static\\images\\home_27_0.png"
+    ],
+    "image_credits": [
+      "https://hal.science/hal-01055567/document"
+    ]
+  },
+  {
+    "id": 28,
+    "keyword_title": "Intelligent Transportation System",
+    "texts": [],
+    "nextpage_texts": [
+      "Traffic Signal Design and Optimization",
+      "Signal Prioritization to Public Transit and Emergency Vehicles"
+    ],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [
+      "Source: www.govtech.com/transportation/washington-d-c-suburb-starts-traffic-signal-modernization"
+    ],
+    "image_paths": [
+      "static\\images\\home_28_0.png"
+    ],
+    "image_credits": [
+      "https://www.openpr.com/news/2786321/rising-trends-of-traffic-geographic-information-system-market"
+    ]
+  },
+  {
+    "id": 29,
+    "keyword_title": "Connected and Autonomous Vehicles",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_29_0.png"
+    ],
+    "image_credits": [
+      ""
+    ]
+  },
+  {
+    "id": 30,
+    "keyword_title": "Nanomaterial Composite Modifier for Asphalt",
+    "texts": [],
+    "nextpage_texts": [
+      "Nanomaterials",
+      "Asphalt pavement for highway and airport"
+    ],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_30_0.png"
+    ],
+    "image_credits": [
+      "https://www.sciencedirect.com/science/article/abs/pii/S0950061816319924"
+    ]
+  },
+  {
+    "id": 31,
+    "keyword_title": "Performance Engineered Pavement Mixture Design",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [
+      "Source: www.globalgilson.com/blog/balanced-mix-design-article"
+    ],
+    "image_paths": [
+      "static\\images\\home_31_0.png"
+    ],
+    "image_credits": [
+      "https://highways.dot.gov/sites/fhwa.dot.gov/files/2021-12/HRT-22035.pdf"
+    ]
+  },
+  {
+    "id": 32,
+    "keyword_title": "Sustainable and Low Carbon Transportation Infrastructure",
+    "texts": [],
+    "nextpage_texts": [
+      "Recycled Solid Waste and Reclaimed Asphalt Pavement as Pavement Construction Materials"
+    ],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_32_0.png"
+    ],
+    "image_credits": [
+      "https://www.sciencedirect.com/science/article/abs/pii/S0165232X13001523"
+    ]
+  },
+  {
+    "id": 33,
+    "keyword_title": "Airport and Road Pavement Structural Capacity Testing",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_33_0.png"
+    ],
+    "image_credits": [
+      "https://link.springer.com/chapter/10.1007/978-981-33-6466-0_33"
+    ]
+  },
+  {
+    "id": 34,
+    "keyword_title": "Bridge Structural Health Monitoring",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_34_0.png"
+    ],
+    "image_credits": [
+      "https://steelbaileybridges.com/blogs/how-to-build-a-bailey-bridge/"
+    ]
+  },
+  {
+    "id": 35,
+    "keyword_title": "Tunnel and Subway Operations Monitoring",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [
+      "www.burns-group.com/project/washington-metro-area-transit-authority-wmata-fiber-optic-infrastructure/"
+    ],
+    "image_paths": [
+      "static\\images\\home_35_0.png"
+    ],
+    "image_credits": [
+      "https://www.kiewit.com/projects/wmata-l-line-steel-tunnel-liner-rehabilitation-and-bridge-structure-repairs/"
+    ]
+  },
+  {
+    "id": 36,
+    "keyword_title": "High-speed Rail Design and Operations",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_36_0.png"
+    ],
+    "image_credits": [
+      "https://red-spark.org/2023/04/16/chinas-high-speed-rail-its-achievements-and-contradictions/"
+    ]
+  },
+  {
+    "id": 37,
+    "keyword_title": "Environmental Health and Safety",
+    "texts": [],
+    "nextpage_texts": [
+      "Environmental Sustainability",
+      "Regulation and Compliance",
+      "Occupational Health and Safety",
+      "Environmental Monitoring",
+      "Public Health Monitoring",
+      "Effect of Environment Pollution on Public Health"
+    ],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_37_0.png"
+    ],
+    "image_credits": [
+      "https://www.themightyearth.com/environmental-health-and-safety/"
+    ]
+  },
+  {
+    "id": 38,
+    "keyword_title": "Education, Training and Workforce Development",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_38_0.png"
+    ],
+    "image_credits": [
+      "https://corporatecomrade.com/service-excellence"
+    ]
+  },
+  {
+    "id": 39,
+    "keyword_title": "Smart Cities and Infrastructure",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_39_0.png"
+    ],
+    "image_credits": [
+      "https://medium.com/@maryam.alolama/dubais-smart-city-77ef55d35e65"
+    ]
+  },
+  {
+    "id": 40,
+    "keyword_title": "Smart Transit and Subway Traveler Information System",
+    "texts": [],
+    "nextpage_texts": [
+      "Display of Real-Time Locations and Forward Directions of Buses and Trains",
+      "Recommendation of the Nearest Bus & Trains Stations based on User Location",
+      "Estimated Arrival Times of Buses & Trains",
+      "Forecasted Arrival Times of Buses & Trains",
+      "Integrated Optimal Routing of Buses & Trains"
+    ],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_40_0.png"
+    ],
+    "image_credits": [
+      "https://apps.apple.com/us/app/raleigh-incidents/id1525141357"
+    ]
+  },
+  {
+    "id": 41,
+    "keyword_title": "Geothermal Energy",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_41_0.png"
+    ],
+    "image_credits": [
+      "https://www.pnnl.gov/news-media/floating-offshore-wind-could-bring-billions-value-west-coast-report-shows"
+    ]
+  },
+  {
+    "id": 42,
+    "keyword_title": "Wind Energy",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_42_0.png"
+    ],
+    "image_credits": [
+      "https://quizlet.com/ca/353811312/geothermal-energy-diagram/"
+    ]
+  },
+  {
+    "id": 43,
+    "keyword_title": "Solar Energy",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_43_0.png"
+    ],
+    "image_credits": [
+      "https://www.nature.com/articles/s41561-023-01304-1"
+    ]
+  },
+  {
+    "id": 44,
+    "keyword_title": "Nuclear Energy",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_44_0.png"
+    ],
+    "image_credits": [
+      "https://www.energy.gov/articles/infographic-nuclear-energy-numbers"
+    ]
+  },
+  {
+    "id": 45,
+    "keyword_title": "HydroElectric Energy",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "static\\images\\home_45_0.png"
+    ],
+    "image_credits": [
+      "http://nativeamericannetroots.net/diary/Dam-Indians-The-Flathead-Reservation"
+    ]
+  }
+]

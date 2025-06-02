@@ -1,0 +1,703 @@
+/* Global Theme Variables */
+:root {
+  --primary-bg: rgb(255, 255, 255);
+  --secondary-bg: #0a1014;
+  --text-dark: #111827;
+  --text-light: #374151;
+  --accent: #ffffff;
+  --accent-dark: #cc8969;
+  --header-bg: #E77500 ;
+  --footer-bg: #000000;
+  --white: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.2);
+  --off-white: #ebe9e9;
+
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  background: var(--primary-bg);
+  color: var(--text-dark);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+
+header h1 {
+  margin: 0;
+  font-size: 3.5rem;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--white);
+}
+
+
+
+nav a:hover {
+  color: var(--primary-bg);
+  text-decoration: underline;
+}
+
+footer {
+  background: var(--header-bg);
+  padding: 1rem 2rem;
+  text-align: center;
+  color: var(--off-white);
+}
+
+footer a {
+  color: var(--off-white);
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-size: 0.9rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+.section {
+  padding: 2rem;
+  background-color: var(--white);
+  margin-bottom: 1.5rem;
+}
+
+.scroll-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  gap: 2em;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 1em;
+}
+
+
+
+.item-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+
+
+
+button, .button {
+  background-color: var(--accent);
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  color: var(--white);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover, .button:hover {
+  background-color: var(--accent-dark);
+}
+
+img {
+  max-width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+ul {
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+ul li {
+  padding: 0.25rem 0;
+  list-style: disc;
+  color: var(--text-light);
+}
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: '/home_background.jpg'
+}
+
+.hero-gradient {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.hero-content {
+  text-align: center;
+  color: var(--primary-bg);
+  max-width: 800px;
+  animation: fadeIn 1s ease-out;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: var(--secondary-bg);
+}
+
+.hero-button {
+  background-color: var(--header-bg);
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--white);
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: var(--header-bg);
+  color: var(--white);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* Showcase Section */
+.showcase-section {
+
+  background-color: var(--header-bg-color);
+}
+
+
+
+.item-wrapper {
+  background: var(--primary-bg);
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(19, 19, 22, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  /* no margin‑right—grid gap handles spacing */
+}
+.item-wrapper:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.0);
+  
+}
+
+
+.item {
+
+  background-position: center;
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.item-detail-section {
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #d1d5db;
+  max-width: 900px;
+  margin: auto;
+}
+
+.subheading {
+  font-size: 1.1rem;
+  color: #93c5fd;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.item-list, .item-credits {
+  padding-left: 1.25rem;
+  margin: 01rem 0;
+}
+
+
+.item-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+
+
+
+
+.newspaper-columns {
+  color: #000; /* default text color */
+  column-count: 2;
+  column-gap: 2rem;
+  padding-top: 1rem;
+}
+
+.category h3 {
+  font-size: 1rem;
+  color: #000; /* was var(--off-white) */
+  margin: 0 0 0.25rem;
+}
+
+
+.category ul {
+  list-style: disc;
+  padding-left: 1.1em;
+  margin: 0;
+}
+
+.category li {
+  font-size: 0.78rem;
+  line-height: 1.3;
+  color: #000000;
+  margin-bottom: 0.2em;
+}
+
+
+
+
+
+.item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.item-title {
+  background: linear-gradient(to top, rgba(239, 238, 234, 0.2), var(--primary-bg));
+  color: var(    --off-white);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+
+.item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: 1;
+}
+
+
+.home-title {
+  font-size: 2rem;
+  color: var(--accent-orange);
+  margin-bottom: 1rem;
+}
+
+.home-text {
+  font-size: 1rem;
+  color: var(--off-white);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.page-title {
+  font-size: 60px;
+  margin-bottom: 1rem;
+  font-family: "Arial";
+  font-weight: bold;
+}
+
+ .bottom-three {
+     margin-bottom: 3cm;
+  }
+
+  .one-column {
+    font-size: 30px;
+    font-family: "Arial";
+  }
+
+  .subtitle {
+    font-size: 30px;
+    font-family: "Arial";
+  }
+
+  .up-three {
+    margin-top: 2cm;
+ }
+
+ .subtitle_spaced_list_item{
+  margin-bottom: 0cm;
+ }
+
+
+
+
+  /* Hero Banner */
+  .hero-banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .hero-content {
+    text-align: center;
+    color: white;
+    max-width: 800px;
+  }
+  .hero-content h2 {
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+  }
+  .button.hero-button:hover {
+    background-color: #cc7a00;
+  }
+
+  /* Mission Section */
+  .mission-section {
+    padding: 4rem 1rem;
+    background: var(-white);
+    text-align: center;
+  }
+  .mission-section .page-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #122141;
+  }
+  .mission-section  .subtitle {
+    font-size: 30px;
+    font-family: "Arial";
+  }
+
+
+
+  /* Utility */
+  .page-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #122141;
+  }
+
+  .page-subtitle{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #122141;
+  }
+  :root {
+    --header-bg-color: #122141; /* fallback header background color */
+  }
+
+
+  header nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* Add a white banner (“beamer”) below the header text */
+  .banner {
+    background-color: var(--header-bg);
+    text-align: left;
+    
+  }
+  .banner p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: var(--white);
+    font-weight: 500;
+    font-family: Arial
+  }
+
+  .header-container {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+  }
+
+  /* ── 2) Narrow video strip at the very top ── */
+  .video-strip {
+    position: relative;
+    width: 100%;
+    height: 80px;                     /* tweak this height if you prefer */
+    overflow: hidden;
+  }
+  .video-strip .video-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;                /* fill/crop without distortion */
+    z-index: 0;
+  }
+
+  /* ── 3) Title overlayed on top of the video ── */
+  .video-strip .title-overlay {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 1;
+
+/* ↓ These rules give you a wide, responsive textbox: */
+width: 80%;            /* occupy 80% of the viewport width */
+max-width: 1000px;     /* but never exceed 1000px */
+padding: 0 1rem;       /* small horizontal padding */
+text-align: center;    /* center‐align the lines */
+
+color: #ffffff;
+text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+font-family: Arial, sans-serif;
+font-size: 1.8rem;    /* adjust size as needed */
+line-height: 1.4;      /* give the multiline text some spacing */
+}
+
+  .video-strip .title-overlay h1 {
+    margin: 0;
+    font-size: 1.5rem;                 /* ~24px; adjust as needed */
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+  }
+
+  /* ── 4) Orange nav bar that partially overlaps the video strip ── */
+  .nav-bar {
+    position: relative;
+    top: 0px;                        /* pull up to overlap 20px over video */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #E77500;         /* orange background */
+    padding: 0.75rem 1rem;             /* vertical/horizontal padding */
+    border-radius: 0 0 8px 8px;        /* rounded bottom corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    height: 30px;                      /* fixed nav‐bar height */
+    margin-bottom: 10px;
+  }
+
+
+  /* ── 5) Nav link styling ── */
+  .nav-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.8rem;                /* ~20px */
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+    margin: 0 1rem;
+    transition: opacity 0.2s;
+  }
+  .nav-bar a:hover {
+    opacity: 0.8;
+  }
+
+  /* ── 6) Search input + icon inside the nav ── */
+  .search-wrapper {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+  }
+  .search-wrapper input {
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    margin-left: 0.5rem;
+  }
+  .search-wrapper .search-icon {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+  }
+
+  /* ── 7) Thin border between header and main content ── */
+  header + main {
+
+  }
+
+  .bottom-bar {
+    height: 12vh;
+    display: flex;
+    /* Lift text to the top, rather than centering vertically */
+    align-items: flex-start;        
+    justify-content: auto; /* pushes company-name left, footer right */
+  
+    /* Only top padding (no bottom padding), so text sits higher */
+    padding: 2rem 2rem 0 2rem;       
+  
+    /* Thin line above this bar */
+    border-top: 1px solid #ddd;    
+  
+    /* Same background as before (or adjust to taste) */
+    background-color: var(--header-bg-alt, var(--header-bg)); 
+  }
+  
+  /* 2) Company name styling */
+  .company-name a {
+    color: var(--white, #333);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+ 
+/* 3) Footer links styling – remove padding-bottom here too */
+.site-footer {
+  font-size: 0.9rem;
+  font-family: Arial, sans-serif;
+}
+
+.site-footer a {
+  color: var(--footer-link-color, #ffffff);
+  text-decoration: none;
+  margin-left: 0.5rem;  /* gap after the “|” */
+  
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+.home-scroll-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-height: 100vh;
+  overflow-y: auto;
+  padding: 1rem 0;
+  background-color: var(--white);
+}
+
+/* Card container */
+.item-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background: var(--primary-bg);
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(19, 19, 22, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  padding: 0;
+
+
+  /* FIXED HEIGHT for uniformity */
+  height: 580px; /* adjust as needed */
+}
+/* Hover effect */
+.item-wrapper:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(19, 19, 22, 0.6);
+}
+
+/* Image at top, full width */
+.item {
+  width: 100%;                     /* span entire card width */
+  aspect-ratio: 4/3;
+  background-size: cover;          /* cover so it fills the container */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 2rem;
+}
+
+/* Title sits immediately under the image */
+.home-item-title {
+  background: var(--primary-bg);
+  color: black;
+  font-weight: 600;
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;      /* remove default margin */
+  z-index: 2;
+}
+
+/* Credits below title */
+.credits {
+  font-size: 0.8rem;
+  color: #979797;
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+}
+
+      /* Spacing utility */
+  .up-two {
+    margin-top: 2rem;
+  }
+
+  .up-two {
+    margin-top: 1rem;
+  }
+
+
+  
+  .subtitle2 {
+    font-size: 40px;
+    font-family: "Source Sans 3";
+    color: #000000;
+    margin: 0;
+  }
+
+  /* Product list container */
+  .product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 1rem 0;
+  }
+
+  /* Individual product card */
+  .product-card {
+    display: flex;
+    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow:
+    0 -8px 18px rgba(0, 0, 0, 0.2),
+    0 12px 18px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Text area inside each card */
+  .product-text {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }

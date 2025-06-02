@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>{{ .Title }}</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <!-- ─── HEADER CONTAINER ─── -->
+  <header class="header-container">
+    <!-- 1) Narrow video strip -->
+    <div class="video-strip">
+      <video
+      
+        class="video-element"
+        autoplay
+        muted
+        loop
+        playsinline
+      >    <source src="/aerial.mp4" type="video/mp4" /></video>
+      <!-- 2) Title overlaid on top of the video -->
+      <div class="title-overlay">
+        Advancing technologies, empowering people. 
+        Discover how we shape smarter, safer, more resilient and sustainable systems across industries.
+      </div>
+    </div>
+
+    <!-- 3) Banner under the video strip -->
+    <div class="banner">
+      <h1>American Advanced Technology</h1>
+    </div>
+
+    <!-- 4) Orange nav bar overlapping the video strip -->
+    <nav class="nav-bar">
+      <a href="/">Home</a>
+      <a href="/service">Service</a>
+      <a href="/research">Research</a>
+      <a href="/training">Training</a>
+      <a href="/product">Product</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </header>
+  <!-- Full-height Hero Section -->
+  <section class="hero-banner"     style="background-image: url('/home_background.jpg');">
+    <div class="hero-gradient">
+      <div class="hero-content">
+        <h2></h2>
+        <a href="#" class="button hero-button" onclick="scrollDown(); return false;">
+          Explore Our Service
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Statement -->
+  <section class="mission-section">
+    <h2 class="page-title">Our Mission</h2>
+    <p class="subtitle">
+      American Advanced Technology’s mission is to make the world a better place to live by advancing technologies and empowering people, education and workforce development. Our vision is for all people to benefit from American Advanced Technology’s services and products that enhance their capability, safety, economy, efficiency, reliability, resilience, sustainability and satisfaction.
+    </p>
+  </section>
+
+  <!-- Showcase Items -->
+ <!-- Showcase Items -->
+<section id="services" class="showcase-section">
+  <div class="home-scroll-container">
+    {{ range .Items }}
+      <a href="/item?id={{ .ID }}" class="item-link">
+  <div
+    id="item-{{ .ID }}"
+    class="item-wrapper"
+    style="
+      width: 700px;
+      aspect-ratio: 4/3;
+      overflow: hidden;
+      background-color: #ffffff;
+    "
+  >
+    <img
+      src="/static/{{ .ResolvedImage }}"
+      alt="{{ .KeywordTitle }}"
+      style="
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-color: #ebe9e9;
+      "
+    />
+          <p class="home-item-title">{{ .KeywordTitle }}</p>
+          {{ if .ImageCredits }}
+            <p class="credits">Image credit: {{ index .ImageCredits 0 }}</p>
+          {{ end }}
+        </div>
+      </a>
+    {{ end }}
+  </div>
+</section>
+  <!-- ─── FOOTER (bottom bar) ─── -->
+  <div class="bottom-bar">
+    <!-- Company name (clickable) -->
+    <div class="company-name">
+      <a href="/">American Advanced Technology</a>
+    </div>
+
+    <!-- Footer links -->
+    <footer class="site-footer">
+      <a href="/tou">Terms of Use</a> |
+      <a href="/privacy">Privacy</a>
+    </footer>
+  </div>
+</body>
+</html>

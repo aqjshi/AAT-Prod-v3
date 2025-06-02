@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>{{ .Title }}</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="/static/js/main.js"></script>
+</head>
+
+<body>
+  <!-- ─── HEADER CONTAINER ─── -->
+  <header class="header-container">
+    <!-- 1) Narrow video strip -->
+    <div class="video-strip">
+      <video
+      
+        class="video-element"
+        autoplay
+        muted
+        loop
+        playsinline
+      >    <source src="/aerial.mp4" type="video/mp4" /></video>
+      <!-- 2) Title overlaid on top of the video -->
+      <div class="title-overlay">
+        Advancing technologies, empowering people. 
+        Discover how we shape smarter, safer, more resilient and sustainable systems across industries.
+      </div>
+    </div>
+
+    <!-- 3) Banner under the video strip -->
+    <div class="banner">
+      <h1>American Advanced Technology</h1>
+    </div>
+
+    <!-- 4) Orange nav bar overlapping the video strip -->
+    <nav class="nav-bar">
+      <a href="/">Home</a>
+      <a href="/service">Service</a>
+      <a href="/research">Research</a>
+      <a href="/training">Training</a>
+      <a href="/product">Product</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </header>
+<div class="section">
+  <h1 class="page-title">Training</h1>
+
+  <p class="subtitle">
+    American Advanced Technology empowers people through education, training and workforce development activities. Download and fill out the  
+    <a href="/static/files/training_form.pdf">
+      Training Inquiry Form
+    </a> and email it to <a href="mailto:customer_service@aat.com">customer_service@aat.com</a> if you are interested in one of the following programs. Our customer service will reach out to you for a no-cost consultation before you decide to register in a Program.
+  </p>
+  <ul class="subtitle">
+    <li class="subtitle_spaced_list_item">Summer and Winter Camp Program for K-12 and College Students</li>
+    <li class="subtitle_spaced_list_item">Culture, Art and Design Program for K-12, Community College and College Students</li>
+    <li class="subtitle_spaced_list_item">College Access Counseling Program for High School Students</li>
+    <li class="subtitle_spaced_list_item">Certificate and Internship Program for High School, Trade School, Community College and College Students</li>
+    <li class="subtitle_spaced_list_item">Incumbent Training Program for Working Professionals and Community Residents</li>
+  </ul>
+</div>
+  <!-- ─── FOOTER (bottom bar) ─── -->
+  <div class="bottom-bar">
+    <!-- Company name (clickable) -->
+    <div class="company-name">
+      <a href="/">American Advanced Technology</a>
+    </div>
+
+    <!-- Footer links -->
+    <footer class="site-footer">
+      <a href="/tou">Terms of Use</a> |
+      <a href="/privacy">Privacy</a>
+    </footer>
+  </div>
+</body>
+</html>
+
