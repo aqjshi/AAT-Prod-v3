@@ -49,7 +49,7 @@
 
   <p class="subtitle">
     American Advanced Technology accepts wholesale orders for the following product. Download and fill out the 
-    <a href="/static/files/Product_Inquiry_Form.pdf">
+    <a href="/static/files/product_inquiry_form.pdf">
       Product Inquiry Form
     </a> and email it to 
     <a href="mailto:customer_service@aat.com">customer_service@aat.com</a> 
@@ -65,7 +65,7 @@
     <!-- Card 1 -->
     <div class="product-card">
       <div class="product-text">
-        <h2 class="subtitle2">
+        <h2 class="page-subtitle">
           High‑Precision 3D Stereo Imaging System
         </h2>
         <p class="subtitle">
@@ -88,7 +88,7 @@
     <!-- Card 2 -->
     <div class="product-card">
       <div class="product-text">
-        <h2 class="subtitle2">
+        <h2 class="page-subtitle">
           Nanomaterial Composite Asphalt Modifier
         </h2>
         <p class="subtitle">
@@ -111,7 +111,7 @@
     <!-- Card 3 -->
     <div class="product-card">
       <div class="product-text">
-        <h2 class="subtitle2">
+        <h2 class="page-subtitle">
           Methane Detector System
         </h2>
         <p class="subtitle">
@@ -134,7 +134,7 @@
     <!-- Card 4 -->
     <div class="product-card">
       <div class="product-text">
-        <h2 class="subtitle2">
+        <h2 class="page-subtitle">
           Air Quality Monitoring System
         </h2>
         <p class="subtitle">
@@ -157,7 +157,7 @@
     <!-- Card 5 -->
     <div class="product-card">
       <div class="product-text">
-        <h2 class="subtitle2">
+        <h2 class="page-subtitle">
           Bridge Monitoring System
         </h2>
         <p class="subtitle">
@@ -176,62 +176,6 @@
   </div>
 
   <hr style="margin: 3rem 0; border-top: 1px solid #444;" />
-
-  <h2>Product Inquiry Form</h2>
-  <p>
-    Prefer online? You can also fill out this form below instead of downloading the PDF.
-  </p>
-
-  <form method="POST" action="/submit-inquiry" class="inquiry-form">
-    <div class="form-row">
-      <label>Full Name</label>
-      <input type="text" name="first_name" placeholder="First Name" required>
-      <input type="text" name="last_name" placeholder="Last Name" required>
-    </div>
-
-    <div class="form-row">
-      <label>Email Address</label>
-      <input type="email" name="email" placeholder="you@example.com" required>
-
-      <label>Organization/Company</label>
-      <input type="text" name="company" placeholder="Company Name">
-    </div>
-
-    <div class="form-row">
-      <label>Phone Number</label>
-      <input type="text" name="phone" placeholder="(123) 456‑7890">
-
-      <label>Company Website</label>
-      <input type="url" name="website" placeholder="https://example.com">
-    </div>
-
-    <div class="form-row">
-      <label>Type of Product Interested In</label>
-      <div class="checkbox-group">
-        <label><input type="checkbox" name="product" value="Technology Transfer"> Technology Transfer</label>
-        <label><input type="checkbox" name="product" value="Asphalt Modifier"> Nanomaterial Asphalt Modifier</label>
-        <label><input type="checkbox" name="product" value="Methane Detector"> Methane Detector System</label>
-        <label><input type="checkbox" name="product" value="Air Quality Monitor"> Air Quality Monitoring System</label>
-      </div>
-    </div>
-
-    <div class="form-row">
-      <label>Brief Description of Your Needs</label>
-      <textarea name="description" rows="4" placeholder="Describe your use case or inquiry here..."></textarea>
-    </div>
-
-    <div class="form-row">
-      <label>Preferred Contact Method</label>
-      <div class="checkbox-group">
-        <label><input type="checkbox" name="contact_method" value="Email"> Email</label>
-        <label><input type="checkbox" name="contact_method" value="Phone"> Phone</label>
-        <label><input type="checkbox" name="contact_method" value="Video"> Video/Virtual Meeting</label>
-      </div>
-    </div>
-
-    <button type="submit" class="button">Submit Inquiry</button>
-  </form>
-</div>
   <!-- ─── FOOTER (bottom bar) ─── -->
   <div class="bottom-bar">
     <!-- Company name (clickable) -->

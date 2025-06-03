@@ -189,30 +189,7 @@ ul li {
 
 
 
-.item-wrapper {
-  background: var(--primary-bg);
-  overflow: hidden;
-  box-shadow: 0 6px 18px rgba(19, 19, 22, 0.5);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
-  /* no margin‑right—grid gap handles spacing */
-}
-.item-wrapper:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.0);
-  
-}
 
-
-.item {
-
-  background-position: center;
-  height: 300px;
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
 
 
 
@@ -266,7 +243,7 @@ ul li {
 }
 
 .category h3 {
-  font-size: 1rem;
+  font-size: 4rem;
   color: #000; /* was var(--off-white) */
   margin: 0 0 0.25rem;
 }
@@ -276,6 +253,7 @@ ul li {
   list-style: disc;
   padding-left: 1.1em;
   margin: 0;
+  font-size: 30px;
 }
 
 .category li {
@@ -283,6 +261,7 @@ ul li {
   line-height: 1.3;
   color: #000000;
   margin-bottom: 0.2em;
+    font-size: 26px;
 }
 
 
@@ -329,12 +308,6 @@ ul li {
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
-}
-.page-title {
-  font-size: 60px;
-  margin-bottom: 1rem;
-  font-family: "Arial";
-  font-weight: bold;
 }
 
  .bottom-three {
@@ -404,13 +377,16 @@ ul li {
 
   /* Utility */
   .page-title {
-    font-size: 3rem;
+    font-size: 2.5vw;
     margin-bottom: 1rem;
     color: #122141;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.02em;
   }
 
   .page-subtitle{
-    font-size: 2.5rem;
+    font-size: 2.3vw;
     margin-bottom: 1rem;
     color: #122141;
   }
@@ -422,16 +398,28 @@ ul li {
   header nav a:hover {
     text-decoration: underline;
   }
-
   /* Add a white banner (“beamer”) below the header text */
   .banner {
     background-color: var(--header-bg);
     text-align: left;
-    
+    width: 100vw;
+    height: 4vw;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 3vw; /* zero top padding */
+    /* Font size scales with viewport width, minimum 0.8rem, maximum 1.2rem */
+    margin-bottom: 0;
   }
+
+.banner h1 {
+  /* size is 8% of the viewport’s width */
+font-size: 2.5vw;
+  margin: 0;
+  padding: 0;
+
+}
   .banner p {
     margin: 0;
-    font-size: 0.875rem;
     color: var(--white);
     font-weight: 500;
     font-family: Arial
@@ -447,7 +435,7 @@ ul li {
   .video-strip {
     position: relative;
     width: 100%;
-    height: 80px;                     /* tweak this height if you prefer */
+    height: 110px;                     /* tweak this height if you prefer */
     overflow: hidden;
   }
   .video-strip .video-element {
@@ -477,13 +465,13 @@ text-align: center;    /* center‐align the lines */
 color: #ffffff;
 text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 font-family: Arial, sans-serif;
-font-size: 1.8rem;    /* adjust size as needed */
+        font-size: 1.5vw;
 line-height: 1.4;      /* give the multiline text some spacing */
 }
 
   .video-strip .title-overlay h1 {
     margin: 0;
-    font-size: 1.5rem;                 /* ~24px; adjust as needed */
+        font-size: 1.5vw;
     font-weight: bold;
     font-family: Arial, sans-serif;
   }
@@ -496,12 +484,11 @@ line-height: 1.4;      /* give the multiline text some spacing */
     align-items: center;
     justify-content: space-around;
     background-color: #E77500;         /* orange background */
-    padding: 0.75rem 1rem;             /* vertical/horizontal padding */
-    border-radius: 0 0 8px 8px;        /* rounded bottom corners */
+    padding: 0.75rem 4rem;             /* vertical/horizontal padding */
+
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 2;
-    height: 30px;                      /* fixed nav‐bar height */
-    margin-bottom: 10px;
+    height: 2vw;                      /* fixed nav‐bar height, decreased by half */
   }
 
 
@@ -509,7 +496,7 @@ line-height: 1.4;      /* give the multiline text some spacing */
   .nav-bar a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 1.8rem;                /* ~20px */
+    font-size: 1.7vw;              /* ~20px */
     font-weight: 600;
     font-family: Arial, sans-serif;
     margin: 0 1rem;
@@ -547,15 +534,14 @@ line-height: 1.4;      /* give the multiline text some spacing */
   }
 
   .bottom-bar {
-    height: 12vh;
+    height: 5vh;
     display: flex;
     /* Lift text to the top, rather than centering vertically */
     align-items: flex-start;        
     justify-content: auto; /* pushes company-name left, footer right */
   
-    /* Only top padding (no bottom padding), so text sits higher */
-    padding: 2rem 2rem 0 2rem;       
-  
+    /* Only bottom padding (no top padding), so text sits higher */
+    padding: .5rem 2rem 2rem 2rem;       
     /* Thin line above this bar */
     border-top: 1px solid #ddd;    
   
@@ -590,69 +576,107 @@ line-height: 1.4;      /* give the multiline text some spacing */
 .site-footer a:hover {
   text-decoration: underline;
 }
-
-
-
 .home-scroll-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 28px;
+  padding: 1rem 0.5rem;
+  background-color: var(--white);
+
+  /* Default: one column (mobile) */
+  grid-template-columns: 1fr;
   max-height: 100vh;
   overflow-y: auto;
-  padding: 1rem 0;
-  background-color: var(--white);
 }
 
-/* Card container */
+/* Tablet: 2 columns once viewport ≥ 600px */
+@media (min-width: 600px) {
+  .home-scroll-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop: 3 columns once viewport ≥ 900px */
+@media (min-width: 900px) {
+  .home-scroll-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* Each card simply stretches to fill its grid cell */
+/* 1) Define a “card height” variable at the root (so you can tweak in one place) */
+:root {
+  --card-height: 590px;
+}
+
+/* 2) Force every card wrapper to use that exact height */
 .item-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
   background: var(--primary-bg);
+  box-shadow: 0 4px 12px rgba(19, 19, 22, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
   overflow: hidden;
-  box-shadow: 0 6px 18px rgba(19, 19, 22, 0.5);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
-  padding: 0;
+  min-width: 0; /* allow grid items to shrink if needed */
 
-
-  /* FIXED HEIGHT for uniformity */
-  height: 580px; /* adjust as needed */
+  /* ▶︎ FIXED HEIGHT: all cards become the same height ◀︎ */
+  height: var(--card-height);
 }
-/* Hover effect */
-.item-wrapper:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(19, 19, 22, 0.6);
+
+
+/* Make the cards narrower by reducing minmax width */
+.home-scroll-container {
+  display: grid;
+  gap: 70px 60px; /* 40px row gap, 60px column gap (reduced x-axis space) */ /* CHANGED */
+  padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* CHANGED: was 800px, now 320px */
 }
 
 /* Image at top, full width */
 .item {
-  width: 100%;                     /* span entire card width */
-  aspect-ratio: 4/3;
-  background-size: cover;          /* cover so it fills the container */
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
+  min-height: 40px; /* CHANGED: allow smaller images */
+  height: clamp(40px, 8vw, 60px); /* CHANGED: allow smaller images */
+  max-height: 60px; /* CHANGED: allow smaller images */
 }
 
-/* Title sits immediately under the image */
-.home-item-title {
-  background: var(--primary-bg);
-  color: black;
-  font-weight: 600;
-  font-size: 2rem;
+/* Make the image wrapper exactly 4:3, filling the card’s width */
+.image-wrapper {
   width: 100%;
-  text-align: center;      /* remove default margin */
-  z-index: 2;
+  aspect-ratio: 4 / 3; /* CHANGED: match card aspect ratio */
+  background-color: #ebe9e9;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: fill;
 }
 
-/* Credits below title */
+/* Title under the image */
+.home-item-title {
+  font-weight: 600;
+  text-align: center;
+  margin: 1rem 0 0.5rem; /* CHANGED: less vertical margin */
+  font-size: clamp(2rem, 3vw, 1.9rem); /* CHANGED: smaller font size */
+  color: black;
+  min-height: 2.2em; /* CHANGED: less vertical space */
+}
+/* Credits below the title */
 .credits {
-  font-size: 0.8rem;
+  font-size: clamp(0.8rem, 1vw, 1rem); /* CHANGED: smaller font */
   color: #979797;
+  margin: 0 0.3rem 0.7rem; /* CHANGED: less margin */
+  min-height: 1.5em; /* CHANGED: less vertical space */
+  margin-top: auto;
   text-align: left;
-  margin-top: 2rem;
-  margin-bottom: 0rem;
+  align-self: flex-start; /* align to bottom left */
+  justify-self: flex-end; /* ensure it's at the bottom if grid is used */
 }
 
       /* Spacing utility */
@@ -696,8 +720,13 @@ line-height: 1.4;      /* give the multiline text some spacing */
   /* Text area inside each card */
   .product-text {
     flex: 1;
-    padding: 1rem;
+    padding: 0 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 0;
   }
+.list-item {
+  font-size: clamp(3rem, 4vw, 6rem); /* Scales with viewport, min 2rem, max 2.5rem */
+  margin-bottom: 0em;
+}

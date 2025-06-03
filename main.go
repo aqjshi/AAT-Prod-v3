@@ -515,6 +515,13 @@ func main() {
 	http.HandleFunc("/images/home_45_0.png", func(w http.ResponseWriter, r *http.Request) {
 		http.ServeFile(w, r, "./static/images/home_45_0.png")
 	})
+
+	http.HandleFunc("/training_inquiry_form.pdf", func(w http.ResponseWriter, r *http.Request) {
+		http.ServeFile(w, r, "./static/files/training_inquiry_form.pdf")
+	})
+	http.HandleFunc("/static/files/product_inquiry_form.pdf", func(w http.ResponseWriter, r *http.Request) {
+		http.ServeFile(w, r, "./static/files/product_inquiry_form.pdf")
+	})
 	log.Println("Listening on http://localhost:8080 …")
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
