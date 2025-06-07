@@ -1,3 +1,3 @@
 
- ssp -i "C:\Users\aqjsh\Desktop\AmericanAdvancedTechnology\laptop_PEM.pem" ec2-user@3.130.42.188
-C:\Users\aqjsh\Desktop\AmericanAdvancedTechnology-Prod
+ ssp -i "C:\Users\aqjsh\Desktop\AmericanAdvancedTechnology\laptop_PEM.pem" ec2-user@3.23.46.120
+C:\Users\aqjsh\gp\src\AAT-Prod-v3

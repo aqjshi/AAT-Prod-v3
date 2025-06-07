@@ -604,7 +604,7 @@ line-height: 1.4;      /* give the multiline text some spacing */
 /* Each card simply stretches to fill its grid cell */
 /* 1) Define a “card height” variable at the root (so you can tweak in one place) */
 :root {
-  --card-height: 590px;
+  --card-height: 450px;
 }
 
 /* 2) Force every card wrapper to use that exact height */
@@ -649,7 +649,6 @@ line-height: 1.4;      /* give the multiline text some spacing */
   aspect-ratio: 4 / 3; /* CHANGED: match card aspect ratio */
   background-color: #ebe9e9;
   overflow: hidden;
-  margin-bottom: 60px;
 }
 .image-wrapper img {
   width: 100%;
@@ -662,16 +661,19 @@ line-height: 1.4;      /* give the multiline text some spacing */
 .home-item-title {
   font-weight: 600;
   text-align: center;
-  margin: 1rem 0 0.5rem; /* CHANGED: less vertical margin */
-  font-size: clamp(2rem, 3vw, 1.9rem); /* CHANGED: smaller font size */
+  font-size: clamp(1.5rem, 3vw, 1.9rem); /* CHANGED: smaller font size */
   color: black;
-  min-height: 2.2em; /* CHANGED: less vertical space */
+  margin-top: 0.8em;   /* Reduced from 0 for less space above */
+  margin-bottom: 0.2em; /* Reduced from 0 for less space below */
+  line-height: .9;    /* Tighter line spacing */
 }
 /* Credits below the title */
 .credits {
   font-size: clamp(0.8rem, 1vw, 1rem); /* CHANGED: smaller font */
   color: #979797;
-  margin: 0 0.3rem 0.7rem; /* CHANGED: less margin */
+  margin-top: 0;
+  margin-left: 10px;
+  margin-right: 10px;
   min-height: 1.5em; /* CHANGED: less vertical space */
   margin-top: auto;
   text-align: left;
@@ -679,7 +681,7 @@ line-height: 1.4;      /* give the multiline text some spacing */
   justify-self: flex-end; /* ensure it's at the bottom if grid is used */
 }
 
-      /* Spacing utility */
+      /* Spacing utildfity */
   .up-two {
     margin-top: 2rem;
   }
