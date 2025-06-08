@@ -341,6 +341,9 @@ func main() {
 	http.HandleFunc("/privacy", func(w http.ResponseWriter, r *http.Request) {
 		http.ServeFile(w, r, "privacy.html")
 	})
+	http.HandleFunc("/icp", func(w http.ResponseWriter, r *http.Request) {
+		http.ServeFile(w, r, "icp.html")
+	})
 
 	http.HandleFunc("/tou", func(w http.ResponseWriter, r *http.Request) {
 		http.ServeFile(w, r, "tou.html")

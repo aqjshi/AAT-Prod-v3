@@ -58,9 +58,9 @@ footer a:hover {
   text-decoration: underline;
 }
 .section {
-  padding: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   background-color: var(--white);
-  margin-bottom: 1.5rem;
 }
 
 .scroll-container {
@@ -108,14 +108,14 @@ img {
 }
 
 ul {
-  padding-left: 1.5rem;
-  margin: 0.5rem 0;
+  padding-left: 0rem;
+  margin: 0rem 0;
 }
 
 ul li {
-  padding: 0.25rem 0;
-  list-style: disc;
-  color: var(--text-light);
+padding: 0.25rem 0;
+list-style: disc;
+color: var(--text-light);
 }
 
 .hero-banner {
@@ -251,17 +251,14 @@ ul li {
 
 .category ul {
   list-style: disc;
-  padding-left: 1.1em;
+  padding-left: em;
   margin: 0;
-  font-size: 30px;
 }
 
 .category li {
-  font-size: 0.78rem;
   line-height: 1.3;
   color: #000000;
   margin-bottom: 0.2em;
-    font-size: 26px;
 }
 
 
@@ -315,7 +312,6 @@ ul li {
   }
 
   .one-column {
-    font-size: 30px;
     font-family: "Arial";
   }
 
@@ -332,7 +328,10 @@ ul li {
   margin-bottom: 0cm;
  }
 
-
+.bottom-two {
+    margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 
   /* Hero Banner */
@@ -377,6 +376,7 @@ ul li {
 
   /* Utility */
   .page-title {
+    margin-top: 2rem;
     font-size: 1.7vw;    
     margin-bottom: 1rem;
     color: #122141;
