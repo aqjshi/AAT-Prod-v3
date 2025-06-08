@@ -348,6 +348,9 @@ func main() {
 	http.HandleFunc("/tou", func(w http.ResponseWriter, r *http.Request) {
 		http.ServeFile(w, r, "tou.html")
 	})
+	http.HandleFunc("/non", func(w http.ResponseWriter, r *http.Request) {
+		http.ServeFile(w, r, "non.html")
+	})
 
 	// Serve the CSS file at /styles.css
 	http.HandleFunc("/styles.css", func(w http.ResponseWriter, r *http.Request) {
