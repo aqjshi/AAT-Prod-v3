@@ -712,7 +712,6 @@ line-height: 1.4;      /* give the multiline text some spacing */
     display: flex;
     border: 1px solid black;
     border: 1px solid rgb(255, 255, 255);
-    border-radius: 8px;
     overflow: hidden;
     box-shadow:
     0 -8px 18px rgba(0, 0, 0, 0.2),
@@ -722,11 +721,12 @@ line-height: 1.4;      /* give the multiline text some spacing */
   /* Text area inside each card */
   .product-text {
     flex: 1;
-    padding: 0 1.5rem;
+    /* padding: 0 1.5rem; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 0;
+        margin-bottom: 0;
   }
 .list-item {
   font-size: clamp(3rem, 4vw, 6rem); /* Scales with viewport, min 2rem, max 2.5rem */
