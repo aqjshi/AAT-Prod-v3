@@ -15,6 +15,7 @@ import (
 	"time"
 
 	"gopkg.in/natefinch/lumberjack.v2"
+  "net"
 )
 
 // Headers/Footer structures mirror your Python HEADERS/FOOTER dictionaries.
