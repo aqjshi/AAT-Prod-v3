@@ -528,6 +528,6 @@ func main() {
 	http.HandleFunc("/static/files/product_inquiry_form.pdf", func(w http.ResponseWriter, r *http.Request) {
 		http.ServeFile(w, r, "./static/files/product_inquiry_form.pdf")
 	})
-	log.Println("Listening on http://localhost:8080 …")
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Println("Listening on http://0.0.0.0:8080 …")
+	log.Fatal(http.ListenAndServe("0.0.0.0:8080", nil))
 }
