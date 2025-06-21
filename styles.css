@@ -40,23 +40,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-footer {
-  background: var(--header-bg);
-  padding: 1rem 2rem;
-  text-align: center;
-  color: var(--off-white);
-}
 
-footer a {
-  color: var(--off-white);
-  text-decoration: none;
-  margin: 0 0.5rem;
-  font-size: 0.9rem;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
 .section {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -533,21 +517,59 @@ line-height: 1.4;      /* give the multiline text some spacing */
 
   }
 
-  .bottom-bar {
-    height: 8vh;
+/* Bottom Bar Styling */
+.bottom-bar {
+    background-color: #E77500; /* Orange background */
+    width: 90vw;             /* Making the bar narrower */
+    padding: 15px 50px;
     display: flex;
-    /* Lift text to the top, rather than centering vertically */
-    align-items: flex-start;        
-    justify-content: auto; /* pushes company-name left, footer right */
-  
-    /* Only bottom padding (no top padding), so text sits higher */
-    padding: .5rem 2rem 2rem 2rem;       
-    /* Thin line above this bar */
-    border-top: 1px solid #ddd;    
-  
-    /* Same background as before (or adjust to taste) */
-    background-color: var(--header-bg-alt, var(--header-bg)); 
-  }
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+/* Company Name Styling */
+.company-name a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Footer container styling */
+.site-footer {
+    font-family: Arial, sans-serif;
+    padding: 5px; /* Keeps a small buffer inside the container */
+    color: white;
+    display: flex;             /* Enables flexbox layout */
+    justify-content: flex-end; /* Aligns items to the right */
+    align-items: center;       /* Vertically centers the items */
+    flex-wrap: wrap;           /* Allows items to wrap to the next line */
+    text-align: right;         /* Ensures wrapped lines are also right-aligned */
+}
+
+/* Styling for individual links */
+.site-footer a {
+    font-size: 0.8rem;
+    color: var(--footer-link-color, #ffffff); /* Keeps your variable for color */
+    text-decoration: none;
+    margin-left: 0.5rem; /* Maintains a consistent gap between links */
+    margin-right: 0.5rem; 
+    white-space: nowrap;   /* Prevents a single link from breaking in the middle */
+}
+
+/* Styling for the vertical separators */
+.site-footer span {
+    color: var(--footer-link-color, #ffffff);
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+}
+
+
+/* Hover effect remains the same */
+.site-footer a:hover {
+    text-decoration: underline;
+}
   
   /* 2) Company name styling */
   .company-name a {
@@ -560,23 +582,7 @@ line-height: 1.4;      /* give the multiline text some spacing */
   
   
  
-/* 3) Footer links styling – remove padding-bottom here too */
-.site-footer {
 
-  font-family: Arial, sans-serif;
-}
-
-.site-footer a {
-    font-size: 0.8rem;
-  color: var(--footer-link-color, #ffffff);
-  text-decoration: none;
-  margin-left: 0.5rem;  /* gap after the “|” */
-  
-}
-
-.site-footer a:hover {
-  text-decoration: underline;
-}
 .home-scroll-container {
   display: grid;
   gap: 28px;

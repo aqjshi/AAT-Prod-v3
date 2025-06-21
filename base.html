@@ -1,10 +1,9 @@
-{{/* File: templates/base.html */}}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title> .Title </title>
+  <title> ITEM </title>
   <link rel="stylesheet" href="/base.css" />
   <script src="/static/js/main.js"></script>
 </head>
@@ -38,8 +37,8 @@
     <nav class="nav-bar">
       <a href="/">Home</a>
       <a href="/service">Service</a>
-      <a href="/empty">Project</a>
-      <a href="/research">Innovation</a>
+      <a href="/project">Project</a>
+      <a href="/research">Research</a>
       <a href="/training">Training</a>
       <a href="/product">Product</a>
       <a href="/contact">Contact</a>
@@ -48,23 +47,23 @@
 
   <!-- ─── MAIN CONTENT BLOCK ─── -->
   <main>
-    {{ block "content" . }}{{ end }}
+
   </main>
   </div>
   <!-- ─── FOOTER (bottom bar) ─── -->
+</section>
+</section>
   <div class="bottom-bar">
-    <!-- Company name (clickable) -->
     <div class="company-name">
       <a href="/">American Advanced Technology</a>
     </div>
 
-    <!-- Footer links -->
     <footer class="site-footer">
       <a href="/tou">Terms of Use</a> |
       <a href="/privacy">Privacy</a> |
-      <a href="/icp">Indirect Cost Policy</a>|
-      <a href="/non">Notice of Nondiscrimination</a>
+      <a href="/icp" class="small-link">Indirect Cost Policy</a>|
+      <a href="/non" class="small-link">Nondiscrimination</a>
     </footer>
-
+  </div>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title> Product Details </title>
+  <title> Service </title>
   <link rel="stylesheet" href="styles.css" />
   <script src="/static/js/main.js"></script>
 </head>
@@ -44,38 +44,17 @@
       <a href="/contact">Contact</a>
     </nav>
   </header>
-  <div class="section item-detail-section">
-    <h1 class="item-title">{{ .Item.KeywordTitle }}</h1>
+<style>
+  .bottom-two {
+    margin-bottom: 2rem;
+  }
+</style>
+<link rel="stylesheet" href="/static/css/base.css">
+  <div class="section">
+    <h1 class="page-title">Service</h1>
 
-    {{ if .Item.NextpageTexts }}
-      <h2 class="subheading">Details</h2>
-      <ul class="item-list">
-        {{ range .Item.NextpageTexts }}
-          <li>{{ . }}</li>
-        {{ end }}
-      </ul>
-    {{ end }}
 
-    {{ if .Item.NextpageImagePaths }}
-      <h2 class="subheading">Additional Images</h2>
-      <div class="item-images">
-        {{ range .Item.NextpageImagePaths }}
-          <img src="/static/{{ . }}" alt="{{ $.Item.KeywordTitle }}">
-        {{ end }}
-      </div>
-    {{ end }}
 
-    {{ if .Item.NextpageImageCredits }}
-      <h2 class="subheading">Image Credits</h2>
-      <ul class="item-credits">
-        {{ range .Item.NextpageImageCredits }}
-          <li><a href="{{ . }}" target="_blank">{{ . }}</a></li>
-        {{ end }}
-      </ul>
-    {{ end }}
-  </div>
-    </div>
-  <!-- ─── FOOTER (bottom bar) ─── -->
 </section>
 </section>
   <div class="bottom-bar">
@@ -92,3 +71,5 @@
   </div>
 </body>
 </html>
+
+

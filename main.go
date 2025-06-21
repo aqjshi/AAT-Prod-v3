@@ -320,6 +320,13 @@ func main() {
 		http.ServeFile(w, r, "home.html")
 	})
 
+	http.HandleFunc("/project", func(w http.ResponseWriter, r *http.Request) {
+		http.ServeFile(w, r, "project.html")
+	})
+
+
+
+
 	http.HandleFunc("/consulting", func(w http.ResponseWriter, r *http.Request) {
 		http.ServeFile(w, r, "consulting.html")
 	})
