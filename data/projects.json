@@ -25,7 +25,7 @@
         "image_paths": "project_2.png",
 
         "next_page_image_paths":  [""],  
-        "next_page_text":["Yangzi River Bridge for railway and highway is the first giant bridge built by China in the 1960s and rehabilitated during 2016-2019. The project aims to develop and deploy an advanced monitoring system for monitoring bridge operations, structural health and safety condition, and ship-bridge collision prevention. More than thirty types of sensors and close to four hundreds of sensors were installed or embedded into the bridge. Nanjing Bureau of Transportation is able to use dashboard and data visualization platform to review performance indices of bridge daily operations and receive alerts for abnormal or unsafety operational conditions. "]  
+        "next_page_texts":["Yangzi River Bridge for railway and highway is the first giant bridge built by China in the 1960s and rehabilitated during 2016-2019. The project aims to develop and deploy an advanced monitoring system for monitoring bridge operations, structural health and safety condition, and ship-bridge collision prevention. More than thirty types of sensors and close to four hundreds of sensors were installed or embedded into the bridge. Nanjing Bureau of Transportation is able to use dashboard and data visualization platform to review performance indices of bridge daily operations and receive alerts for abnormal or unsafety operational conditions. "]  
     },
 
 
@@ -35,7 +35,7 @@
         "image_paths": "project_3.png",
 
         "next_page_image_paths":  [""],     
-        "next_page_text":[
+        "next_page_texts":[
 
             "This project aims to monitor traffic stream and identify vehicle types, vehicle trajectories, volume, occupancy and speed, and based on which to model microscopic lead-vehicle behavior, vehicle-following behavior and lane-changing behavior, and to build intelligent agent-based traffic flow simulation at macroscopic level with high fidelity.  The project improves traffic operations efficiency and safety, reduces carbon emission, and enhances air quality by optimizing operations policy, regularization and signal. "
         ]
@@ -48,7 +48,7 @@
         "image_paths": "project_4.png",
 
         "next_page_image_paths":  [""],     
-        "next_page_text":["This project aims to develop a GIS-based vehicle navigation and congestion pricing system that incorporates present and future travel time forecast with uncertainty measure to create adaptive and intelligent strategies for optimal vehicle navigation (e.g., fastest, shortest, cheapest, most reliable, least carbon emission) as well as congestion pricing strategies for maximizing entire transportation network efficiency. "]  
+        "next_page_texts":["This project aims to develop a GIS-based vehicle navigation and congestion pricing system that incorporates present and future travel time forecast with uncertainty measure to create adaptive and intelligent strategies for optimal vehicle navigation (e.g., fastest, shortest, cheapest, most reliable, least carbon emission) as well as congestion pricing strategies for maximizing entire transportation network efficiency. "]  
     },
 
 
@@ -58,7 +58,7 @@
         "image_paths": "project_5.png",
 
         "next_page_image_paths":  [""],       
-        "next_page_text":["This project aims to conduct a comprehensive safety assessment for newly planned and designed streets and roads in Nanjing using a number of factors such as highway geometry, pavement skid resistance, traffic signs and marks, traffic flow, weather, lighting condition, transportation facilities (e.g., interchanges, on- and off-ramps, tunnels and bridges), etc. The assessment result is summarized through multiple single-factor indices well as an overall Safety Risk Index for every segment of a transportation network. Engineering countermeasure treatments are proposed to mitigate the safety risk."]
+        "next_page_texts":["This project aims to conduct a comprehensive safety assessment for newly planned and designed streets and roads in Nanjing using a number of factors such as highway geometry, pavement skid resistance, traffic signs and marks, traffic flow, weather, lighting condition, transportation facilities (e.g., interchanges, on- and off-ramps, tunnels and bridges), etc. The assessment result is summarized through multiple single-factor indices well as an overall Safety Risk Index for every segment of a transportation network. Engineering countermeasure treatments are proposed to mitigate the safety risk."]
     },
 
 
@@ -68,7 +68,7 @@
         "image_paths": "project_6.png",
 
         "next_page_image_paths":  [""],   
-        "next_page_text":["Nanomaterials have the potential to modify properties of asphalt binder, and therefore to improve pavement performance. This project aims to develop nanomaterials modified asphalt using nanotechnology to improve the overall asphalt pavement performance including high resistance to rutting and cracking."]  
+        "next_page_texts":["Nanomaterials have the potential to modify properties of asphalt binder, and therefore to improve pavement performance. This project aims to develop nanomaterials modified asphalt using nanotechnology to improve the overall asphalt pavement performance including high resistance to rutting and cracking."]  
     },
 
 
@@ -78,7 +78,7 @@
         "image_paths": "project_7.png",
 
         "next_page_image_paths":  [""],      
-        "next_page_text":["The next great thing in the Asphalt World is Balanced Mix Design (BMD).  New York has a version of that called Performance Engineered Mixtures (PEM). Currently it isn’t doing a true balanced design, but more utilizing test thresholds to qualify mixes for rutting and cracking.  The ultimate goal of PEM mixes is to give industry an opportunity to innovate.  This could mean increasing reclaimed asphalt pavement (RAP) percentages, or introducing other additives (rejuvenators, plastics, warm mix additives, etc.)  Rubber could potentially be on that list too as rubber is already allowed by spec as a liquid binder modifier to replace SBS/SB polymers.  When polymer pricing was volatile, liquid suppliers may look at rubber as an option.  But there has been little movement in that direction. In the 90’s and during the rubber mandates, rubber has been used as an aggregate replacement (crumb rubber) in several states (e.g., New York and Massachusetts) with limited success. This project aims to develop BMD using innovative additives to asphalt and solid waste (e.g., RAP, slug, fly ash) to substitute aggregates for sustainable and low carbon highway and airport pavement."]  
+        "next_page_texts":["The next great thing in the Asphalt World is Balanced Mix Design (BMD).  New York has a version of that called Performance Engineered Mixtures (PEM). Currently it isn’t doing a true balanced design, but more utilizing test thresholds to qualify mixes for rutting and cracking.  The ultimate goal of PEM mixes is to give industry an opportunity to innovate.  This could mean increasing reclaimed asphalt pavement (RAP) percentages, or introducing other additives (rejuvenators, plastics, warm mix additives, etc.)  Rubber could potentially be on that list too as rubber is already allowed by spec as a liquid binder modifier to replace SBS/SB polymers.  When polymer pricing was volatile, liquid suppliers may look at rubber as an option.  But there has been little movement in that direction. In the 90’s and during the rubber mandates, rubber has been used as an aggregate replacement (crumb rubber) in several states (e.g., New York and Massachusetts) with limited success. This project aims to develop BMD using innovative additives to asphalt and solid waste (e.g., RAP, slug, fly ash) to substitute aggregates for sustainable and low carbon highway and airport pavement."]  
     },
 
 
@@ -88,7 +88,7 @@
         "image_paths": "project_8.png",
 
         "next_page_image_paths":  [""],    
-        "next_page_text":["This project aims to develop and test high-fidelity finite element models for the static and dynamic analysis, design and operations of high-speed railway structures, including CRH380A high-speed train, CRTSII ballastless track slab structure, soil subgrade foundation, transitional foundation, and elevated bridge foundation"]  
+        "next_page_texts":["This project aims to develop and test high-fidelity finite element models for the static and dynamic analysis, design and operations of high-speed railway structures, including CRH380A high-speed train, CRTSII ballastless track slab structure, soil subgrade foundation, transitional foundation, and elevated bridge foundation"]  
     },
 
 
@@ -98,7 +98,7 @@
         "image_paths": "project_9.png",
 
         "next_page_image_paths":  [""],    
-        "next_page_text":[""]  
+        "next_page_texts":[""]  
     },
 
 
@@ -108,7 +108,7 @@
         "image_paths": "project_10.png",
 
         "next_page_image_paths":  [""],     
-        "next_page_text":["Aggregates degrade under vehicular traffic loading and environmental effect, which then cause the reduction in road skid resistance, a serious threat to transportation safety. This project aims to develop imaging technology for high precision reconstruction of pavement surface 3D topology and to develop predictive models for assessing pavement skid resistance based on pavement texture.", 
+        "next_page_texts":["Aggregates degrade under vehicular traffic loading and environmental effect, which then cause the reduction in road skid resistance, a serious threat to transportation safety. This project aims to develop imaging technology for high precision reconstruction of pavement surface 3D topology and to develop predictive models for assessing pavement skid resistance based on pavement texture.", 
     "Developed predictive models of the International Friction Index (IFI), British Pendulum Number (BPN), Dynamic Friction Coefficient (DFC), and Skid Number (SN) based on high-accuracy surface topology."]
 },
 
@@ -119,7 +119,7 @@
         "image_paths": "project_11.png",
 
         "next_page_image_paths":    [],
-        "next_page_text":["This project aims to use wave-vibration signals received on pavement surface of highway and airport during Falling Weight Deflectometer (FWD) nondestructive testing to evaluate structural and materials properties and integrity of pavements. "]   
+        "next_page_texts":["This project aims to use wave-vibration signals received on pavement surface of highway and airport during Falling Weight Deflectometer (FWD) nondestructive testing to evaluate structural and materials properties and integrity of pavements. "]   
     },
 
 
@@ -129,7 +129,7 @@
         "image_paths": "project_12.png",
 
         "next_page_image_paths":[],
-        "next_page_text":["This project aims to use artificial intelligence (AI) models to predict traffic accidents and improve traffic safety. "]
+        "next_page_texts":["This project aims to use artificial intelligence (AI) models to predict traffic accidents and improve traffic safety. "]
 
     }
 

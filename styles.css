@@ -739,3 +739,76 @@ line-height: 1.4;      /* give the multiline text some spacing */
   font-size: clamp(3rem, 4vw, 6rem); /* Scales with viewport, min 2rem, max 2.5rem */
   margin-bottom: 0em;
 }
+
+
+
+/* Container for the image items */
+.project-images-container {
+    display: flex;
+    flex-wrap: wrap;       /* Allow items to wrap to the next line */
+    gap: 15px;             /* Space between items */
+    justify-content: center; /* Center items horizontally in the container */
+    align-items: flex-start; /* Align items to the top if they are different heights, though with fixed height, this is less critical */
+    
+    /* Optional: Max width for the whole gallery to prevent spreading too wide */
+    max-width: 1000px; /* Adjust as needed, e.g., 90% or a pixel value */
+    margin-left: auto;
+    margin-right: auto; /* Center the container itself */
+    padding: 0 10px; /* Some padding on the sides for smaller screens */
+}
+
+/* Individual image item wrapper */
+.project-image-item {
+    /* flex-basis: Sets the initial size of a flex item before growing/shrinking.
+       Use a smaller value for more items per row. */
+    flex-basis: 220px; /* A good starting size for a compact grid */
+    
+    /* flex-grow: Allows items to grow if there's extra space in the row. */
+    flex-grow: 1; /* All items grow equally */
+
+    /* flex-shrink: Allows items to shrink if there's not enough space. */
+    flex-shrink: 1; /* All items shrink equally */
+
+    /* Min/Max widths to control item scaling behavior */
+    min-width: 180px; /* Don't let items get too small */
+    max-width: 300px; /* Don't let items get too large (ensures more items per row) */
+    
+    /* Fixed height for all wrappers to make them the same size visually. */
+    height: 200px; /* Adjust this value for desired compactness/size */
+    
+    display: flex; /* Make the wrapper a flex container */
+    justify-content: center; /* Center the image horizontally within its wrapper */
+    align-items: center; /* Center the image vertically within its wrapper */
+    
+    overflow: hidden; /* Crucial: Hides any part of the image that spills out due to object-fit: cover */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    background-color: #f8f8f8; /* Light background for safety */
+}
+
+/* The actual image inside the item wrapper */
+.project-image-item img {
+    width: 100%;        /* Make image fill the width of its parent wrapper */
+    height: 100%;       /* Make image fill the height of its parent wrapper */
+    object-fit: cover;  /* Scale and crop the image to perfectly fill the wrapper,
+                           maintaining aspect ratio. This is key for uniform appearance. */
+    display: block;     /* Removes any potential extra space beneath the image */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .project-image-item {
+        flex-basis: 45%; /* Two columns on smaller screens, allowing space for gap */
+        max-width: unset; /* Remove max-width constraint for better filling */
+        height: 180px; /* Slightly smaller height for mobile compactness */
+        min-width: 150px; /* Ensure a minimum size */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-image-item {
+        flex-basis: 90%; /* One column on very small screens */
+        height: 150px; /* Even smaller height */
+    }
+}
+

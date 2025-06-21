@@ -173,17 +173,6 @@ func loadProjectItems() {
 	fmt.Printf("Loaded %d projectItems\n", len(projectItems))
 }
 
-// filterItemsWithImage returns only those items whose ResolvedImage != ""
-func filterItemsWithImage() []Item {
-	res := make([]Item, 0, len(items))
-	for _, it := range items {
-		if it.ResolvedImage != "" {
-			res = append(res, it)
-		}
-	}
-	return res
-}
-
 // findImagesForProject scans the filesystem for all images belonging to a specific project ID.
 func findImagesForProject(projectID int) ([]string, error) {
 	var imagePaths []string

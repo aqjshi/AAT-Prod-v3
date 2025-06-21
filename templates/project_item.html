@@ -45,20 +45,25 @@
       <a href="/contact">Contact</a>
     </nav>
   </header>
+        <section class="project-detail-section">
+            <h1 class="project-title">{{ .Project.Title }}</h1>
             
-            <div class="project-images-container">
-                {{ range .Project.ImagePaths }}
-                    {{/* Image paths should be absolute or relative to the static server root */}}
-                    <img src="/{{ . }}" alt="Project Image" class="project-image">
-                {{ else }}
-                    <p>No images available for this project.</p>
-                {{ end }}
-            </div>
-
             <div class="project-content">
                 {{/* .Content already contains joined NextPageTexts with newlines */}}
                 <p>{{ .Project.Content }}</p> 
             </div>
+
+          <div class="project-images-container">
+              {{ range .Project.ImagePaths }}
+                  <div class="project-image-item"> {{/* This wrapper is crucial */}}
+                      <img src="/{{ . }}" alt="Project Image" class="project-image">
+                  </div>
+              {{ else }}
+                  <p>No images available for this project.</p>
+              {{ end }}
+          </div>
+
+
             
             <a href="/project" class="back-link">Back to Projects</a>
         </section>
