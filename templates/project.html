@@ -45,48 +45,26 @@
       <a href="/contact">Contact</a>
     </nav>
   </header>
-  <!-- Full-height Hero Section -->
-  <section class="hero-banner"     style="background-image: url('/home_background.jpg');">
-    <div class="hero-gradient">
-      <div class="hero-content">
-        <h2></h2>
-        <a href="#" class="button hero-button" onclick="scrollDown(); return false;">
-          Explore Our Service
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Mission Statement -->
-  <section class="mission-section">
-    <h2 class="page-title">Our Mission</h2>
-    <p class="subtitle">
-    American Advanced Technology’s mission is to make the world a better place to live by advancing technologies and empowering people and community. American Advanced Technology's vision is to benefit our customers and the society at large from our services and products that enhance their capability, health, safety, economy, efficiency, reliability, resilience, sustainability and satisfaction.
-    
-    </p>
-  </section>
 
   <!-- Showcase Items -->
- <!-- Showcase Items -->
 <section id="services" class="showcase-section">
   <div class="home-scroll-container">
     {{ range .Items }}
-      <a href="/item?id={{ .ID }}" class="item-link">
-  <div class="item-wrapper">
-    <div class="image-wrapper">
-      <img src="/static/{{ .ResolvedImage }}" alt="{{ .KeywordTitle }}">
-    </div>
-    <p class="home-item-title">{{ .KeywordTitle }}</p>
-    {{ if .ImageCredits }}
-      <p class="credits">Image credit: {{ index .ImageCredits 0 }}</p>
+    {{/* Start the anchor tag here, wrapping the entire item-wrapper */}}
+    <a href="/project_item.html?id={{ .ID }}" class="item-link"> 
+      <div class="item-wrapper">
+        <div class="image-wrapper">
+          {{/* Assuming .ResolvedImage already contains the full path like "1/image.jpg" */}}
+          <img src="/static/images/{{ .ResolvedImage }}" alt="{{ .KeywordTitle }}">
+        </div>
+        <p class="home-item-title">{{ .KeywordTitle }}</p>
+      </div>
+    </a> {{/* Close the anchor tag */}}
     {{ end }}
   </div>
-</a>
-    {{ end }}
-  </div>
-    </div>
 </section>
-</section>
+
+
   <div class="bottom-bar">
     <div class="company-name">
       <a href="/">American Advanced Technology</a>
@@ -101,3 +79,6 @@
   </div>
 </body>
 </html>
+
+
+

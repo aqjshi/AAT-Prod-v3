@@ -9,7 +9,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_1_0.png"
+      "home_1_0.png"
     ],
     "image_credits": [
       "https://www.chronos-studeos.com/stories/the-importance-of-adopting-bim-as-a-starting-place-for-architects/"
@@ -29,7 +29,7 @@
       "hivevp.com/photogrammetry-vs-3d-laser-scanning/"
     ],
     "image_paths": [
-      "static\\images\\home_2_0.png"
+      "home_2_0.png"
     ],
     "image_credits": [
       "https://www.dfrobot.com/blog-1644.html"
@@ -45,7 +45,7 @@
       "www.limess.com/en/products/q400-digital-image-correlation"
     ],
     "image_paths": [
-      "static\\images\\home_3_0.png"
+      "home_3_0.png"
     ],
     "image_credits": [
       "https://appliedresearch.illinois.edu/research-cores/materials-and-manufacturing"
@@ -59,7 +59,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_4_0.png"
+      "home_4_0.png"
     ],
     "image_credits": [
       "https://ascelibrary.org/doi/10.1061/%28ASCE%29CP.1943-5487.0000625"
@@ -73,7 +73,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_5_0.png"
+      "home_5_0.png"
     ],
     "image_credits": [
       "https://gamepill.com/exploring-the-world-through-ar-glasses/"
@@ -94,7 +94,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_6_0.png"
+      "home_6_0.png"
     ],
     "image_credits": [
       "https://www.nlc.org/wp-content/uploads/2021/06/ARPA-BROWN-BAG-WATER-SLIDES.pdf"
@@ -110,7 +110,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_7_0.png"
+      "home_7_0.png"
     ],
     "image_credits": [
       "https://pro.arcgis.com/en/pro-app/latest/help/data/utility-network/what-is-a-utility-network-.htm"
@@ -130,7 +130,7 @@
       "www.softwareadvice.com/cmms/agileassets-profile/"
     ],
     "image_paths": [
-      "static\\images\\home_8_0.png"
+      "home_8_0.png"
     ],
     "image_credits": [
       "https://cogentibs.com/partners-alliances/https://www.knoxvilletn.gov/archived_news_stories/2016/high-_tech_vans_collect_traffic_sign_data_for_city"
@@ -151,7 +151,7 @@
     ],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_9_0.png"
+      "home_9_0.png"
     ],
     "image_credits": [
       "https://www.knoxvilletn.gov/archived_news_stories/2016/high-_tech_vans_collect_traffic_sign_data_for_city"
@@ -182,7 +182,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_10_0.png"
+      "home_10_0.png"
     ],
     "image_credits": [
       "https://www.mdpi.com/2076-3263/11/1/24"
@@ -203,7 +203,7 @@
       "store.awwa.org/M77-Condition-Assessment-of-Water-Mains"
     ],
     "image_paths": [
-      "static\\images\\home_11_0.png"
+      "home_11_0.png"
     ],
     "image_credits": [
       "https://www.investopedia.com/terms/a/asset-condition-assessment.asp"
@@ -222,7 +222,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_12_0.png"
+      "home_12_0.png"
     ],
     "image_credits": [
       "https://www.provideocoalition.com/dji-launches-mavic-3-pro-cine/"
@@ -241,7 +241,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_13_0.png"
+      "home_13_0.png"
     ],
     "image_credits": [
       "https://www.researchgate.net/figure/500-year-joint-seismic-tsunami-connectivity-maps-showing-a-the-probability-that-each_fig3_353154768"
@@ -255,7 +255,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_14_0.png"
+      "home_14_0.png"
     ],
     "image_credits": [
       "https://schoolofdisruption.com/exponential-technologies/internet-of-things/"
@@ -279,7 +279,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_15_0.png"
+      "home_15_0.png"
     ],
     "image_credits": [
       "https://www.fedex.com/en-cn/business-insights/tech-innovation/how-delivery-works-in-our-on-demand-economy.html"
@@ -293,7 +293,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_16_0.png"
+      "home_16_0.png"
     ],
     "image_credits": [
       "https://blog.womenincloudnative.com/the-evolution-of-cloud-computing-from-data-centers-to-aws"
@@ -312,7 +312,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_17_0.png"
+      "home_17_0.png"
     ],
     "image_credits": [
       "https://incubator.ucf.edu/what-is-artificial-intelligence-ai-and-why-people-should-learn-about-it/"
@@ -328,7 +328,7 @@
       "www.westfordonline.com/blogs/financial-risk-management-strategies/"
     ],
     "image_paths": [
-      "static\\images\\home_18_0.png"
+      "home_18_0.png"
     ],
     "image_credits": [
       "https://github.com/Anveshdeo/Financial-Risk-Management-using-ML/blob/main/README.md"
@@ -342,7 +342,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_19_0.png"
+      "home_19_0.png"
     ],
     "image_credits": [
       ""
@@ -364,7 +364,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_20_0.png"
+      "home_20_0.png"
     ],
     "image_credits": [
       "https://www.az-apps.com/"
@@ -384,7 +384,7 @@
       "Systems optimization for enhancing opportunities, improving efficiency, safety, resilience and sustainability, reducing cost, non-revenue water and carbon emission"
     ],
     "image_paths": [
-      "static\\images\\home_21_0.png"
+      "home_21_0.png"
     ],
     "image_credits": [
       "https://ops.fhwa.dot.gov/freight/freight_analysis/nat_freight_stats/docs/05factsfigures/fig2_4.htm"
@@ -398,7 +398,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_22_0.png"
+      "home_22_0.png"
     ],
     "image_credits": [
       "https://www.timetoast.com/timelines/history-theory-and-practice-of-management"
@@ -412,7 +412,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_23_0.png"
+      "home_23_0.png"
     ],
     "image_credits": [
       "https://www.ishn.com/articles/112413-how-we-lose-safety-judgment-skill-development"
@@ -429,7 +429,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_24_0.png"
+      "home_24_0.png"
     ],
     "image_credits": [
       "https://www.nttrdirectory.com/blog/truck-driver-safety-essential-strategies-for-fleet-managers-repair-shops"
@@ -443,7 +443,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_25_0.png"
+      "home_25_0.png"
     ],
     "image_credits": [
       "https://www.cazbike.org/list-of-cell-phone-related-driving-restrictions/"
@@ -457,7 +457,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_26_0.png"
+      "home_26_0.png"
     ],
     "image_credits": [
       "https://ops.fhwa.dot.gov/freewaymgmt/publications/frwy_mgmt_handbook/chapter13_02.htm"
@@ -473,7 +473,7 @@
       "Source: NGSIM, Cambridge Systematics, Inc."
     ],
     "image_paths": [
-      "static\\images\\home_27_0.png"
+      "home_27_0.png"
     ],
     "image_credits": [
       "https://hal.science/hal-01055567/document"
@@ -492,7 +492,7 @@
       "Source: www.govtech.com/transportation/washington-d-c-suburb-starts-traffic-signal-modernization"
     ],
     "image_paths": [
-      "static\\images\\home_28_0.png"
+      "home_28_0.png"
     ],
     "image_credits": [
       "https://www.openpr.com/news/2786321/rising-trends-of-traffic-geographic-information-system-market"
@@ -506,7 +506,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_29_0.png"
+      "home_29_0.png"
     ],
     "image_credits": [
       ""
@@ -523,7 +523,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_30_0.png"
+      "home_30_0.png"
     ],
     "image_credits": [
       "https://www.sciencedirect.com/science/article/abs/pii/S0950061816319924"
@@ -539,7 +539,7 @@
       "Source: www.globalgilson.com/blog/balanced-mix-design-article"
     ],
     "image_paths": [
-      "static\\images\\home_31_0.png"
+      "home_31_0.png"
     ],
     "image_credits": [
       "https://highways.dot.gov/sites/fhwa.dot.gov/files/2021-12/HRT-22035.pdf"
@@ -555,7 +555,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_32_0.png"
+      "home_32_0.png"
     ],
     "image_credits": [
       "https://www.sciencedirect.com/science/article/abs/pii/S0165232X13001523"
@@ -569,7 +569,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_33_0.png"
+      "home_33_0.png"
     ],
     "image_credits": [
       "https://link.springer.com/chapter/10.1007/978-981-33-6466-0_33"
@@ -583,7 +583,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_34_0.png"
+      "home_34_0.png"
     ],
     "image_credits": [
       "https://steelbaileybridges.com/blogs/how-to-build-a-bailey-bridge/"
@@ -599,7 +599,7 @@
       "www.burns-group.com/project/washington-metro-area-transit-authority-wmata-fiber-optic-infrastructure/"
     ],
     "image_paths": [
-      "static\\images\\home_35_0.png"
+      "home_35_0.png"
     ],
     "image_credits": [
       "https://www.kiewit.com/projects/wmata-l-line-steel-tunnel-liner-rehabilitation-and-bridge-structure-repairs/"
@@ -613,7 +613,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_36_0.png"
+      "home_36_0.png"
     ],
     "image_credits": [
       "https://red-spark.org/2023/04/16/chinas-high-speed-rail-its-achievements-and-contradictions/"
@@ -634,7 +634,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_37_0.png"
+      "home_37_0.png"
     ],
     "image_credits": [
       "https://www.themightyearth.com/environmental-health-and-safety/"
@@ -648,7 +648,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_38_0.png"
+      "home_38_0.png"
     ],
     "image_credits": [
       "https://corporatecomrade.com/service-excellence"
@@ -662,7 +662,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_39_0.png"
+      "home_39_0.png"
     ],
     "image_credits": [
       "https://medium.com/@maryam.alolama/dubais-smart-city-77ef55d35e65"
@@ -682,7 +682,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_40_0.png"
+      "home_40_0.png"
     ],
     "image_credits": [
       "https://apps.apple.com/us/app/raleigh-incidents/id1525141357"
@@ -696,7 +696,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_41_0.png"
+      "home_41_0.png"
     ],
     "image_credits": [
       "https://www.pnnl.gov/news-media/floating-offshore-wind-could-bring-billions-value-west-coast-report-shows"
@@ -710,7 +710,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_42_0.png"
+      "home_42_0.png"
     ],
     "image_credits": [
       "https://quizlet.com/ca/353811312/geothermal-energy-diagram/"
@@ -724,7 +724,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_43_0.png"
+      "home_43_0.png"
     ],
     "image_credits": [
       "https://www.nature.com/articles/s41561-023-01304-1"
@@ -738,7 +738,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_44_0.png"
+      "home_44_0.png"
     ],
     "image_credits": [
       "https://www.energy.gov/articles/infographic-nuclear-energy-numbers"
@@ -752,7 +752,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "static\\images\\home_45_0.png"
+      "home_45_0.png"
     ],
     "image_credits": [
       "http://nativeamericannetroots.net/diary/Dam-Indians-The-Flathead-Reservation"

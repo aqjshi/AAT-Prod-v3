@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title> Product Details </title>
+    <title>{{ .Project.Title }} - American Advanced Technology</title>
   <link rel="stylesheet" href="styles.css" />
-  <script src="/static/js/main.js"></script>
+  <script src="main.js"></script>
 </head>
 
 <body>
@@ -28,10 +28,11 @@
       </div>
     </div>
 
-    <!-- 3) Banner under the video strip -->
-    <div class="banner">
-      <h1>American Advanced Technology</h1>
-    </div>
+<div class="banner">
+  <h1 >
+    American Advanced Technology
+  </h1>
+</div>
 
     <!-- 4) Orange nav bar overlapping the video strip -->
     <nav class="nav-bar">
@@ -44,39 +45,23 @@
       <a href="/contact">Contact</a>
     </nav>
   </header>
-  <div class="section item-detail-section">
-    <h1 class="item-title">{{ .Item.KeywordTitle }}</h1>
+            
+            <div class="project-images-container">
+                {{ range .Project.ImagePaths }}
+                    {{/* Image paths should be absolute or relative to the static server root */}}
+                    <img src="/{{ . }}" alt="Project Image" class="project-image">
+                {{ else }}
+                    <p>No images available for this project.</p>
+                {{ end }}
+            </div>
 
-    {{ if .Item.NextpageTexts }}
-      <h2 class="subheading">Details</h2>
-      <ul class="item-list">
-        {{ range .Item.NextpageTexts }}
-          <li>{{ . }}</li>
-        {{ end }}
-      </ul>
-    {{ end }}
-
-    {{ if .Item.NextpageImagePaths }}
-      <h2 class="subheading">Additional Images</h2>
-      <div class="item-images">
-        {{ range .Item.NextpageImagePaths }}
-          <img src="/static/{{ . }}" alt="{{ $.Item.KeywordTitle }}">
-        {{ end }}
-      </div>
-    {{ end }}
-
-    {{ if .Item.NextpageImageCredits }}
-      <h2 class="subheading">Image Credits</h2>
-      <ul class="item-credits">
-        {{ range .Item.NextpageImageCredits }}
-          <li><a href="{{ . }}" target="_blank">{{ . }}</a></li>
-        {{ end }}
-      </ul>
-    {{ end }}
-  </div>
-    </div>
-  <!-- ─── FOOTER (bottom bar) ─── -->
-</section>
+            <div class="project-content">
+                {{/* .Content already contains joined NextPageTexts with newlines */}}
+                <p>{{ .Project.Content }}</p> 
+            </div>
+            
+            <a href="/project" class="back-link">Back to Projects</a>
+        </section>
 </section>
   <div class="bottom-bar">
     <div class="company-name">

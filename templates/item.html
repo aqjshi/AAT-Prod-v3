@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title> Project </title>
+  <title> Project Details </title>
   <link rel="stylesheet" href="styles.css" />
   <script src="/static/js/main.js"></script>
 </head>
@@ -44,77 +44,38 @@
       <a href="/contact">Contact</a>
     </nav>
   </header>
-<style>
-  .bottom-two {
-    margin-bottom: 2rem;
-  }
-</style>
+  <div class="section item-detail-section">
+    <h1 class="item-title">{{ .Item.KeywordTitle }}</h1>
 
+    {{ if .Item.NextpageTexts }}
+      <h2 class="subheading">Details</h2>
+      <ul class="item-list">
+        {{ range .Item.NextpageTexts }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    {{ end }}
 
-<link rel="stylesheet" href="/static/css/base.css">
-  <div class="section">
-    <h1 class="page-title">Project</h1>
+    {{ if .Item.NextpageImagePaths }}
+      <h2 class="subheading">Additional Images</h2>
+      <div class="item-images">
+        {{ range .Item.NextpageImagePaths }}
+          <img src="/static/{{ . }}" alt="{{ $.Item.KeywordTitle }}">
+        {{ end }}
+      </div>
+    {{ end }}
 
-
-
-
-
-
-<a href="/srt"   class="subtitle">
-Smart Real-Time Transit and Subway Traveler Information System for Washington Metropolitan Area Transit Authority (WMATA)
-</a>
-
-<a href="/yrb"  class="subtitle">
-Yangzi River Bridge Structural Health and Safety Monitoring
-</a>
-
-<a href="/its"  class="subtitle">
-Intelligent Transportation System and Signal Optimization
-</a>
-
-<a href="/gis"   class="subtitle">
-GIS-Based Optimal Vehicle Navigation and Congestion Pricing System
-</a>
-
-
-
-<a href="/srs"  class="subtitle">
-Street and Road Safety Assessment and Improvement
-</a>
-
-<a href="/ncm"  class="subtitle">
-Nanomaterial Composite Modifier for Asphalt
-</a>
-
-
-<a href="/pep"  class="subtitle">
-Performance Engineered Pavement-Balanced Asphalt Pavement Mix Design
-</a>
-
-
-<a href="/hsr"  class="subtitle">
-High-speed Rail Design and Operations
-</a>
-
-<a href="/hap"  class="subtitle">
-Highway and Airport Pavement Condition Assessment
-</a>
-
-<a href="/pst"   class="subtitle">
-Pavement Surface Topology Imaging and Skid Resistance Assessment
-</a>
-
-
-
-<p class="subtitle">
-Highway and Airport Pavement Nondestructive Testing and Evaluation
-</a>
-
-<p class="subtitle">
-Artificial Intelligence Model for Traffic Accident Prediction
-</a>
-
-
+    {{ if .Item.NextpageImageCredits }}
+      <h2 class="subheading">Image Credits</h2>
+      <ul class="item-credits">
+        {{ range .Item.NextpageImageCredits }}
+          <li><a href="{{ . }}" target="_blank">{{ . }}</a></li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </div>
+    </div>
+  <!-- ─── FOOTER (bottom bar) ─── -->
 </section>
 </section>
   <div class="bottom-bar">
@@ -131,5 +92,3 @@ Artificial Intelligence Model for Traffic Accident Prediction
   </div>
 </body>
 </html>
-
-
