@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title> Service </title>
+  <title> Privacy </title>
   <link rel="stylesheet" href="styles.css" />
   <script src="/static/js/main.js"></script>
 </head>
@@ -29,9 +29,12 @@
     </div>
 
     <!-- 3) Banner under the video strip -->
-    <div class="banner">
-      <h1>American Advanced Technology</h1>
-    </div>
+<div class="banner">
+  <img src="static/images/logo.png" alt="Company Logo" class="banner-logo">
+  <h1>
+    American Advanced Technology
+  </h1>
+</div>
 
     <!-- 4) Orange nav bar overlapping the video strip -->
     <nav class="nav-bar">
@@ -42,23 +45,59 @@
       <a href="/training">Training</a>
       <a href="/product">Product</a>
       <a href="/contact">Contact</a>
+    <a href="/about">About</a>  
     </nav>
   </header>
-<style>
-  .bottom-two {
-    margin-bottom: 2rem;
+    <style>
+  .section {
+    padding: 2rem 1rem; /* vertical and horizontal padding */
+  }
+  .page-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--header-bg-color);
+    text-align: center;
+  }
+  .policy-text {
+    max-width: 800px;
+    margin: 0 auto;       /* center horizontally */
+    padding: 1.5rem 2rem; /* generous left/right padding */
+    background: var(--primary-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+  }
+  .policy-text pre {
+    margin: 0;
+    white-space: pre-wrap;   /* wrap long lines */
+    word-break: break-word;
+    font-family: inherit;
+    line-height: 1.6;
+    color: var(--text-black);
   }
 </style>
-<link rel="stylesheet" href="/static/css/base.css">
-  <div class="section">
-    <h1 class="page-title">Service</h1>
+  
 
+<div class="section">
+  <section>
+    <h1 class="page-title">About</h1>
+    <div class="policy-text">
+      <section class="terms-of-use">
+  <h1>Who We Are</h1>
+      <p>
+        Established in 2003 under the name of American Advanced SUN Technologies, Inc., the company was renamed as American Advanced Technology, LLC in 2010. We provide our customers with engineering and technology consulting, services and products.
+    
+    </p>
 
+  </div>
+        </section>
+</div>
 
-</section>
 </section>
   <div class="bottom-bar">
+            <img src="static/images/logo.png" alt="Company Logo" class="banner-logo">
     <div class="company-name">
+
       <a href="/">American Advanced Technology</a>
     </div>
 
@@ -71,5 +110,6 @@
   </div>
 </body>
 </html>
+
 
 

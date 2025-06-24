@@ -9,31 +9,28 @@
 </head>
 
 <body>
-  <!-- ─── HEADER CONTAINER ─── -->
   <header class="header-container">
-    <!-- 1) Narrow video strip -->
     <div class="video-strip">
       <video
-      
         class="video-element"
         autoplay
         muted
         loop
         playsinline
       >    <source src="/aerial.mp4" type="video/mp4" /></video>
-      <!-- 2) Title overlaid on top of the video -->
       <div class="title-overlay">
-        Advancing technologies, empowering people. 
+        Advancing technologies, empowering people.
         Discover how we shape smarter, safer, more resilient and sustainable systems across industries.
       </div>
     </div>
 
-    <!-- 3) Banner under the video strip -->
     <div class="banner">
-      <h1>American Advanced Technology</h1>
+      <img src="static/images/logo.png" alt="Company Logo" class="banner-logo">
+      <h1>
+        American Advanced Technology
+      </h1>
     </div>
 
-    <!-- 4) Orange nav bar overlapping the video strip -->
     <nav class="nav-bar">
       <a href="/">Home</a>
       <a href="/service">Service</a>
@@ -42,144 +39,128 @@
       <a href="/training">Training</a>
       <a href="/product">Product</a>
       <a href="/contact">Contact</a>
+      <a href="/about">About</a>
     </nav>
   </header>
+  <style>
 
-<div class="section">
-  <h1 class="page-title">Product</h1>
 
-  <p class="subtitle" >
-   American Advanced Technology only accepts wholesale orders for the following products. Download and fill out the
-    <a href="/static/files/product_inquiry_form.pdf">
-      Product Inquiry Form
-    </a> and email it to 
-    <a href="mailto:customer_service@usaaat.com">customer_service@usaaat.com</a> 
-if you are interested in the product. Our customer service will reach out to you for a nocost consultation before placing an order.
-  </p>
+/* --- Showcase Section (Product List) Styling --- */
 
-  <!-- Three‐card layout: text on left, image on right -->
-  <div class="product-list">
-    <!-- Spacer -->
-    <div class="up-one"></div>
 
-    <!-- Card 1 -->
-    <div class="product-card">
-      <div class="product-text">
-        <h2 class="page-title">
-          High‑Precision 3D Stereo Imaging System
-        </h2>
-        <p class="subtitle" style = "margin-bottom:0">
-          Method and Apparatus for Measuring Characteristics of a Surface Topology, U.S. Patent 10757393
-        </p>
+.home-item-title {
+    font-size: 1.25em; /* Slightly larger title for cards */
+    font-weight: bold;
+    color: #E77500; /* Orange title */
+    padding: 15px;
+    margin: 0; /* Remove default margin */
+    text-align: center;
+}
+
+.credits {
+    font-size: 0.85em; /* **Smaller font size for credits/description** */
+    color: #555;
+    padding: 0 15px 15px; /* Padding top, sides, bottom */
+    margin: 0; /* Remove default margin */
+    line-height: 1.5;
+    flex-grow: 1; /* Allows description to take up available vertical space */
+    overflow: hidden; /* Hide overflow if text is too long */
+    text-overflow: ellipsis; /* Add ellipsis for overflow */
+    display: -webkit-box; /* For multi-line ellipsis */
+    -webkit-line-clamp: 8; /* Limit to 8 lines before ellipsis, adjust as needed */
+    -webkit-box-orient: vertical;
+}
+
+.credits a {
+    color: #E77500; /* Ensure links within credits are styled */
+    text-decoration: underline;
+}
+
+/* --- Header Container (Existing Styles - ensure they are in styles.css) --- */
+.header-container {
+    position: relative; /* For overlapping elements */
+    width: 100%;
+    overflow: hidden; /* Prevents overflow from video */
+    margin-bottom: 20px; /* Space below header */
+}
+
+
+
+
+
+
+  </style>
+  <div class="section">
+    
+    <h1 class="page-title">Product</h1>
+
+    <p class="subtitle" >
+      American Advanced Technology accepts only wholesale orders for the following products. Download and fill out the
+      <a href="static/files/Product_Inquiry_Form.pdf">
+        Product Inquiry Form
+      </a> and email it to
+      <a href="mailto:customer_service@usaaat.com">customer_service@usaaat.com</a>
+      if you are interested in a product. Our customer service will reach out to you for a no-cost consultation before placing an order.
+    </p>
+
+    <section id="products" class="showcase-section">
+      <div class="home-scroll-container">
+        <!-- <a href="/item?id=3D_Stereo_Imaging_System" class="item-link"> -->
+          <div class="item-wrapper">
+            <div class="image-wrapper">
+              <img src="/static/images/products_TT.png" alt="High‑Precision 3D Stereo Imaging System">
+            </div>
+            <p class="home-item-title">High‑Precision 3D Stereo Imaging System</p>
+            <p class="credits">Method and Apparatus for Measuring Characteristics of a Surface Topology, <a href="static/files/USPatent10757393.pdf">U.S. Patent 10757393</a>.</p>
+          </div>
+        </a>
+
+        <!-- <a href="/item?id=Nanomaterial_Asphalt_Modifier" class="item-link"> -->
+          <div class="item-wrapper">
+            <div class="image-wrapper">
+              <img src="/static/images/products_NCAM.png" alt="Nanomaterial Composite Asphalt Modifier">
+            </div>
+            <p class="home-item-title">Nanomaterial Composite Asphalt Modifier</p>
+            <p class="credits">Nanomaterial Composite Asphalt Modifier is used to improve rutting resistance, reduce fatigue cracking and enhance asphalt pavement longevity. The material needs to be blended with asphalt binder prior to mixing with aggregate. Technical support will be provided when manufacturing modified asphalt mixture.</p>
+          </div>
+        </a>
+
+        <!-- <a href="/item?id=Methane_Detector_System" class="item-link"> -->
+          <div class="item-wrapper">
+            <div class="image-wrapper">
+              <img src="static/images/products_MDS.png" alt="Methane Detector System">
+            </div>
+            <p class="home-item-title">Methane Detector System</p>
+            <p class="credits">Methane Detection System is used to detect methane gas leaks and remotely monitor changes in the methane concentration at project and network levels. Individual calibration and testing for measurements. Extended temperature range (-40 °C to +60 °C), internal microprocessor for advanced signal processing, GSM (4G) or WiFi (2.4 GHz) digital communication, GPS localization, rugged aluminum enclosure (EN AB46100), optional distant pellistor output, and IR‑long optical path for better resolution.</p>
+          </div>
+        </a>
+
+        <!-- <a href="/item?id=Air_Quality_Monitoring_System" class="item-link"> -->
+          <div class="item-wrapper">
+            <div class="image-wrapper">
+              <img src="/static/images/products_AQMS.png" alt="Air Quality Monitoring System">
+            </div>
+            <p class="home-item-title">Air Quality Monitoring System</p>
+            <p class="credits">Air Quality Monitoring System is used to monitor air quality at project and network levels. Functionality includes detecting and localizing (GPS) gas leaks, measuring gas concentrations (CO₂, NO₂, SO₂, CO, C₂H₂, C₂H₄), humidity, and temperature; data preprocessing and sharing via GSM, LAN, or WiFi; a dashboard with visual and audible alarms when concentrations exceed predefined thresholds; and air quality control for particulate matter (PM1.0, PM2.5, PM4, PM10), VOC, and NOₓ indexing.</p>
+          </div>
+        </a>
+
+        <!-- <a href="/item?id=Bridge_Monitoring_System" class="item-link"> -->
+          <div class="item-wrapper">
+            <div class="image-wrapper">
+              <img src="/static/images/products_BMS.png" alt="Bridge Monitoring System">
+            </div>
+            <p class="home-item-title">Bridge Monitoring System</p>
+            <p class="credits">Bridge Monitoring System is used to monitor bridge health, safety, and traffic conditions at project and network levels. Functionality includes measuring displacement, vibration, strain, cracking, humidity, temperature, concrete spalling, using optical and wireless communication for data transmission, and providing a dashboard with visual and audible alarms when measurements exceed predefined thresholds.</p>
+          </div>
+        </a>
       </div>
-      <div class="product-image" style="
-        width: 400px;
-          aspect-ratio: 4/4;
-        background-image: url('/product_TT.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-      "></div>
-    </div>
-
-    <!-- Spacer -->
-    <div class="up-two"></div>
-
-    <!-- Card 2 -->
-    <div class="product-card">
-      <div class="product-text">
-        <h2 class="page-title">
-          Nanomaterial Composite Asphalt Modifier
-        </h2>
-        <p class="subtitle">
-          Nanomaterial Composite Asphalt Modifier is used to improve rutting resistance, reduce fatigue cracking and enhance asphalt pavement longevity. The material needs to be blended with asphalt binder prior to mixing with aggregate. Technical support will be provided when manufacturing modified asphalt mixture.
-        </p>
-      </div>
-      <div class="product-image" style="
-        width: 400px;
-          aspect-ratio: 4/4;
-        background-image: url('./product_NCAM.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-      "></div>
-    </div>
-
-    <!-- Spacer -->
-    <div class="up-two"></div>
-
-    <!-- Card 3 -->
-    <div class="product-card">
-      <div class="product-text">
-        <h2 class="page-title">
-          Methane Detector System
-        </h2>
-        <p class="subtitle">
-          Methane Detection System is used to detect methane gas leaks and remotely monitor changes in the methane concentration at project and network levels. Individual calibration and testing for measurements. Extended temperature range (-40 °C to +60 °C), internal microprocessor for advanced signal processing, GSM (4G) or WiFi (2.4 GHz) digital communication, GPS localization, rugged aluminum enclosure (EN AB46100), optional distant pellistor output, and IR‑long optical path for better resolution.
-        </p>
-      </div>
-      <div class="product-image" style="
-        width: 400px;
-          aspect-ratio: 4/4;
-        background-image: url('/product_MDS.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-      "></div>
-    </div>
-
-    <!-- Spacer -->
-    <div class="up-two"></div>
-
-    <!-- Card 4 -->
-    <div class="product-card">
-      <div class="product-text">
-        <h2 class="page-title">
-          Air Quality Monitoring System
-        </h2>
-        <p class="subtitle">
-          Air Quality Monitoring System is used to monitor air quality at project and network levels. Functionality includes detecting and localizing (GPS) gas leaks, measuring gas concentrations (CO₂, NO₂, SO₂, CO, C₂H₂, C₂H₄), humidity, and temperature; data preprocessing and sharing via GSM, LAN, or WiFi; a dashboard with visual and audible alarms when concentrations exceed predefined thresholds; and air quality control for particulate matter (PM1.0, PM2.5, PM4, PM10), VOC, and NOₓ indexing.
-        </p>
-      </div>
-      <div class="product-image" style="
-        width: 400px;
-          aspect-ratio: 4/4;
-        background-image: url('/product_AQMS.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-      "></div>
-    </div>
-
-    <!-- Spacer -->
-    <div class="up-two"></div>
-
-    <!-- Card 5 -->
-    <div class="product-card">
-      <div class="product-text">
-        <h2 class="page-title">
-          Bridge Monitoring System
-        </h2>
-        <p class="subtitle" style = "margin-bottom:0">
-          Bridge Monitoring System is used to monitor bridge health, safety, and traffic conditions at project and network levels. Functionality includes measuring displacement, vibration, strain, cracking, humidity, temperature, concrete spalling, using optical and wireless communication for data transmission, and providing a dashboard with visual and audible alarms when measurements exceed predefined thresholds.
-        </p>
-      </div>
-      <div class="product-image" style="
-        width: 400px;
-          aspect-ratio: 4/4;
-        background-image: url('/product_BMS.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-      "></div>
-    </div>
+    </section>
   </div>
-  </div>
-  <hr style="margin: 3rem 0; border-top: 1px solid #444;" />
-  <!-- ─── FOOTER (bottom bar) ─── -->
-</section>
-</section>
+
+
   <div class="bottom-bar">
+    <img src="static/images/logo.png" alt="Company Logo" class="banner-logo">
     <div class="company-name">
       <a href="/">American Advanced Technology</a>
     </div>
@@ -193,4 +174,3 @@ if you are interested in the product. Our customer service will reach out to you
   </div>
 </body>
 </html>
-

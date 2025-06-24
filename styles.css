@@ -60,9 +60,15 @@ nav a:hover {
 
 
 .item-link {
-  display: block;
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
+    display: block; /* Make the entire card clickable */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.item-link:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* More prominent shadow on hover */
 }
 
 
@@ -85,11 +91,6 @@ button:hover, .button:hover {
   background-color: var(--accent-dark);
 }
 
-img {
-  max-width: 100%;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
 
 ul {
   padding-left: 0rem;
@@ -166,9 +167,13 @@ color: var(--text-light);
   to { opacity: 1; transform: translateY(0); }
 }
 /* Showcase Section */
-.showcase-section {
 
-  background-color: var(--header-bg-color);
+.showcase-section {
+    padding: 20px 0;
+    background-color: #fff; /* White background for the product cards area */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
 }
 
 
@@ -202,10 +207,6 @@ color: var(--text-light);
   margin: 1.5rem 0 0.5rem;
 }
 
-.item-list, .item-credits {
-  padding-left: 1.25rem;
-  margin: 01rem 0;
-}
 
 
 .item-images {
@@ -303,6 +304,10 @@ color: var(--text-light);
     font-size: 1.5vw;    
     font-family: "Arial";
   }
+  .subtitle a {
+    color: #E77500; /* Orange for links */
+    text-decoration: none;
+}
 
   .up-three {
     margin-top: 2cm;
@@ -387,20 +392,31 @@ color: var(--text-light);
     background-color: var(--header-bg);
     text-align: left;
     width: 100vw;
-    height: 4vw;
+    height: 6vw;
     max-width: 100%;
     box-sizing: border-box;
     padding: 0 3vw; /* zero top padding */
     /* Font size scales with viewport width, minimum 0.8rem, maximum 1.2rem */
     margin-bottom: 0;
+      display: flex; /* Enables flexbox for the banner container */
+  align-items: center; /* Vertically aligns items in the center */
+  justify-content: left; /* Centers the content horizontally (adjust if needed) */
+  /* Add any other banner styles you have, e.g., background-color, padding */
+  padding: 10px 20px;
   }
 
-.banner h1 {
-  /* size is 8% of the viewport’s width */
-font-size: 2.5vw;
-  margin: 0;
-  padding: 0;
+.banner-logo {
+  height: 40px; /* Keep your existing height */
+  width: auto;
+  margin: 5px;
+  margin-right: 10px;
 
+    outline: none;
+}
+.banner h1 {
+  margin: 0; /* Remove default margin from h1 to prevent extra space */
+  color: #ffffff; /* Example text color */
+  font-size: 2.5vw; /* Adjust font size as needed */
 }
   .banner p {
     margin: 0;
@@ -409,11 +425,13 @@ font-size: 2.5vw;
     font-family: Arial
   }
 
-  .header-container {
-    position: relative;
+.header-container {
+    position: relative; /* For overlapping elements */
     width: 100%;
-    z-index: 1;
-  }
+    overflow: hidden; /* Prevents overflow from video */
+    margin-bottom: 20px; /* Space below header */
+}
+
 
   /* ── 2) Narrow video strip at the very top ── */
   .video-strip {
@@ -480,8 +498,8 @@ line-height: 1.4;      /* give the multiline text some spacing */
   .nav-bar a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 1.7vw;              /* ~20px */
-    font-weight: 600;
+    font-size: 1.5vw;              /* ~20px */
+    font-weight: 570;
     font-family: Arial, sans-serif;
     margin: 0 1rem;
     transition: opacity 0.2s;
@@ -528,13 +546,6 @@ line-height: 1.4;      /* give the multiline text some spacing */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
 }
 
-/* Company Name Styling */
-.company-name a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
-}
 
 /* Footer container styling */
 .site-footer {
@@ -576,24 +587,14 @@ line-height: 1.4;      /* give the multiline text some spacing */
     color: var(--white, #333);
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2.5vw;
     font-family: Arial, sans-serif;
   }
   
   
  
 
-.home-scroll-container {
-  display: grid;
-  gap: 28px;
-  padding: 1rem 0.5rem;
-  background-color: var(--white);
 
-  /* Default: one column (mobile) */
-  grid-template-columns: 1fr;
-  max-height: 100vh;
-  overflow-y: auto;
-}
 
 /* Tablet: 2 columns once viewport ≥ 600px */
 @media (min-width: 600px) {
@@ -614,27 +615,29 @@ line-height: 1.4;      /* give the multiline text some spacing */
   --card-height: 450px;
 }
 
-/* 2) Force every card wrapper to use that exact height */
+
+
+
 .item-wrapper {
-  display: flex;
-  flex-direction: column;
-  background: var(--primary-bg);
-  box-shadow: 0 4px 12px rgba(19, 19, 22, 0.3);
-  transition: transform 0.2s, box-shadow 0.2s;
-  overflow: hidden;
-  min-width: 0; /* allow grid items to shrink if needed */
-
-  /* ▶︎ FIXED HEIGHT: all cards become the same height ◀︎ */
-  height: var(--card-height);
+    display: flex;
+    flex-direction: column; /* Stack image, title, description vertically */
+    height: 100%; /* Ensures cards in a row have consistent height */
+    min-height: 550px; /* **Makes cards longer on Y-axis (taller) - ADJUST AS NEEDED** */
+    background-color: #f9f9f9; /* Light background for each card */
+    border: 1px solid #ddd;
+    overflow: hidden; /* Ensures image and text stay within bounds */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for cards */
 }
-
-
 /* Make the cards narrower by reducing minmax width */
 .home-scroll-container {
   display: grid;
   gap: 70px 60px; /* 40px row gap, 60px column gap (reduced x-axis space) */ /* CHANGED */
-  padding: 1rem;
+  padding: 1rem 0.5rem;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* CHANGED: was 800px, now 320px */
+
+  max-height: 100vh;
+  overflow-y: auto;
+
 }
 
 /* Image at top, full width */
@@ -665,27 +668,33 @@ line-height: 1.4;      /* give the multiline text some spacing */
 }
 
 /* Title under the image */
+
 .home-item-title {
-  font-weight: 600;
-  text-align: center;
-  font-size: clamp(1.5rem, 3vw, 1.9rem); /* CHANGED: smaller font size */
-  color: black;
-  margin-top: 0.8em;   /* Reduced from 0 for less space above */
-  margin-bottom: 0.2em; /* Reduced from 0 for less space below */
-  line-height: .9;    /* Tighter line spacing */
+    font-size: 1.25em; /* Slightly larger title for cards */
+    font-weight: bold;
+    color: #E77500; /* Orange title */
+    padding: 15px;
+    margin: 0; /* Remove default margin */
+    text-align: center;
 }
-/* Credits below the title */
+
 .credits {
-  font-size: clamp(0.8rem, 1vw, 1rem); /* CHANGED: smaller font */
-  color: #979797;
-  margin-top: 0;
-  margin-left: 10px;
-  margin-right: 10px;
-  min-height: 1.5em; /* CHANGED: less vertical space */
-  margin-top: auto;
-  text-align: left;
-  align-self: flex-start; /* align to bottom left */
-  justify-self: flex-end; /* ensure it's at the bottom if grid is used */
+    font-size: 0.85em; /* **Smaller font size for credits/description** */
+    color: #555;
+    padding: 0 15px 15px; /* Padding top, sides, bottom */
+    margin: 0; /* Remove default margin */
+    line-height: 1.5;
+    flex-grow: 1; /* Allows description to take up available vertical space */
+    overflow: hidden; /* Hide overflow if text is too long */
+    text-overflow: ellipsis; /* Add ellipsis for overflow */
+    display: -webkit-box; /* For multi-line ellipsis */
+    -webkit-line-clamp: 8; /* Limit to 8 lines before ellipsis, adjust as needed */
+    -webkit-box-orient: vertical;
+}
+
+.credits a {
+    color: #E77500; /* Ensure links within credits are styled */
+    text-decoration: underline;
 }
 
       /* Spacing utildfity */

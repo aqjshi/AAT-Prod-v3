@@ -29,7 +29,8 @@
     </div>
 
 <div class="banner">
-  <h1 >
+  <img src="static/images/logo.png" alt="Company Logo" class="banner-logo">
+  <h1>
     American Advanced Technology
   </h1>
 </div>
@@ -43,6 +44,7 @@
       <a href="/training">Training</a>
       <a href="/product">Product</a>
       <a href="/contact">Contact</a>
+    <a href="/about">About</a>  
     </nav>
   </header>
   <!-- Full-height Hero Section -->
@@ -65,30 +67,33 @@
     
     </p>
   </section>
-
+    <div class="section">
   <!-- Showcase Items -->
- <!-- Showcase Items -->
-<section id="services" class="showcase-section">
-  <div class="home-scroll-container">
+   <section id="projects" class="showcase-section">
+      <h2 class="page-title">Our Projects</h2> <div class="home-scroll-container">
     {{ range .Items }}
-      <a href="/item?id={{ .ID }}" class="item-link">
-  <div class="item-wrapper">
-    <div class="image-wrapper">
-      <img src="/static/images/{{ .ResolvedImage }}" alt="{{ .KeywordTitle }}">
-    </div>
-    <p class="home-item-title">{{ .KeywordTitle }}</p>
-    {{ if .ImageCredits }}
-      <p class="credits">Image credit: {{ index .ImageCredits 0 }}</p>
-    {{ end }}
-  </div>
-</a>
+      <a href="{{ .Link }}" class="item-link"{ end }>
+        <div class="item-wrapper">
+          <div class="image-wrapper">
+            <img src="/static/images/{{ .ResolvedImage }}" alt="{{ .KeywordTitle }}">
+          </div>
+          <p class="home-item-title">{{ .KeywordTitle }}</p>
+          {{ if .ImageCredits }}
+            <p class="credits">{{ index .ImageCredits 0 }}</p>
+          {{ end }}
+        </div>
+      </a>
     {{ end }}
   </div>
     </div>
 </section>
+
+
 </section>
   <div class="bottom-bar">
+            <img src="static/images/logo.png" alt="Company Logo" class="banner-logo">
     <div class="company-name">
+
       <a href="/">American Advanced Technology</a>
     </div>
 

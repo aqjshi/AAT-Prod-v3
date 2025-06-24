@@ -69,6 +69,7 @@ type Item struct {
 	ImageCredits  []string      `json:"image_credits,omitempty"`
 	ResolvedImage string        // e.g. "images/home_1_0.jpg"
 	InlineStyle   string        // full CSS snippet, set in loadItems()
+	Link          string   // **NEW**: This will hold the URL for each item
 }
 
 // ProjectFromJSON maps directly to the structure of each object in your projects.json file.
@@ -259,6 +260,8 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+
+
 func projectHandler(w http.ResponseWriter, r *http.Request) {
 	data := map[string]interface{}{
 		"Title": "American Advanced Technology",
@@ -388,6 +391,10 @@ func main() {
 	http.HandleFunc("/non", func(w http.ResponseWriter, r *http.Request) {
 		http.ServeFile(w, r, "templates/non.html")
 	})
+		http.HandleFunc("/about", func(w http.ResponseWriter, r *http.Request) {
+		http.ServeFile(w, r, "templates/about.html")
+	})
+
 
 	// Serve the CSS file at /styles.css
 	http.HandleFunc("/styles.css", func(w http.ResponseWriter, r *http.Request) {
