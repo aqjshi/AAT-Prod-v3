@@ -1,0 +1,24 @@
+Home图片名称	对应的第二个页面
+Smart Transit and Subway Traveler Information System	https://www.usaaat.com/project_item.html?id=1
+Bridge Structural Health Monitoring	https://www.usaaat.com/project_item.html?id=2
+Intelligent Transportation System	https://www.usaaat.com/project_item.html?id=3
+Traffic Congestion Prediction and Mitigation	https://www.usaaat.com/project_item.html?id=4
+Geographical Information System (GIS) and Smart Mapping	https://www.usaaat.com/project_item.html?id=4
+Transportation Safety	https://www.usaaat.com/project_item.html?id=5
+Traffic Simulation	https://www.usaaat.com/project_item.html?id=5
+Nanomaterial Composite Modifier for Asphalt	https://www.usaaat.com/project_item.html?id=6
+Performance Engineered Pavement Mixture Design	https://www.usaaat.com/project_item.html?id=7
+High-speed Rail Design and Operations	https://www.usaaat.com/project_item.html?id=8
+Condition Assessment	https://orfe.princeton.edu/events/2017/lu-sun-catholic-university-america-visiting-princeton-university
+Inspection	https://www.usaaat.com/project_item.html?id=9
+High-Precision 3D Stereo Imaging	https://www.usaaat.com/project_item.html?id=10
+Monitoring	https://www.usaaat.com/product
+Airport and Road Pavement Structural Capacity Testing	https://www.usaaat.com/project_item.html?id=11
+Artificial Intelligence (AI)	https://www.usaaat.com/project_item.html?id=12
+Building Information Modeling (BIM)	https://dl.acm.org/doi/10.1111/mice.13210
+3D Scanning	https://doi.org/10.1061/(ASCE)CP.1943-5487.0000625
+Asset Management	https://doi.org/10.1061/(ASCE)TE.1943-5436.0000239
+High-Performance Computing	https://www.sciencedirect.com/science/article/abs/pii/S0045782513000157
+Cognitive and Neurobehavior of Driving	https://onlinelibrary.wiley.com/doi/epdf/10.1002/atr.1232
+Connected and Autonomous Vehicles	https://doi.org/10.1016/j.physa.2019.123829  
+Sustainable and Low Carbon Transportation Infrastructure	https://ascelibrary.org/doi/10.1061/%28ASCE%29MT.1943-5533.0001750
