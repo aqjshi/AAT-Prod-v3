@@ -47,7 +47,27 @@
     <a href="/about">About</a>  
     </nav>
   </header>
+<style>
+.product-card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #E77500;
+    text-align: center; /* Horizontally center the text */
+    padding: 15px; /* Add padding around the title text itself */
+    margin: auto 0; /* *** CRITICAL: Pushes this element to vertically center *** */
+                    /* 'auto' for top/bottom margins will absorb available space,
+                       effectively centering it within the flex container */
+    flex-grow: 1; /* Allows the title area to expand to fill remaining space */
 
+    /* Also make the title itself a flex container to vertically center its own text */
+    display: flex;
+    align-items: center; /* Vertically center content (text) within the title element */
+    justify-content: center; /* Horizontally center content (text) within the title element */
+    box-sizing: border-box; /* Include padding in height calculations */
+}
+
+
+</style>
   <!-- Showcase Items -->
 <section id="services" class="showcase-section">
   <div class="home-scroll-container">
@@ -59,7 +79,9 @@
           {{/* Assuming .ResolvedImage already contains the full path like "1/image.jpg" */}}
           <img src="/static/images/{{ .ResolvedImage }}" alt="{{ .KeywordTitle }}">
         </div>
-        <p class="home-item-title">{{ .KeywordTitle }}</p>
+          <p class="product-card-title">{{ .KeywordTitle }}</p> {{ if .ImageCredits }}
+            <p class="credits">{{ index .ImageCredits 0 }}</p>
+          {{ end }}
       </div>
     </a> {{/* Close the anchor tag */}}
     {{ end }}
