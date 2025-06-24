@@ -43,17 +43,33 @@
     </nav>
   </header>
   <style>
+.item-wrapper {
+    display: flex;
+    flex-direction: column; /* Stack image, title, description vertically */
+    height: 100%; /* Ensures cards in a row have consistent height */
+    min-height: 600px; /* Makes cards longer on Y-axis (taller) - ADJUST AS NEEDED */
+    background-color: #f9f9f9; /* Light background for each card */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden; /* Ensures image and text stay within bounds */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for cards */
+}
 
 
-/* --- Showcase Section (Product List) Styling --- */
-
-
-
-
-/* --- Header Container (Existing Styles - ensure they are in styles.css) --- */
-
-
-
+.credits {
+    font-size: 0.85em; /* **Smaller font size for credits/description** */
+    color: #555;
+    padding: 0 15px 15px; /* Padding top, sides, bottom */
+    margin: 0; /* Remove default margin */
+    line-height: 1.5;
+    flex-grow: 1; /* Allows description to take up available vertical space */
+    overflow: hidden; /* Hide overflow if text is too long */
+    text-overflow: ellipsis; /* Add ellipsis for overflow */
+    display: -webkit-box; /* For multi-line ellipsis */
+    -webkit-line-clamp: 8; /* Limit to 8 lines before ellipsis, adjust as needed */
+    -webkit-box-orient: vertical;
+    opacity: 1;
+}
 
 
 
@@ -73,7 +89,7 @@
 
     <section id="products" class="showcase-section">
       <div class="home-scroll-container">
-        <!-- <a href="/item?id=3D_Stereo_Imaging_System" class="item-link"> -->
+        <a href="/project_item.html?id=10" class="item-link">
           <div class="item-wrapper">
             <div class="image-wrapper">
               <img src="/static/images/products_TT.png" alt="High‑Precision 3D Stereo Imaging System">
@@ -113,7 +129,7 @@
           </div>
         </a>
 
-        <!-- <a href="/item?id=Bridge_Monitoring_System" class="item-link"> -->
+        <a href="/project_item.html?id=2" class="item-link">
           <div class="item-wrapper">
             <div class="image-wrapper">
               <img src="/static/images/products_BMS.png" alt="Bridge Monitoring System">

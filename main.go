@@ -395,7 +395,6 @@ func main() {
 		http.ServeFile(w, r, "templates/about.html")
 	})
 
-
 	// Serve the CSS file at /styles.css
 	http.HandleFunc("/styles.css", func(w http.ResponseWriter, r *http.Request) {
 		http.ServeFile(w, r, "styles.css")
