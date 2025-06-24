@@ -74,6 +74,19 @@
 }
 
 
+.item-wrapper {
+    display: flex;
+    flex-direction: column; /* Stack image, title, description vertically */
+    height: 100%; /* Ensures cards in a row have consistent height */
+    min-height: 515px; /* Makes cards longer on Y-axis (taller) - ADJUST AS NEEDED */
+    background-color: #f9f9f9; /* Light background for each card */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden; /* Ensures image and text stay within bounds */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for cards */
+}
+
+
 
 .home-item-title {
       text-align: center; /* Horizontally center the text */
