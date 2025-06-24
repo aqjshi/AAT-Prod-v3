@@ -42,6 +42,7 @@
       <a href="/about">About</a>
     </nav>
   </header>
+
   <style>
 .item-wrapper {
     display: flex;
@@ -89,8 +90,9 @@
 
     <section id="products" class="showcase-section">
       <div class="home-scroll-container">
-        <a href="/project_item.html?id=10" class="item-link">
-          <div class="item-wrapper">
+        
+        <!-- <a href="/project_item.html?id=10" class="item-link"  return false;"> -->
+          <div class="item-wrapper" onclick="goToItem(this)">
             <div class="image-wrapper">
               <img src="/static/images/products_TT.png" alt="High‑Precision 3D Stereo Imaging System">
             </div>
@@ -99,8 +101,7 @@
           </div>
         </a>
 
-        <!-- <a href="/item?id=Nanomaterial_Asphalt_Modifier" class="item-link"> -->
-          <div class="item-wrapper">
+        <a href="https://ascelibrary.org/doi/10.1061/%28ASCE%29MT.1943-5533.0001750" class="item-link" onclick="goToItem(this); return false;"> <div class="item-wrapper">
             <div class="image-wrapper">
               <img src="/static/images/products_NCAM.png" alt="Nanomaterial Composite Asphalt Modifier">
             </div>
@@ -109,8 +110,7 @@
           </div>
         </a>
 
-        <!-- <a href="/item?id=Methane_Detector_System" class="item-link"> -->
-          <div class="item-wrapper">
+        <a href="/project_item.html?id=3" class="item-link" onclick="goToItem(this); return false;"> <div class="item-wrapper">
             <div class="image-wrapper">
               <img src="static/images/products_MDS.png" alt="Methane Detector System">
             </div>
@@ -119,8 +119,7 @@
           </div>
         </a>
 
-        <!-- <a href="/item?id=Air_Quality_Monitoring_System" class="item-link"> -->
-          <div class="item-wrapper">
+        <a href="/project_item.html?id=4" class="item-link" onclick="goToItem(this); return false;"> <div class="item-wrapper">
             <div class="image-wrapper">
               <img src="/static/images/products_AQMS.png" alt="Air Quality Monitoring System">
             </div>
@@ -129,7 +128,7 @@
           </div>
         </a>
 
-        <a href="/project_item.html?id=2" class="item-link">
+        <a href="/project_item.html?id=2" class="item-link" onclick="goToItem(this); return false;">
           <div class="item-wrapper">
             <div class="image-wrapper">
               <img src="/static/images/products_BMS.png" alt="Bridge Monitoring System">
@@ -138,6 +137,24 @@
             <p class="credits">Bridge Monitoring System is used to monitor bridge health, safety, and traffic conditions at project and network levels. Functionality includes measuring displacement, vibration, strain, cracking, humidity, temperature, concrete spalling, using optical and wireless communication for data transmission, and providing a dashboard with visual and audible alarms when measurements exceed predefined thresholds.</p>
           </div>
         </a>
+
+
+
+        <a href="https://github.com/aqjshi/Quantitivative_Public" class="item-link" onclick="goToItem(this); return false;">
+          <div class="item-wrapper">
+            <div class="image-wrapper">
+              <img src="/static/images/quant.png" alt="Bridge Monitoring System">
+            </div>
+            <p class="home-item-title">AI Quantitative Trading</p>
+            <p class="credits">
+                      AI quantitative trading uses advanced machine learning models, statistical models, deep learning models and much high-performance computing power to analyze financial market data, find profitable possibilities, and act on them immediately to maximize the gain.
+      </p>
+            
+            </div>
+        </a>
+
+        
+
       </div>
     </section>
   </div>

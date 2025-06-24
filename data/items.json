@@ -804,4 +804,23 @@
     ], 
     "Link": ""
   }
+
+,
+    {
+    "id": 46,
+    "keyword_title": "AI Quantitative Trading",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "quant.png"
+    ],
+    "image_credits": [
+      ""
+    ], 
+    "Link": "https://github.com/aqjshi/Quantitivative_Public"
+  }
+
+
 ]

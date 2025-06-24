@@ -169,7 +169,7 @@ color: var(--text-light);
 /* Showcase Section */
 
 .showcase-section {
-    padding: 20px 0;
+    padding: 0px 0;
     background-color: #fff; /* White background for the product cards area */
     border-radius: 8px;
     margin-bottom: 40px;
@@ -400,14 +400,13 @@ color: var(--text-light);
     height: 8vw;
     max-width: 100%;
     box-sizing: border-box;
-    padding: 0 3vw; /* zero top padding */
     /* Font size scales with viewport width, minimum 0.8rem, maximum 1.2rem */
     margin-bottom: 0;
       display: flex; /* Enables flexbox for the banner container */
   align-items: center; /* Vertically aligns items in the center */
   justify-content: left; /* Centers the content horizontally (adjust if needed) */
   /* Add any other banner styles you have, e.g., background-color, padding */
-  padding: 10px 20px;
+  z-index: 2;
   }
 
 .banner-logo {
@@ -434,7 +433,6 @@ color: var(--text-light);
     position: relative; /* For overlapping elements */
     width: 100%;
     overflow: hidden; /* Prevents overflow from video */
-    margin-bottom: 20px; /* Space below header */
 }
 
 
@@ -491,7 +489,7 @@ line-height: 1.4;      /* give the multiline text some spacing */
     align-items: center;
     justify-content: space-around;
     background-color: #E77500;         /* orange background */
-    padding: 0.75rem 6rem;             /* vertical/horizontal padding */
+    padding: 0.3rem 6rem;             /* vertical/horizontal padding */
 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 2;
@@ -502,7 +500,7 @@ line-height: 1.4;      /* give the multiline text some spacing */
 /* Styling for individual links inside the nav bar */
 .nav-bar a {
     position: relative;               /* Allows us to use 'top' to move it */
-    top: -1.1rem;                     /* ** ADJUST THIS VALUE **
+    top: -.7rem;                     /* ** ADJUST THIS VALUE **
                                          A negative 'top' value moves the element UP.
                                          Start with a small value like -0.5rem or -1rem and
                                          increase/decrease until the text is where you want it
