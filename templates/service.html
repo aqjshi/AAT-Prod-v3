@@ -1,260 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title> Services </title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="/static/js/main.js"></script>
-</head>
+{{ template "header.html" . }}
 
-<body>
-  <!-- ─── HEADER CONTAINER ─── -->
-  <header class="header-container">
-    <!-- 1) Narrow video strip -->
-    <div class="video-strip">
-      <video
-      
-        class="video-element"
-        autoplay
-        muted
-        loop
-        playsinline
-      >    <source src="/aerial.mp4" type="video/mp4" /></video>
-      <!-- 2) Title overlaid on top of the video -->
-      <div class="title-overlay">
-        Advancing technologies, empowering people. 
-        Discover how we shape smarter, safer, more resilient and sustainable systems across industries.
-      </div>
-    </div>
-
-    <!-- 3) Banner under the video strip -->
-<div class="banner">
-  <img src="static/images/logo.png" alt="Company Logo" class="banner-logo">
-  <h1>
-    American Advanced Technology
-  </h1>
-</div>
-
-    <!-- 4) Orange nav bar overlapping the video strip -->
-    <nav class="nav-bar">
-      <a href="/">Home</a>
-      <a href="/service">Service</a>
-      <a href="/project">Project</a>
-      <a href="/research">Research</a>
-      <a href="/training">Training</a>
-      <a href="/product">Product</a>
-      <a href="/contact">Contact</a>
-    <a href="/about">About</a>  
-    </nav>
-  </header>
 <style>
   .bottom-two {
     margin-bottom: 2rem;
   }
 </style>
 <link rel="stylesheet" href="/static/css/base.css">
-  <div class="section">
-    <h1 class="page-title">Service</h1>
+
+<div class="section">
+  <h1 class="page-title">Service</h1>
 
   <p class="subtitle">
-
-American Advanced Technology, LLC provides our customers with services and staff in the following sectors.
-</p>
+    American Advanced Technology, LLC provides our customers with services in transportation, water and wastewater, energy, environmental and public health, and safety, smart city and infrastructure, software, information technology, artificial intelligence and financial sectors. Specific service areas include
+  </p>
   
   <div style="margin-top: 50px; padding: 0rem;">
-  <div>
-    <h1 class="page-title">Optics, Imaging and Electronics</h1>
-    <ul class="one-column" >
-      <li class="subtitle">3D Laser Scanning</li>
-      <li class="subtitle">LiDAR Technology</li>
-      <li class="subtitle">3D Photogrammetry</li>
-      <li class="subtitle">Digital Image Correlation</li>
-      <li class="subtitle">High‑Precision 3D Stereo Imaging</li>
-      <li class="subtitle">Remote Sensing</li>
-      <li class="subtitle">Computer Vision</li>
-      <li class="subtitle">Internet of Things (IoT) Sensor</li>
-    </ul>
-  </div>
-
-  <div class="bottom-two"></div>
-  <div>
-    <h1 class="page-title">Information and Telecommunication</h1>
-    <ul class="one-column" >
-      <li class="subtitle">Dashboard Design and Development</li>
-      <li class="subtitle">Web Design and Development</li>
-      <li class="subtitle">App Design and Development</li>
-      <li class="subtitle">Software Design and Development</li>
-      <li class="subtitle">Virtual Reality</li>
-      <li class="subtitle">Augmented Reality</li>
-    </ul>
-  </div>
-
-  <div class="bottom-two"></div>
-  <div>
-    <h1 class="page-title">Asset Management of Infrastructure and Facility</h1>
-    <ul class="one-column" >
-      <li class="subtitle">Inspection</li>
-      <li class="subtitle">Monitoring</li>
-      <li class="subtitle">Condition Assessment</li>
-    </ul>
-  </div>
-
-  <div class="bottom-two"></div>
-  <div>
-    <h1 class="page-title">Project and Construction Management</h1>
-    <ul class="one-column" >
-      <li class="subtitle">Project Management</li>
-      <li class="subtitle">Construction Management</li>
-    </ul>
-  </div>
-
-  <div class="bottom-two"></div>
-  <div>
-    <h1 class="page-title">Artificial Intelligence</h1>
-    <ul class="one-column" >
-      <li class="subtitle">AI Center</li>
-      <li class="subtitle">Machine Learning</li>
-      <li class="subtitle">Artificial Intelligence (AI)</li>
-    </ul>
-  </div>
-
-  <div class="bottom-two"></div>
-  <div>
-    <h1 class="page-title">Applied Mathematics, Computing and Data Analytics</h1>
-    <ul class="one-column" >
-      <li class="subtitle">Data Center</li>
-      <li class="subtitle">Mathematical Modeling</li>
-      <li class="subtitle">Statistical Science</li>
-      <li class="subtitle">Optimization</li>
-      <li class="subtitle">Data Visualization</li>
-      <li class="subtitle">Data Analytics</li>
-      <li class="subtitle">Data Driven Decision Making</li>
-      <li class="subtitle">High‑Performance Computing for Partial Differential Equations</li>
-      <li class="subtitle">Multiscale and Multiphysics Modeling and Simulation</li>
-      <li class="subtitle">Cloud Computing</li>
-    </ul>
-  </div>
-
-  <div class="bottom-two"></div>
-  <div>
-    <h1 class="page-title">Transportation and Logistics</h1>
-    <ul class="one-column" >
-      <li class="subtitle">Traffic Congestion Prediction and Mitigation</li>
-      <li class="subtitle">Traffic Simulation</li>
-      <li class="subtitle">Traffic Signal Design and Optimization</li>
-      <li class="subtitle">Transportation Systems Management and Operations (TSMO)</li>
-      <li class="subtitle">Intelligent Transportation System</li>
-      <li class="subtitle">Highway Geometric Design</li>
-      <li class="subtitle">High‑speed Rail and Subway Design and Operations</li>
-      <li class="subtitle">Airport Pavement Design, Operations and Maintenance</li>
-      <li class="subtitle">Smart Traveler Information System for Transit, Subway and Fleet</li>
-    </ul>
-  </div>
-
-  <div class="bottom-two"></div>
-  <div>
-    <h1 class="page-title">Clean Energy</h1>
-    <ul class="one-column" >
-      <li class="subtitle">Wind, Solar, Nuclear, Hydroelectric and Geothermal Energy</li>
-    </ul>
-  </div>
-
-  <div class="bottom-two"></div>
-  <div>
-    <h1 class="page-title">Infrastructure Monitoring</h1>
-    <ul class="one-column" >
-      <li class="subtitle">Battery Management System</li>
-      <li class="subtitle">Geothermal Energy for Cold Region Subgrade</li>
-      <li class="subtitle">Smart Driving</li>
-      <li class="subtitle">Connected and Autonomous Vehicles</li>
-      <li class="subtitle">Smart Driving with Optimal Vehicle Routing</li>
-      <li class="subtitle">Fleet Management</li>
-      <li class="subtitle">Active Suspension and Control</li>
-    </ul>
-  </div>
-
-  <div class="bottom-two"></div>
-  <div>
-    <h1 class="page-title">Finance and Insurance</h1>
-    <ul class="one-column" >
-      <li class="subtitle">Budgeting Service for Non‑profit Organization and Small Business</li>
-      <li class="subtitle">Accounting Service for Non‑profit Organization and Small Business</li>
-      <li class="subtitle">Financial Risk Management</li>
-      <li class="subtitle">Financial Asset Management</li>
-      <li class="subtitle">Vehicle Insurance</li>
-      <li class="subtitle">Community Development</li>
-    </ul>
-  </div>
-
-  <div class="bottom-two"></div>
-  <div>
-    <h1 class="page-title">Health</h1>
-    <ul class="one-column" >
-      <li class="subtitle">Cognitive, Neurological and Behavioral Driving Safety and Injury Prevention</li>
-      <li class="subtitle">Artificial Intelligence based Precision Medicine</li>
-      <li class="subtitle">Environmental Monitoring</li>
-      <li class="subtitle">Environmental Health and Safety</li>
-      <li class="subtitle">Environmental Effect on Public Health</li>
-      <li class="subtitle">Smart Device for Healthcare</li>
-      <li class="subtitle">Neurological Rehabilitation</li>
-    </ul>
-  </div>
-
-  <div class="bottom-two"></div>
-  <div>
-    <h1 class="page-title">Safety</h1>
-    <ul class="one-column" >
-      <li class="subtitle">Traffic Safety</li>
-      <li class="subtitle">Transportation Safety</li>
-      <li class="subtitle">Work Zone Safety</li>
-      <li class="subtitle">Construction Safety</li>
-      <li class="subtitle">Bridge, Tunnel and Slope Structure Safety</li>
-      <li class="subtitle">Hazard and Disaster Safety and Mitigation</li>
-      <li class="subtitle">Fire Safety</li>
-      <li class="subtitle">Methane Safety</li>
-      <li class="subtitle">Battery Safety</li>
-    </ul>
-  </div>
-
-  <div class="bottom-two"></div>
-  <div>
-    <h1 class="page-title">Nanotechnology and Pavement</h1>
-    <ul class="one-column" >
-      <li class="subtitle">Nano Composite Material for Asphalt Modification</li>
-      <li class="subtitle">Performance Engineered Pavement Mixture Design</li>
-      <li class="subtitle">Recycled and Reclaimed Waste for Sustainable and Low Carbon Pavement</li>
-      <li class="subtitle">Nondestructive Testing of Airport and Road Pavement</li>
-    </ul>
-  </div>
-  
-  <div class="bottom-two"></div>
-  <div>
-    <h1 class="page-title">Drone Applications</h1>
-    <ul class="one-column" >
-      <li class="subtitle">Exterior Window Washing</li>
-      <li class="subtitle">Building and Infrastructure Painting</li>
-      <li class="subtitle">Photography, Photogrammetry and Surveying for Road, Bridge, Tunnel, Subway, Traffic, Utility, Foodstuff Granary, etc.</li>
-    </ul>
+    {{ range .Categories }}
+      <div>
+        <h1 class="page-title">{{ .Title }}</h1>
+        <ul class="one-column">
+          {{ range .Services }}
+            <li class="subtitle">{{ . }}</li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="bottom-two"></div> 
+    {{ end }}
   </div>
 </div>
-  </div>
-</section>
-</section>
-  <div class="bottom-bar">
-    <div class="company-name">
 
-      <a href="/">American Advanced Technology</a>
-    </div>
-
-    <footer class="site-footer">
-      <a href="/tou">Terms of Use</a> |
-      <a href="/privacy">Privacy</a> |
-      <a href="/icp" class="small-link">Indirect Cost Policy</a>|
-      <a href="/non" class="small-link">Nondiscrimination</a>
-    </footer>
-  </div>
-</body>
-</html>
-
-
+{{ template "footer.html" . }}

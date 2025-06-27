@@ -9,7 +9,7 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "home_1_0.png"
+      "home_1_0.jpg"
     ],
     "image_credits": [
       "https://www.chronos-studeos.com/stories/the-importance-of-adopting-bim-as-a-starting-place-for-architects/"
@@ -53,7 +53,7 @@
     "image_credits": [
       "https://appliedresearch.illinois.edu/research-cores/materials-and-manufacturing"
     ], 
-    "Link": ""
+    "Link": "https://www.sciencedirect.com/science/article/abs/pii/S0263224116001068"
   },
   {
     "id": 4,
@@ -68,7 +68,7 @@
     "image_credits": [
       "https://ascelibrary.org/doi/10.1061/%28ASCE%29CP.1943-5487.0000625"
     ], 
-    "Link": "https://www.usaaat.com/project_item.html?id=10"
+    "Link": "/project_item.html?id=10"
   },
   {
     "id": 5,
@@ -78,12 +78,12 @@
     "nextpage_image_paths": [],
     "nextpage_image_credits": [],
     "image_paths": [
-      "home_5_0.png"
+      "home_5_0.jpg"
     ],
     "image_credits": [
       "https://gamepill.com/exploring-the-world-through-ar-glasses/"
     ], 
-    "Link": ""
+    "Link": "/research"
   },
   {
     "id": 6,
@@ -105,7 +105,7 @@
     "image_credits": [
       "https://www.nlc.org/wp-content/uploads/2021/06/ARPA-BROWN-BAG-WATER-SLIDES.pdf"
     ], 
-    "Link": ""
+    "Link": "/research"
   },
   {
     "id": 7,
@@ -122,7 +122,7 @@
     "image_credits": [
       "https://pro.arcgis.com/en/pro-app/latest/help/data/utility-network/what-is-a-utility-network-.htm"
     ], 
-    "Link": "https://www.usaaat.com/project_item.html?id=4"
+    "Link": "/project_item.html?id=4"
   },
   {
     "id": 8,
@@ -165,7 +165,7 @@
     "image_credits": [
       "https://www.knoxvilletn.gov/archived_news_stories/2016/high-_tech_vans_collect_traffic_sign_data_for_city"
     ], 
-    "Link": "https://www.usaaat.com/project_item.html?id=9"
+    "Link": "/project_item.html?id=9"
   },
   {
     "id": 10,
@@ -197,7 +197,7 @@
     "image_credits": [
       "https://www.mdpi.com/2076-3263/11/1/24"
     ], 
-    "Link": "https://www.usaaat.com/product"
+    "Link": "/product"
   },
   {
     "id": 11,
@@ -239,7 +239,7 @@
     "image_credits": [
       "https://www.provideocoalition.com/dji-launches-mavic-3-pro-cine/"
     ], 
-    "Link": ""
+    "Link": "/service"
   },
   {
     "id": 13,
@@ -259,7 +259,7 @@
     "image_credits": [
       "https://www.researchgate.net/figure/500-year-joint-seismic-tsunami-connectivity-maps-showing-a-the-probability-that-each_fig3_353154768"
     ], 
-    "Link": ""
+    "Link": "/research"
   },
   {
     "id": 14,
@@ -274,7 +274,7 @@
     "image_credits": [
       "https://schoolofdisruption.com/exponential-technologies/internet-of-things/"
     ], 
-    "Link": ""
+    "Link": "/product"
   },
   {
     "id": 15,
@@ -299,7 +299,7 @@
     "image_credits": [
       "https://www.fedex.com/en-cn/business-insights/tech-innovation/how-delivery-works-in-our-on-demand-economy.html"
     ], 
-    "Link": ""
+    "Link": "/service"
   },
   {
     "id": 16,
@@ -314,7 +314,7 @@
     "image_credits": [
       "https://blog.womenincloudnative.com/the-evolution-of-cloud-computing-from-data-centers-to-aws"
     ], 
-    "Link": ""
+    "Link": "/service"
   },
   {
     "id": 17,
@@ -334,7 +334,7 @@
     "image_credits": [
       "https://incubator.ucf.edu/what-is-artificial-intelligence-ai-and-why-people-should-learn-about-it/"
     ], 
-    "Link": "https://www.usaaat.com/project_item.html?id=12"
+    "Link": "/project_item.html?id=12"
   },
   {
     "id": 18,
@@ -351,7 +351,7 @@
     "image_credits": [
       "https://github.com/Anveshdeo/Financial-Risk-Management-using-ML/blob/main/README.md"
     ], 
-    "Link": ""
+    "Link": "/research"
   },
   {
     "id": 19,
@@ -389,7 +389,7 @@
     "image_credits": [
       "https://www.az-apps.com/"
     ], 
-    "Link": ""
+    "Link": "https://link.springer.com/article/10.1007/s10957-006-9107-7"
   },
   {
     "id": 21,
@@ -410,7 +410,7 @@
     "image_credits": [
       "https://ops.fhwa.dot.gov/freight/freight_analysis/nat_freight_stats/docs/05factsfigures/fig2_4.htm"
     ], 
-    "Link": ""
+    "Link": "/research"
   },
   {
     "id": 22,
@@ -425,7 +425,7 @@
     "image_credits": [
       "https://www.timetoast.com/timelines/history-theory-and-practice-of-management"
     ], 
-    "Link": ""
+    "Link": "/service"
   },
   {
     "id": 23,
@@ -440,7 +440,7 @@
     "image_credits": [
       "https://www.ishn.com/articles/112413-how-we-lose-safety-judgment-skill-development"
     ], 
-    "Link": ""
+    "Link": "/service"
   },
   {
     "id": 24,
@@ -458,7 +458,7 @@
     "image_credits": [
       "https://www.nttrdirectory.com/blog/truck-driver-safety-essential-strategies-for-fleet-managers-repair-shops"
     ], 
-    "Link": "https://www.usaaat.com/project_item.html?id=5"
+    "Link": "/project_item.html?id=5"
   },
   {
     "id": 25,
@@ -488,7 +488,7 @@
     "image_credits": [
       "https://ops.fhwa.dot.gov/freewaymgmt/publications/frwy_mgmt_handbook/chapter13_02.htm"
     ], 
-    "Link": "https://www.usaaat.com/project_item.html?id=4"
+    "Link": "/project_item.html?id=4"
   },
   {
     "id": 27,
@@ -505,7 +505,7 @@
     "image_credits": [
       "https://hal.science/hal-01055567/document"
     ], 
-    "Link": "https://www.usaaat.com/project_item.html?id=5"
+    "Link": "/project_item.html?id=5"
   },
   {
     "id": 28,
@@ -525,7 +525,7 @@
     "image_credits": [
       "https://www.openpr.com/news/2786321/rising-trends-of-traffic-geographic-information-system-market"
     ], 
-    "Link": "https://www.usaaat.com/project_item.html?id=3"
+    "Link": "/project_item.html?id=3"
   },
   {
     "id": 29,
@@ -558,7 +558,7 @@
     "image_credits": [
       "https://www.sciencedirect.com/science/article/abs/pii/S0950061816319924"
     ], 
-    "Link": "https://www.usaaat.com/project_item.html?id=6"
+    "Link": "/project_item.html?id=6"
   },
   {
     "id": 31,
@@ -575,7 +575,7 @@
     "image_credits": [
       "https://highways.dot.gov/sites/fhwa.dot.gov/files/2021-12/HRT-22035.pdf"
     ], 
-    "Link": "https://www.usaaat.com/project_item.html?id=7"
+    "Link": "/project_item.html?id=7"
   },
   {
     "id": 32,
@@ -607,7 +607,7 @@
     "image_credits": [
       "https://link.springer.com/chapter/10.1007/978-981-33-6466-0_33"
     ], 
-    "Link": "https://www.usaaat.com/project_item.html?id=11"
+    "Link": "/project_item.html?id=11"
   },
   {
     "id": 34,
@@ -622,7 +622,7 @@
     "image_credits": [
       "https://steelbaileybridges.com/blogs/how-to-build-a-bailey-bridge/"
     ], 
-    "Link": "https://www.usaaat.com/project_item.html?id=2"
+    "Link": "/project_item.html?id=2"
   },
   {
     "id": 35,
@@ -639,7 +639,7 @@
     "image_credits": [
       "https://www.kiewit.com/projects/wmata-l-line-steel-tunnel-liner-rehabilitation-and-bridge-structure-repairs/"
     ], 
-    "Link": ""
+    "Link": "/project_item.html?id=8"
   },
   {
     "id": 36,
@@ -654,7 +654,7 @@
     "image_credits": [
       "https://red-spark.org/2023/04/16/chinas-high-speed-rail-its-achievements-and-contradictions/"
     ], 
-    "Link": "https://www.usaaat.com/project_item.html?id=8"
+    "Link": "/project_item.html?id=8"
   },
   {
     "id": 37,
@@ -676,7 +676,7 @@
     "image_credits": [
       "https://www.themightyearth.com/environmental-health-and-safety/"
     ], 
-    "Link": ""
+    "Link": "/product"
   },
   {
     "id": 38,
@@ -691,7 +691,7 @@
     "image_credits": [
       "https://corporatecomrade.com/service-excellence"
     ], 
-    "Link": ""
+    "Link": "/training"
   },
   {
     "id": 39,
@@ -706,7 +706,7 @@
     "image_credits": [
       "https://medium.com/@maryam.alolama/dubais-smart-city-77ef55d35e65"
     ], 
-    "Link": ""
+    "Link": "/product"
   },
   {
     "id": 40,
@@ -727,26 +727,12 @@
     "image_credits": [
       "https://apps.apple.com/us/app/raleigh-incidents/id1525141357"
     ], 
-    "Link": "https://www.usaaat.com/project_item.html?id=1"
+    "Link": "/project_item.html?id=1"
   },
-  {
-    "id": 41,
-    "keyword_title": "Geothermal Energy",
-    "texts": [],
-    "nextpage_texts": [],
-    "nextpage_image_paths": [],
-    "nextpage_image_credits": [],
-    "image_paths": [
-      "home_41_0.png"
-    ],
-    "image_credits": [
-      "https://www.pnnl.gov/news-media/floating-offshore-wind-could-bring-billions-value-west-coast-report-shows"
-    ], 
-    "Link": ""
-  },
+  
   {
     "id": 42,
-    "keyword_title": "Wind Energy",
+    "keyword_title": "Energy Sector",
     "texts": [],
     "nextpage_texts": [],
     "nextpage_image_paths": [],
@@ -757,55 +743,11 @@
     "image_credits": [
       "https://quizlet.com/ca/353811312/geothermal-energy-diagram/"
     ], 
-    "Link": ""
+    "Link": "/project_item.html?id=13"
   },
-  {
-    "id": 43,
-    "keyword_title": "Solar Energy",
-    "texts": [],
-    "nextpage_texts": [],
-    "nextpage_image_paths": [],
-    "nextpage_image_credits": [],
-    "image_paths": [
-      "home_43_0.png"
-    ],
-    "image_credits": [
-      "https://www.nature.com/articles/s41561-023-01304-1"
-    ], 
-    "Link": ""
-  },
-  {
-    "id": 44,
-    "keyword_title": "Nuclear Energy",
-    "texts": [],
-    "nextpage_texts": [],
-    "nextpage_image_paths": [],
-    "nextpage_image_credits": [],
-    "image_paths": [
-      "home_44_0.png"
-    ],
-    "image_credits": [
-      "https://www.energy.gov/articles/infographic-nuclear-energy-numbers"
-    ], 
-    "Link": ""
-  },
-  {
-    "id": 45,
-    "keyword_title": "HydroElectric Energy",
-    "texts": [],
-    "nextpage_texts": [],
-    "nextpage_image_paths": [],
-    "nextpage_image_credits": [],
-    "image_paths": [
-      "home_45_0.png"
-    ],
-    "image_credits": [
-      "http://nativeamericannetroots.net/diary/Dam-Indians-The-Flathead-Reservation"
-    ], 
-    "Link": ""
-  }
-
-,
+  
+  
+  
     {
     "id": 46,
     "keyword_title": "AI Quantitative Trading",

@@ -1,56 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title> Home </title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="main.js"></script>
-  
-</head>
+{{ template "header.html" . }}
 
-<body>
-  <!-- ─── HEADER CONTAINER ─── -->
-  <header class="header-container">
-    <!-- 1) Narrow video strip -->
-    <div class="video-strip">
-      <video
-      
-        class="video-element"
-        autoplay
-        muted
-        loop
-        playsinline
-      >    <source src="/aerial.mp4" type="video/mp4" /></video>
-      <!-- 2) Title overlaid on top of the video -->
-      <div class="title-overlay">
-        Advancing technologies, empowering people. 
-        Discover how we shape smarter, safer, more resilient and sustainable systems across industries.
-      </div>
-    </div>
 
-<div class="banner">
-  <img src="static/images/logo.png" alt="Company Logo" class="banner-logo">
-  <h1>
-    American Advanced Technology
-  </h1>
-</div>
-
-    <!-- 4) Orange nav bar overlapping the video strip -->
-    <nav class="nav-bar">
-      <a href="/">Home</a>
-      <a href="/service">Service</a>
-      <a href="/project">Project</a>
-      <a href="/research">Research</a>
-      <a href="/training">Training</a>
-      <a href="/product">Product</a>
-      <a href="/contact">Contact</a>
-    <a href="/about">About</a>  
-    </nav>
-  </header>
   <style>
-
-
+.home-item-title {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #E77500;
+    padding: 0px;
+    margin: 0;
+    text-align: center;
+    margin-top: 40px;
+}
 
 .credit {
     font-size: 0.85em; /* Smaller font size for credits/description */
@@ -74,17 +35,6 @@
 }
 
 
-.item-wrapper {
-    display: flex;
-    flex-direction: column; /* Stack image, title, description vertically */
-    height: 100%; /* Ensures cards in a row have consistent height */
-    min-height: 510px; /* Makes cards longer on Y-axis (taller) - ADJUST AS NEEDED */
-    background-color: #f9f9f9; /* Light background for each card */
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden; /* Ensures image and text stay within bounds */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for cards */
-}
 
 
 
@@ -102,10 +52,14 @@
 
   </style>
   <!-- Full-height Hero Section -->
-  <section class="hero-banner"     style="background-image: url('/home_background.jpg');">
+  <section class="hero-banner"     style="background-image: url('/home_background');">
     <div class="hero-gradient">
       <div class="hero-content">
         <h2></h2>
+          <a href="#" class="hero-button" onclick="scrollDown(); return false;">
+                Explore Our Products
+            </a>
+
       </div>
     </div>
   </section>
@@ -117,7 +71,6 @@
 American Advanced Technology’s mission is to make the world a better place to live by advancing technologies and empowering people and community. Our services and products benefit our customers and the society by enhancing their capability, health, safety, economy, efficiency, reliability, resilience, sustainability and satisfaction.
     </p>
   </section>
-    <div class="section">
   <section id="projects" class="showcase-section">
       <h2 class="page-title">Our Service</h2>
       <div class="home-scroll-container">
@@ -135,23 +88,9 @@ American Advanced Technology’s mission is to make the world a better place to 
       </a>
     {{ end }}
   </div>
-    </div>
-</section>
-
 
 </section>
-  <div class="bottom-bar">
-    <div class="company-name">
 
-      <a href="/">American Advanced Technology</a>
-    </div>
 
-    <footer class="site-footer">
-      <a href="/tou">Terms of Use</a> |
-      <a href="/privacy">Privacy</a> |
-      <a href="/icp" class="small-link">Indirect Cost Policy</a>|
-      <a href="/non" class="small-link">Nondiscrimination</a>
-    </footer>
-  </div>
-</body>
-</html>
+</section>
+ {{ template "footer.html" . }}

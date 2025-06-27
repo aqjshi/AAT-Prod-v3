@@ -1,59 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title> Product </title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="/static/js/main.js"></script>
-</head>
+{{ template "header.html" . }}
 
-<body>
-  <header class="header-container">
-    <div class="video-strip">
-      <video
-        class="video-element"
-        autoplay
-        muted
-        loop
-        playsinline
-      >    <source src="/aerial.mp4" type="video/mp4" /></video>
-      <div class="title-overlay">
-        Advancing technologies, empowering people.
-        Discover how we shape smarter, safer, more resilient and sustainable systems across industries.
-      </div>
-    </div>
-
-    <div class="banner">
-      <img src="static/images/logo.png" alt="Company Logo" class="banner-logo">
-      <h1>
-        American Advanced Technology
-      </h1>
-    </div>
-
-    <nav class="nav-bar">
-      <a href="/">Home</a>
-      <a href="/service">Service</a>
-      <a href="/project">Project</a>
-      <a href="/research">Research</a>
-      <a href="/training">Training</a>
-      <a href="/product">Product</a>
-      <a href="/contact">Contact</a>
-      <a href="/about">About</a>
-    </nav>
-  </header>
 
   <style>
 .item-wrapper {
-    display: flex;
-    flex-direction: column; /* Stack image, title, description vertically */
-    height: 100%; /* Ensures cards in a row have consistent height */
     min-height: 600px; /* Makes cards longer on Y-axis (taller) - ADJUST AS NEEDED */
-    background-color: #f9f9f9; /* Light background for each card */
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden; /* Ensures image and text stay within bounds */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for cards */
 }
 
 
@@ -88,31 +38,43 @@
       if you are interested in a product. Our customer service will reach out to you for a no-cost consultation before placing an order.
     </p>
 
-    <section id="products" class="showcase-section">
+
       <div class="home-scroll-container">
         
-        <!-- <a href="/project_item.html?id=10" class="item-link"  return false;"> -->
-          <div class="item-wrapper" onclick="goToItem(this)">
+
+
+        <a href="/project_item.html?id=10" 
+        class="item-link" onclick="goToItem(this); return false;"> 
+         <div class="item-wrapper">
             <div class="image-wrapper">
-              <img src="/static/images/products_TT.png" alt="High‑Precision 3D Stereo Imaging System">
-            </div>
-            <p class="home-item-title">High‑Precision 3D Stereo Imaging System</p>
-            <p class="credits">Method and Apparatus for Measuring Characteristics of a Surface Topology, <a href="static/files/USPatent10757393.pdf">U.S. Patent 10757393</a>.</p>
-          </div>
+                <img src="/static/images/products_TT.png" alt="High‑Precision 3D Stereo Imaging System" class="image-wrapper"  >
+              </div>
+              <p class="home-item-title">High‑Precision 3D Stereo Imaging System</p>
+              <p class="credits">Method and Apparatus for Measuring Characteristics of a Surface Topology, see link below: </p>
+              <p class="credits" style="   color: #E77500; text-decoration: underline; " href="static/files/USPatent10757393.pdf">U.S. Patent 10757393</p>
+           </div>
         </a>
 
-        <a href="https://ascelibrary.org/doi/10.1061/%28ASCE%29MT.1943-5533.0001750" class="item-link" onclick="goToItem(this); return false;"> <div class="item-wrapper">
+      
+        
+
+
+        <a href="https://ascelibrary.org/doi/10.1061/%28ASCE%29MT.1943-5533.0001750" 
+        class="item-link" onclick="goToItem(this); return false;"> 
+        <div class="item-wrapper">
             <div class="image-wrapper">
-              <img src="/static/images/products_NCAM.png" alt="Nanomaterial Composite Asphalt Modifier">
+              <img src="/static/images/products_NCAM.png" alt="Nanomaterial Composite Asphalt Modifier" class="image-wrapper">
             </div>
             <p class="home-item-title">Nanomaterial Composite Asphalt Modifier</p>
             <p class="credits">Nanomaterial Composite Asphalt Modifier is used to improve rutting resistance, reduce fatigue cracking and enhance asphalt pavement longevity. The material needs to be blended with asphalt binder prior to mixing with aggregate. Technical support will be provided when manufacturing modified asphalt mixture.</p>
           </div>
         </a>
 
-        <a href="/project_item.html?id=3" class="item-link" onclick="goToItem(this); return false;"> <div class="item-wrapper">
+        <a href="/project_item.html?id=3" 
+        class="item-link" onclick="goToItem(this); return false;"> 
+        <div class="item-wrapper">
             <div class="image-wrapper">
-              <img src="static/images/products_MDS.png" alt="Methane Detector System">
+              <img src="static/images/products_MDS.png" alt="Methane Detector System" class="image-wrapper">
             </div>
             <p class="home-item-title">Methane Detector System</p>
             <p class="credits">Methane Detection System is used to detect methane gas leaks and remotely monitor changes in the methane concentration at project and network levels. Individual calibration and testing for measurements. Extended temperature range (-40 °C to +60 °C), internal microprocessor for advanced signal processing, GSM (4G) or WiFi (2.4 GHz) digital communication, GPS localization, rugged aluminum enclosure (EN AB46100), optional distant pellistor output, and IR‑long optical path for better resolution.</p>
@@ -121,18 +83,17 @@
 
         <a href="/project_item.html?id=4" class="item-link" onclick="goToItem(this); return false;"> <div class="item-wrapper">
             <div class="image-wrapper">
-              <img src="/static/images/products_AQMS.png" alt="Air Quality Monitoring System">
+              <img src="/static/images/products_AQMS.png" alt="Air Quality Monitoring System" class="image-wrapper">
             </div>
             <p class="home-item-title">Air Quality Monitoring System</p>
             <p class="credits">Air Quality Monitoring System is used to monitor air quality at project and network levels. Functionality includes detecting and localizing (GPS) gas leaks, measuring gas concentrations (CO₂, NO₂, SO₂, CO, C₂H₂, C₂H₄), humidity, and temperature; data preprocessing and sharing via GSM, LAN, or WiFi; a dashboard with visual and audible alarms when concentrations exceed predefined thresholds; and air quality control for particulate matter (PM1.0, PM2.5, PM4, PM10), VOC, and NOₓ indexing.</p>
           </div>
         </a>
 
-        <a href="/project_item.html?id=2" class="item-link" onclick="goToItem(this); return false;">
+        <a href="/project_item.html?id=2" class="item-link" onclick="goToItem(this); return false;" class="project-image" >
           <div class="item-wrapper">
-            <div class="image-wrapper">
-              <img src="/static/images/products_BMS.png" alt="Bridge Monitoring System">
-            </div>
+
+            <img src="/static/images/products_BMS.png" alt="Bridge Monitoring System" class="image-wrapper">
             <p class="home-item-title">Bridge Monitoring System</p>
             <p class="credits">Bridge Monitoring System is used to monitor bridge health, safety, and traffic conditions at project and network levels. Functionality includes measuring displacement, vibration, strain, cracking, humidity, temperature, concrete spalling, using optical and wireless communication for data transmission, and providing a dashboard with visual and audible alarms when measurements exceed predefined thresholds.</p>
           </div>
@@ -143,7 +104,7 @@
         <a href="https://github.com/aqjshi/Quantitivative_Public" class="item-link" onclick="goToItem(this); return false;">
           <div class="item-wrapper">
             <div class="image-wrapper">
-              <img src="/static/images/quant.png" alt="Bridge Monitoring System">
+              <img src="/static/images/quant.png" alt="Bridge Monitoring System" class="project-image" >
             </div>
             <p class="home-item-title">AI Quantitative Trading</p>
             <p class="credits">
@@ -156,21 +117,9 @@
         
 
       </div>
-    </section>
+
   </div>
 
 
-  <div class="bottom-bar">
-    <div class="company-name">
-      <a href="/">American Advanced Technology</a>
-    </div>
 
-    <footer class="site-footer">
-      <a href="/tou">Terms of Use</a> |
-      <a href="/privacy">Privacy</a> |
-      <a href="/icp" class="small-link">Indirect Cost Policy</a>|
-      <a href="/non" class="small-link">Nondiscrimination</a>
-    </footer>
-  </div>
-</body>
-</html>
+{{ template "footer.html" . }}

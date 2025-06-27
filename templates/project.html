@@ -1,55 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title> Home </title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="main.js"></script>
-</head>
 
-<body>
-  <!-- ─── HEADER CONTAINER ─── -->
-  <header class="header-container">
-    <!-- 1) Narrow video strip -->
-    <div class="video-strip">
-      <video
-      
-        class="video-element"
-        autoplay
-        muted
-        loop
-        playsinline
-      >    <source src="/aerial.mp4" type="video/mp4" /></video>
-      <!-- 2) Title overlaid on top of the video -->
-      <div class="title-overlay">
-        Advancing technologies, empowering people. 
-        Discover how we shape smarter, safer, more resilient and sustainable systems across industries.
-      </div>
-    </div>
+{{ template "header.html" . }}
 
-<div class="banner">
-  <img src="static/images/logo.png" alt="Company Logo" class="banner-logo">
-  <h1>
-    American Advanced Technology
-  </h1>
-</div>
-
-    <!-- 4) Orange nav bar overlapping the video strip -->
-    <nav class="nav-bar">
-      <a href="/">Home</a>
-      <a href="/service">Service</a>
-      <a href="/project">Project</a>
-      <a href="/research">Research</a>
-      <a href="/training">Training</a>
-      <a href="/product">Product</a>
-      <a href="/contact">Contact</a>
-    <a href="/about">About</a>  
-    </nav>
-  </header>
 <style>
 .product-card-title {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bold;
     color: #E77500;
     text-align: center; /* Horizontally center the text */
@@ -89,21 +43,5 @@
 </section>
 
 
-  <div class="bottom-bar">
-    <div class="company-name">
 
-      <a href="/">American Advanced Technology</a>
-    </div>
-
-    <footer class="site-footer">
-      <a href="/tou">Terms of Use</a> |
-      <a href="/privacy">Privacy</a> |
-      <a href="/icp" class="small-link">Indirect Cost Policy</a>|
-      <a href="/non" class="small-link">Nondiscrimination</a>
-    </footer>
-  </div>
-</body>
-</html>
-
-
-
+{{ template "footer.html" . }}

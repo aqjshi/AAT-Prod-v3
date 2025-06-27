@@ -13,7 +13,190 @@ import (
 	"strconv"
 	"strings"
 )
+// Define the struct for a single service category and its items
+type ServiceCategory struct {
+    Title    string
+    Services []string
+}
 
+// Global variable to hold your service data
+var serviceCategories []ServiceCategory
+
+// (Keep all your existing structs like StringOrSlice, Item, ProjectFromJSON, Project, etc.)
+
+// (Keep your existing var HEADERS, FOOTER, base, IMAGE_EXTS, tmpl)
+
+// (Keep all your existing loadItems, loadProjectItems, findImagesForProject, loadProjects functions)
+
+// New function to load service categories (call this in main())
+func loadServiceCategories() {
+    // Manually populate the data from your provided HTML snippet
+    // In a real application, this would come from a JSON file or database
+    serviceCategories = []ServiceCategory{
+        {
+            Title: "Optics, Imaging and Electronics",
+            Services: []string{
+                "Photography",
+                "3D Laser Scanning and Mapping",
+                "LiDAR Technology and Mapping",
+                "3D Photogrammetry and Mapping",
+                "Engineering Surveying",
+                "Digital Image Correlation",
+                "HighPrecision 3D Stereo Imaging",
+                "Remote Sensing",
+                "Computer Vision",
+                "Internet of Things (IoT) Sensor",
+            },
+        },
+        {
+            Title: "Information and Telecommunication",
+            Services: []string{
+                "Computer Aided Design and Analysis (CAD)",
+                "3D Printing",
+                "Building Information Modeling (BIM)",
+                "Dashboard Design and Development",
+                "Data Visualization",
+                "Web Design and Development",
+                "App Design and Development",
+                "Software Design and Development",
+                "Optical Communication",
+                "Wireless Communication",
+                "Virtual Reality",
+                "Augmented Reality",
+            },
+        },
+        {
+            Title: "Infrastructure and Facility Asset Management",
+            Services: []string{
+                "Inspection",
+                "Monitoring",
+                "Condition Assessment",
+            },
+        },
+        {
+            Title: "Project and Construction Management",
+            Services: []string{
+                "Utility Coordination", // Added based on full text
+                "Project Management",
+                "Program Management", // Added based on full text
+                "Risk Management", // Added based on full text
+                "Project Scheduling", // Added based on full text
+                "Project Controls", // Added based on full text
+                "Cost Estimating", // Added based on full text
+                "Construction Inspection, QC Inspection and Quality Management", // Added based on full text
+                "Construction Management",
+                "Engineering Design Support", // Added based on full text
+                "Office Engineering, Document Control and Staff Augmentation", // Added based on full text
+                "Communication and Public Outreach", // Added based on full text
+            },
+        },
+        {
+            Title: "Artificial Intelligence",
+            Services: []string{
+                "AI Center Buildup and Operations", // Added based on full text
+                "Machine Learning",
+                "Artificial Intelligence (AI) Algorithm and Deployment", // Added based on full text
+            },
+        },
+        {
+            Title: "Applied Mathematics, Computing and Data Analytics",
+            Services: []string{
+                "Data Center Buildup and Operations", // Added based on full text
+                "Mathematical Modeling",
+                "Statistical Science",
+                "Optimization",
+                "Data Analytics",
+                "Data Driven Decision Making",
+                "HighPerformance Computing for Partial Differential Equations",
+                "Multiscale and Multiphysics Modeling and Simulation",
+                "Cloud Computing",
+            },
+        },
+        {
+            Title: "Transportation and Logistics",
+            Services: []string{
+                "Traffic Congestion Prediction and Mitigation",
+                "Traffic Simulation",
+                "Traffic Signal Design and Optimization",
+                "Transportation Systems Management and Operations (TSMO)",
+                "Intelligent Transportation System",
+                "Connected and Autonomous Vehicles", // Added based on full text
+                "Highway Geometric Design",
+                "Rail Transportation Design and & Operations", // Corrected '&'
+                "Airport Pavement Design, Operations and Maintenance",
+                "Smart Traveler Information System for Transit and Subway", // Combined with Fleet from user's list
+                "Fleet Management", // Moved here
+                "Smart Driving with Optimal Vehicle Routing", // Moved here
+            },
+        },
+        {
+            Title: "Energy", // Corrected to "Energy" from "Clean Energy" for consistency with user's full text
+            Services: []string{
+                "Monitoring, Inspection and Diagnose for Wind, Solar, Nuclear, Natural Gas, Hydroelectric and Geothermal Energy", // Combined from user's full text
+                "Battery Management System", // Moved here
+                "Geothermal Energy for Cold Region Subgrade", // Moved here
+                "Active Suspension and Control of Vehicle", // Moved here
+            },
+        },
+        {
+            Title: "Finance and Insurance",
+            Services: []string{
+                "Budgeting Service for Nonprofit Organization and Small Business", // Corrected "Non‑profit"
+                "Accounting Service for Nonprofit Organization and Small Business", // Corrected "Non‑profit"
+                "Financial Risk Management",
+                "Financial Asset Management",
+                "AI Congestion-Based Pricing", // Added based on full text
+                "AI Vehicle Insurance", // Added based on full text
+                "AI Quantitative Trading", // Added based on full text
+                "Community Development", // Added based on full text
+            },
+        },
+        {
+            Title: "Environmental and Public Health", // Combined from "Health" in user's full text
+            Services: []string{
+                "Cognitive, Neurological and Behavioral Driving Safety and Injury Prevention",
+                "AI Precision Medicine", // Added based on full text
+                "Environmental Monitoring",
+                "Environmental Health and Safety",
+                "Air Pollution Effect on Public Health", // Corrected "Effect"
+                "Smart Device for Healthcare",
+                "Neurological Rehabilitation",
+            },
+        },
+        {
+            Title: "Operations Safety", // Corrected to "Operations Safety" from just "Safety" for clarity
+            Services: []string{
+                "Traffic Safety",
+                "Transportation Safety",
+                "Work Zone Safety",
+                "Construction Safety",
+                "Bridge, Tunnel and Slope Structure Safety",
+                "Hazard and Disaster Safety and Mitigation",
+                "Fire Safety",
+                "Methane Safety",
+                "Battery Safety",
+            },
+        },
+        {
+            Title: "Nanotechnology and Sustainable Pavement", // Corrected title
+            Services: []string{
+                "Nano Composite Material for Asphalt Modification",
+                "Performance Engineered Balanced Pavement Mixture and Design", // Corrected from "Performance Engineered Pavement Mixture Design"
+                "Solid Waste and Reclaimed Asphalt Pavement for Sustainable and Low Carbon Pavement", // Corrected title
+                "Nondestructive Testing of Airport and Road Pavement",
+            },
+        },
+        {
+            Title: "Drone Applications",
+            Services: []string{
+                "Exterior Window and Solar Panel Washing", // Combined
+                "Building and Infrastructure Painting",
+                "Drone Surveying and Mapping for Building, Infrastructure, Facility, etc.", // Combined
+            },
+        },
+    }
+    log.Printf("Loaded %d service categories.", len(serviceCategories))
+}
 // Headers/Footer structures mirror your Python HEADERS/FOOTER dictionaries.
 var HEADERS = map[string]map[string]string{
 	"home":       {"title": "Home", "background": "static/images/home_background.jpg"},
@@ -260,11 +443,133 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+func aboutHandler(w http.ResponseWriter, r *http.Request) {
+	data := map[string]interface{}{
+		"Title": "About Us",
+
+	}
+	if err := tmpl.ExecuteTemplate(w, "about.html", data); err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
+}
+
+
+
+func consultingHandler(w http.ResponseWriter, r *http.Request) {
+	data := map[string]interface{}{
+		"Title": "Consulting",
+
+	}
+	if err := tmpl.ExecuteTemplate(w, "consulting.html", data); err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
+}
+
+
+func contactHandler(w http.ResponseWriter, r *http.Request) {
+	data := map[string]interface{}{
+		"Title": "Contact",
+	}
+	if err := tmpl.ExecuteTemplate(w, "contact.html", data); err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
+}
+
+
+func emptyHandler(w http.ResponseWriter, r *http.Request) {
+	data := map[string]interface{}{
+		"Title": "Empty",
+
+	}
+	if err := tmpl.ExecuteTemplate(w, "empty.html", data); err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
+}
+
+
+func icpHandler(w http.ResponseWriter, r *http.Request) {
+	data := map[string]interface{}{
+		"Title": "Indirect Cost Policy",
+
+	}
+	if err := tmpl.ExecuteTemplate(w, "icp.html", data); err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
+}
+
+
+
+
+
+func nonHandler(w http.ResponseWriter, r *http.Request) {
+	data := map[string]interface{}{
+		"Title": "Nondiscrimination",
+
+	}
+	if err := tmpl.ExecuteTemplate(w, "non.html", data); err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
+}
+
+
+func privacyHandler(w http.ResponseWriter, r *http.Request) {
+	data := map[string]interface{}{
+		"Title": "Privacy",
+
+	}
+	if err := tmpl.ExecuteTemplate(w, "privacy.html", data); err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
+}
+
+
+func productHandler(w http.ResponseWriter, r *http.Request) {
+	data := map[string]interface{}{
+		"Title": "Products",
+
+	}
+	if err := tmpl.ExecuteTemplate(w, "product.html", data); err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
+}
+
+func researchHandler(w http.ResponseWriter, r *http.Request) {
+	data := map[string]interface{}{
+		"Title": "Research",
+
+	}
+	if err := tmpl.ExecuteTemplate(w, "research.html", data); err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
+}
+
+
+
+func touHandler(w http.ResponseWriter, r *http.Request) {
+	data := map[string]interface{}{
+		"Title": "Terms of Use",
+
+	}
+	if err := tmpl.ExecuteTemplate(w, "tou.html", data); err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
+}
+
+
+func trainingHandler(w http.ResponseWriter, r *http.Request) {
+	data := map[string]interface{}{
+		"Title": "Training",
+
+	}
+	if err := tmpl.ExecuteTemplate(w, "training.html", data); err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
+}
 
 
 func projectHandler(w http.ResponseWriter, r *http.Request) {
 	data := map[string]interface{}{
-		"Title": "American Advanced Technology",
+		"Title": "Projects",
 		"Items": projectItems,
 	}
 	if err := tmpl.ExecuteTemplate(w, "project.html", data); err != nil {
@@ -331,79 +636,124 @@ func project_item_Handler(w http.ResponseWriter, r *http.Request) {
 		log.Printf("Error rendering project_item.html: %v", err)
 	}
 }
+func serviceHandler(w http.ResponseWriter, r *http.Request) {
+    data := map[string]interface{}{
+        "Title":      "Service", // This is for the page's <title> and <h1>Service</h1>
+        "Categories": serviceCategories, // Pass the new service data
+        "Headers":    HEADERS,          // Ensure common data for header/footer is passed
+        "Footer":     FOOTER,           // Ensure common data for header/footer is passed
+    }
+    if err := tmpl.ExecuteTemplate(w, "service.html", data); err != nil {
+        http.Error(w, err.Error(), http.StatusInternalServerError)
+    }
+}
 
 func main() {
 	// 1) Load and resolve items
 	loadItems()
 	loadProjectItems()
+	loadServiceCategories() // *** CALL THIS NEW FUNCTION HERE ***
+
 	// Parse templates...
 	// Parse all HTML templates in the templates directory
 	var err error
-	tmpl, err = template.ParseGlob("templates/*.html")
+
+	tmpl, err = template.ParseFiles(
+		"templates/header.html",
+		"templates/footer.html",
+		"templates/home.html",
+		"templates/about.html",
+		"templates/consulting.html",
+		"templates/contact.html",
+		"templates/empty.html",
+		"templates/icp.html",
+		"templates/non.html",
+		"templates/privacy.html",
+		"templates/product.html",
+		"templates/project_item.html", 
+		"templates/project.html",
+		"templates/research.html", 
+		"templates/service.html", 
+		"templates/tou.html", 
+		"templates/training.html", 
+	)
 	if err != nil {
 		log.Fatalf("Error parsing templates: %v", err)
 	}
 
-	// Serve index.html at root
+
 
 	// 2) Dynamic handler for the home page:
 	http.HandleFunc("/", homeHandler)
+	// 3) Serve everything under ./static/ at URL path /static/
+	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./static"))))
+
+	http.HandleFunc("/main.js", func(w http.ResponseWriter, r *http.Request) {
+		http.ServeFile(w, r, "main.js")
+	})
+
+
+
 	http.HandleFunc("/project", projectHandler)
 	http.HandleFunc("/project_item.html", project_item_Handler) // Handler for individual project details
 
-	// 3) Serve everything under ./static/ at URL path /static/
-	fs := http.FileServer(http.Dir("./static"))
-	http.Handle("/static/", http.StripPrefix("/static/", fs))
+	http.HandleFunc("/about", aboutHandler)
+	http.HandleFunc("/consulting", consultingHandler)
+	http.HandleFunc("/contact", contactHandler)
+	http.HandleFunc("/empty", emptyHandler)
+	http.HandleFunc("/icp", icpHandler)
+	http.HandleFunc("/non", nonHandler)
+	http.HandleFunc("/privacy", privacyHandler)
+	http.HandleFunc("/product", productHandler)
+	http.HandleFunc("/research", researchHandler)
+	http.HandleFunc("/service", serviceHandler)
+	http.HandleFunc("/tou", touHandler)
+	http.HandleFunc("/training", trainingHandler)
 
-	http.HandleFunc("/home", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, "templates/home.html")
-	})
 
-	http.HandleFunc("/consulting", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, "templates/consulting.html")
-	})
-	http.HandleFunc("/service", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, "templates/service.html")
-	})
-	http.HandleFunc("/research", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, "templates/research.html")
-	})
-	http.HandleFunc("/training", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, "templates/training.html")
-	})
-	http.HandleFunc("/product", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, "templates/product.html")
-	})
-
-	http.HandleFunc("/contact", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, "templates/contact.html")
-	})
-	http.HandleFunc("/privacy", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, "templates/privacy.html")
-	})
-	http.HandleFunc("/icp", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, "templates/icp.html")
-	})
-
-	http.HandleFunc("/tou", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, "templates/tou.html")
-	})
-	http.HandleFunc("/non", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, "templates/non.html")
-	})
-		http.HandleFunc("/about", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, "templates/about.html")
-	})
-
+	
 	// Serve the CSS file at /styles.css
 	http.HandleFunc("/styles.css", func(w http.ResponseWriter, r *http.Request) {
 		http.ServeFile(w, r, "styles.css")
 	})
+
+
+
+	// http.HandleFunc("/research", func(w http.ResponseWriter, r *http.Request) {
+	// 	http.ServeFile(w, r, "templates/research.html")
+	// })
+	// http.HandleFunc("/training", func(w http.ResponseWriter, r *http.Request) {
+	// 	http.ServeFile(w, r, "templates/training.html")
+	// })
+	// http.HandleFunc("/product", func(w http.ResponseWriter, r *http.Request) {
+	// 	http.ServeFile(w, r, "templates/product.html")
+	// })
+
+	// http.HandleFunc("/contact", func(w http.ResponseWriter, r *http.Request) {
+	// 	http.ServeFile(w, r, "templates/contact.html")
+	// })
+	// http.HandleFunc("/privacy", func(w http.ResponseWriter, r *http.Request) {
+	// 	http.ServeFile(w, r, "templates/privacy.html")
+	// })
+	// http.HandleFunc("/icp", func(w http.ResponseWriter, r *http.Request) {
+	// 	http.ServeFile(w, r, "templates/icp.html")
+	// })
+
+	// http.HandleFunc("/tou", func(w http.ResponseWriter, r *http.Request) {
+	// 	http.ServeFile(w, r, "templates/tou.html")
+	// })
+	// http.HandleFunc("/non", func(w http.ResponseWriter, r *http.Request) {
+	// 	http.ServeFile(w, r, "templates/non.html")
+	// })
+	// 	http.HandleFunc("/about", func(w http.ResponseWriter, r *http.Request) {
+	// 	http.ServeFile(w, r, "templates/about.html")
+	// })
+
 	// Serve the video file at /aerial.mp4
 	http.HandleFunc("/aerial.mp4", func(w http.ResponseWriter, r *http.Request) {
 		http.ServeFile(w, r, "./static/video/aerial.mp4")
 	})
-	http.HandleFunc("/home_background.jpg", func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/home_background", func(w http.ResponseWriter, r *http.Request) {
 		http.ServeFile(w, r, "./static/images/home_background.jpg")
 	})
 
@@ -423,9 +773,6 @@ func main() {
 		http.ServeFile(w, r, "./static/images/products_TT.png")
 	})
 
-	http.HandleFunc("/main.js", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, "main.js")
-	})
 	http.HandleFunc("/items.json", func(w http.ResponseWriter, r *http.Request) {
 		http.ServeFile(w, r, "./data/items.json")
 	})

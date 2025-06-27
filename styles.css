@@ -11,7 +11,12 @@
   --white: #ffffff;
   --shadow: rgba(0, 0, 0, 0.2);
   --off-white: #ebe9e9;
-
+  --card-height: 450px;
+  --header-bg-color: #122141; /* fallback header background color */
+  /* Ensure these variables are defined at :root or a higher scope if they aren't already */
+  --white: #ffffff;    /* White color */
+  --grey-hover: #808080; /* A medium grey for the hover state */
+    --text-color: #333; /* General text color */
 }
 
 body {
@@ -21,27 +26,19 @@ body {
   color: var(--text-dark);
   font-size: 16px;
   line-height: 1.6;
+  display: flex; /* Make the body a flex container */
+  flex-direction: column; /* Stack children (header, main content, footer) vertically */
+  min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+  margin: 0; /* Remove default body margin */
 }
 
 
 
-header h1 {
-  margin: 0;
-  font-size: 3.5rem;
-  font-weight: 900;
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--white);
-}
 
-
-
-nav a:hover {
-  color: var(--primary-bg);
-  text-decoration: underline;
-}
 
 
 .section {
+  flex-grow: 1; /* Allow this section to grow and push the footer down */
   padding-left: 2rem;
   padding-right: 2rem;
   background-color: var(--white);
@@ -49,7 +46,7 @@ nav a:hover {
 
 .scroll-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4,1fr);
   grid-auto-rows: 200px;
   gap: 2em;
   max-height: 80vh;
@@ -64,11 +61,13 @@ nav a:hover {
     color: inherit; /* Inherit text color */
     display: block; /* Make the entire card clickable */
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth hover effect */
-}
+    justify-content: center;
+    align-items: center;
+  }
 
 .item-link:hover {
     transform: translateY(-5px); /* Lift card on hover */
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* More prominent shadow on hover */
+
 }
 
 
@@ -129,37 +128,43 @@ color: var(--text-light);
   animation: fadeIn 1s ease-out;
 }
 
-.hero-content h1 {
-  font-size: 2.8rem;
-  margin-bottom: 1rem;
-  font-weight: bold;
-}
 
-.hero-content h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
 
-.hero-content p {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-  color: var(--secondary-bg);
-}
 
 .hero-button {
-  background-color: var(--header-bg);
+  background-color: var(--header-bg); /* Initial orange background */
+  opacity: 0.9;                       /* Initial opacity as required */
   padding: 0.75rem 1.5rem;
-  border-radius: 6px;
+  border-radius: 9px;
   font-size: 1rem;
   font-weight: bold;
   color: var(--white);
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  
+  /* Initial state: transparent border */
+  border: 2px solid transparent; 
+
+  /* Add transitions for all properties that will change on hover */
+  transition: background-color 0.3s ease, 
+              opacity 0.3s ease, 
+              border-color 0.3s ease,
+              transform 0.3s ease, /* For subtle lift on hover */
+              box-shadow 0.3s ease; /* For subtle shadow change */
+  
+  /* Subtle initial shadow for a stylish look */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  display: inline-block; /* Ensure padding and transform apply correctly */
 }
 
 .hero-button:hover {
-  background-color: var(--header-bg);
-  color: var(--white);
+  background-color: var(--grey-hover); /* Transition to grey background */
+  opacity: 0.4;                       /* Opacity remains the same as initial state */
+  color: var(--white);                /* Text color remains white */
+  border-color: var(--white);         /* Transition to white border */
+  
+  /* Optional: Subtle Apple-style effects */
+  transform: translateY(-2px);        /* Lift the button slightly */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Slightly more prominent shadow */
 }
 
 @keyframes fadeIn {
@@ -172,7 +177,7 @@ color: var(--text-light);
     padding: 0px 0;
     background-color: #fff; /* White background for the product cards area */
     border-radius: 8px;
-    margin-bottom: 40px;
+
 }
 
 
@@ -254,17 +259,6 @@ color: var(--text-light);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
-.item-title {
-  background: linear-gradient(to top, rgba(239, 238, 234, 0.2), var(--primary-bg));
-  color: var(    --off-white);
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 0.75rem 1rem;
-  width: 100%;
-  text-align: center;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-  z-index: 2;
-}
 
 .item::after {
   content: '';
@@ -277,19 +271,6 @@ color: var(--text-light);
 }
 
 
-.home-title {
-  font-size: 2rem;
-  color: var(--accent-orange);
-  margin-bottom: 1rem;
-}
-
-.home-text {
-  font-size: 1rem;
-  color: var(--off-white);
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
 
  .bottom-three {
      margin-bottom: 3cm;
@@ -308,20 +289,9 @@ color: var(--text-light);
     text-decoration: none;
 }
 
-  .up-three {
-    margin-top: 1cm;
- }
-
-   .up-four {
-    margin-top: 2cm;
-    margin-bottom: 2cm;
- }
 
 
- .subtitle_spaced_list_item{
-  margin-bottom: 0cm;
- }
-
+ 
 .bottom-two {
     margin-top: 20px;
   margin-bottom: 20px;
@@ -384,39 +354,29 @@ color: var(--text-light);
     margin-bottom: 1rem;
     color: #122141;
   }
-  :root {
-    --header-bg-color: #122141; /* fallback header background color */
-  }
 
 
-  header nav a:hover {
-    text-decoration: underline;
-  }
+header h1 {
+  margin: 0;
+  font-size: 3.5rem;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--white);
+}
+
   /* Add a white banner (“beamer”) below the header text */
   .banner {
     background-color: var(--header-bg);
     text-align: left;
-    width: 100vw;
-    height: 8vw;
-    max-width: 100%;
+    height: 70px;
     box-sizing: border-box;
     /* Font size scales with viewport width, minimum 0.8rem, maximum 1.2rem */
-    margin-bottom: 0;
-      display: flex; /* Enables flexbox for the banner container */
-  align-items: center; /* Vertically aligns items in the center */
-  justify-content: left; /* Centers the content horizontally (adjust if needed) */
-  /* Add any other banner styles you have, e.g., background-color, padding */
-  z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-.banner-logo {
-  height: 70px; /* Keep your existing height */
-  width: auto;
-  margin: 5px;
-  margin-right: 10px;
 
-    outline: none;
-}
 .banner h1 {
   margin: 0; /* Remove default margin from h1 to prevent extra space */
   color: #ffffff; /* Example text color */
@@ -474,102 +434,105 @@ font-family: Arial, sans-serif;
 line-height: 1.4;      /* give the multiline text some spacing */
 }
 
-  .video-strip .title-overlay h1 {
-    margin: 0;
-        font-size: 1.5vw;
-    font-weight: bold;
-    font-family: Arial, sans-serif;
-  }
-
-  /* ── 4) Orange nav bar that partially overlaps the video strip ── */
-  .nav-bar {
-    position: relative;
-    top: 0px;                        /* pull up to overlap 20px over video */
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #E77500;         /* orange background */
-    padding: 0.3rem 6rem;             /* vertical/horizontal padding */
-
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 2;
-    height: .1px;                      /* fixed nav‐bar height, decreased by half */
-  }
 
 
-/* Styling for individual links inside the nav bar */
-.nav-bar a {
-    position: relative;               /* Allows us to use 'top' to move it */
-    top: -.7rem;                     /* ** ADJUST THIS VALUE **
-                                         A negative 'top' value moves the element UP.
-                                         Start with a small value like -0.5rem or -1rem and
-                                         increase/decrease until the text is where you want it
-                                         relative to the bar's top edge. */
-    /* Maintain existing link styles */
-    color: white;
-    text-decoration: none;
-    padding: 0 10px;                  /* Add padding to the clickable area of the links */
-    margin: 0 5px;
-    font-size: 1.1em;                 /* You might want to slightly boost the font size */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for potential hover effect */
-    z-index: 3;                       /* Ensure the text is above the nav-bar itself if needed */
-}
+ 
 
-.nav-bar a:hover {
-    background-color: #d16b00; /* Darker orange on hover */
-    border-radius: 5px;
-    /* Optional: add a slight additional lift on hover */
-    /* transform: translateY(-3px); */
-}
-  /* ── 6) Search input + icon inside the nav ── */
-  .search-wrapper {
-    display: flex;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
-    padding: 0.25rem 0.5rem;
-  }
-  .search-wrapper input {
-    border: none;
-    background: transparent;
-    color: #fff;
-    font-size: 1rem;
-    outline: none;
-    margin-left: 0.5rem;
-  }
-  .search-wrapper .search-icon {
-    width: 20px;
-    height: 20px;
-    fill: #fff;
-  }
+
+  
 
   /* ── 7) Thin border between header and main content ── */
   header + main {
 
   }
 
+
+.header-main-content {
+
+    display: flex; /* Enables flexbox for horizontal layout */
+    justify-content: space-between; /* Pushes logo/name to left, nav to right */
+    align-items: center; /* Vertically aligns items in the middle */
+    background-color: var(--header-bg); /* Example background for this strip */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+    flex-wrap: wrap; /* Allows content to wrap on smaller desktop sizes before mobile breakpoint */
+}
+
+/* --- Logo and Company Name Group --- */
+.logo-link {
+    display: flex; /* Make the link a flex container */
+    align-items: center; /* Vertically align logo and company name */
+    text-decoration: none; /* Remove underline from the whole logo-link */
+    color: var(--text-color); /* Inherit or set default text color */
+}
+
+.banner-logo {
+    height: 60px; /* Desktop logo size */
+    width: auto;
+    margin-right: 15px; /* Space between logo and name */
+
+    outline: none;
+}
+
+
+
+/* --- Navigation Bar (.nav-bar) --- */
+.nav-bar {
+    display: flex; /* Already flex for horizontal distribution */
+    align-items: center; /* Vertically align nav items */
+    justify-content: space-around; /* Distribute items horizontally */
+    background-color: var(--header-bg); /* Orange background */
+    z-index: 2; /* Ensure it stays above other elements if layered */
+    height: auto; /* **CRUCIAL: Allow height to adapt to content, not fixed .1px** */
+    overflow: visible; /* Allow hover effects to extend outside */
+    border-radius: 6px; /* Match button styling if desired */
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+/* Styling for individual links inside the nav bar */
+.nav-bar a {
+    position: static; /* **CRUCIAL: Remove problematic 'relative' and 'top' offset** */
+    color: var(--white);
+    text-decoration: none; /* Default no underline */
+    font-size: 1em; /* Standard font size for nav links */
+    font-weight: bold;
+    margin-left: 0.5rem; /* Maintains a consistent gap between links */
+    margin-right: 0.5rem; 
+    padding: .35rem;
+    border-radius: 6px; /* Slight rounded corners for nav items */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    z-index: 3; /* Ensure links are above nav-bar */
+}
+
+.nav-bar a:hover {
+    background-color: #d16b00; /* Darker orange on hover */
+    text-decoration: underline; /* Underline on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+
 /* Bottom Bar Styling */
 .bottom-bar {
     background-color: #E77500; /* Orange background */
-    width: 90vw;             /* Making the bar narrower */
     padding: 15px 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
 }
 
 
 /* Footer container styling */
 .site-footer {
+    text-decoration: underline;
     font-family: Arial, sans-serif;
     padding: 5px; /* Keeps a small buffer inside the container */
     color: white;
     display: flex;             /* Enables flexbox layout */
-    justify-content: flex-end; /* Aligns items to the right */
+    justify-content: center; /* Aligns items to the right */
     align-items: center;       /* Vertically centers the items */
     flex-wrap: wrap;           /* Allows items to wrap to the next line */
-    text-align: right;         /* Ensures wrapped lines are also right-aligned */
 }
 
 /* Styling for individual links */
@@ -586,7 +549,6 @@ line-height: 1.4;      /* give the multiline text some spacing */
 .site-footer span {
     color: var(--footer-link-color, #ffffff);
     font-size: 0.8rem;
-    margin-left: 0.5rem;
 }
 
 
@@ -595,64 +557,36 @@ line-height: 1.4;      /* give the multiline text some spacing */
     text-decoration: underline;
 }
   
-  /* 2) Company name styling */
-  .company-name a {
-    color: var(--white, #333);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 2.2vw;
-    font-family: Arial, sans-serif;
-  }
-  
-  
- 
-
-
-
-/* Tablet: 2 columns once viewport ≥ 600px */
-@media (min-width: 600px) {
-  .home-scroll-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Desktop: 3 columns once viewport ≥ 900px */
-@media (min-width: 900px) {
-  .home-scroll-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-/* Each card simply stretches to fill its grid cell */
-/* 1) Define a “card height” variable at the root (so you can tweak in one place) */
-:root {
-  --card-height: 450px;
-}
-
 
 
 
 .item-wrapper {
+    max-width: 35vh; /* *** Forces each card to be a maximum of 200px wide *** */
+                      
     display: flex;
-    flex-direction: column; /* Stack image, title, description vertically */
-    height: 100%; /* Ensures cards in a row have consistent height */
-    min-height: 525px; /* Makes cards longer on Y-axis (taller) - ADJUST AS NEEDED */
-    background-color: #f9f9f9; /* Light background for each card */
-    border: 1px solid #ddd;
+    flex-direction: column;
+    height: 100%; /* Important for consistent card height in a row */
+    min-height: 310px; /* Minimum height for cards */
+    background-color: rgb(249, 249, 249);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(221, 221, 221);
+    border-image: initial;
     border-radius: 8px;
-    overflow: hidden; /* Ensures image and text stay within bounds */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for cards */
+    overflow: hidden;
 }
+
+
 /* Make the cards narrower by reducing minmax width */
 .home-scroll-container {
-  display: grid;
-  gap: 70px 60px; /* 40px row gap, 60px column gap (reduced x-axis space) */ /* CHANGED */
-  padding: 1rem 0.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* CHANGED: was 800px, now 320px */
-
-  max-height: 100vh;
-  overflow-y: auto;
-
+    display: grid;
+    grid-template-columns: repeat(4, 2fr); /* Default for desktop (e.g., 4 columns) */
+    gap: 30px; /* Gap between cards on desktop */
+    padding: 20px;
 }
+
+/* --- Item Wrapper General Styles --- */
 
 /* Image at top, full width */
 .item {
@@ -823,18 +757,165 @@ line-height: 1.4;      /* give the multiline text some spacing */
 
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
+    body {
+        margin-top: 0px; /* Adjust for smaller header */
+    }
+
+
+    .company-name, .hero-content h2, .page-title {
+        font-size: 2em;
+    }
+    
+    .video-strip .title-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        width: 80%;
+        max-width: 1000px;
+        padding: 0 1rem;
+        text-align: center;
+        color: #ffffff;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+        font-family: Arial, sans-serif;
+        font-size: 3.2vw;
+        line-height: 1.4;
+    }
+    .subtitle {
+        font-size: 1em;
+    }
+
+    .video-container {
+        height: 200px;
+    }
+
+
+    .banner h1 {
+      margin: 0; /* Remove default margin from h1 to prevent extra space */
+      color: #ffffff; /* Example text color */
+      font-size: 20px; /* Adjust font size as needed */
+    }
+
+    .main-header-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
     .project-image-item {
         flex-basis: 45%; /* Two columns on smaller screens, allowing space for gap */
         max-width: unset; /* Remove max-width constraint for better filling */
         height: 180px; /* Slightly smaller height for mobile compactness */
         min-width: 150px; /* Ensure a minimum size */
     }
+
+   .header-main-content {
+        flex-direction: column; /* Stack logo/name and nav vertically */
+        align-items: center; /* Center horizontally */
+    }
+
+    .banner {
+        margin-bottom: 0px; /* Space between logo/name group and nav bar */
+    }
+
+    .logo-link {
+        flex-direction: row; /* Stack logo and company name vertically if space is tight */
+        align-items: center; /* Center them horizontally when stacked */
+        text-align: center; /* Ensure any wrapped text is centered */
+    }
+
+    .banner-logo {
+        height: 40px; /* Smaller logo on mobile */
+        margin-right: 0; /* Remove horizontal margin if stacked */
+        margin-bottom: 2px; /* Space between stacked logo and name */
+    }
+
+    .company-name {
+        font-size: 1.5em; /* Fixed, larger font size for mobile name, not vw */
+        white-space: normal; /* Allow name to wrap if needed */
+    }
+
+    .nav-bar {
+        flex-direction:row; /* Stack nav items vertically */
+        align-items: center; /* Center nav items horizontally */
+        width: 100%; /* Make nav take up more width on mobile */
+        max-width: 600px; /* Optional: limit max width of nav bar for very large phones */
+    }
+
+    .nav-bar a {
+      
+        margin: .2em 0em; /* Space between stacked links */
+        width: 100%; /* Make links take full width for easier tapping */
+        text-align: center; /* Center the link text */
+        font-size: 1.5vh; /* Slightly larger tap target */
+    }
+
+    .mission-section  .page-title {
+    font-size: 20px;
+    font-family: "Arial";
+  }
+
+    .mission-section  .subtitle {
+    font-size: 15px;
+    font-family: "Arial";
+  }
+    .home-scroll-container {
+        grid-template-columns: repeat(2, 1fr); /* Forces exactly 2 columns */
+        gap: 15px; /* Adjust gap for better spacing on smaller screens */
+        padding: 10px; /* Adjust container padding for mobile */
+    }
+
+    .item-wrapper {
+        max-width: 40vh; /* *** Forces each card to be a maximum of 200px wide *** */
+                        /* Adjust this value (e.g., 180px, 220px) to find what fits best on typical phones. */
+        margin-left: auto; /* Centers the card within its grid column */
+        margin-right: auto;/* Centers the card within its grid column */
+        min-height: 510px; /* Optionally reduce min-height for mobile to fit content better */
+    }
+    .page-title {
+        font-size: 1.2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-item-title {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    color: #E77500;
+    padding: 8px;
+    margin: 0;
+    text-align: center;
 }
+.credits {
+    font-size: 0.6em;
+    color: #555;
+    padding: 0 8px 8px;
+    margin: 0;
+    line-height: 1;
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    opacity: 1;
+}
+
+
+}
+
 
 @media (max-width: 480px) {
-    .project-image-item {
-        flex-basis: 90%; /* One column on very small screens */
-        height: 150px; /* Even smaller height */
+    .home-scroll-container {
+        grid-template-columns: 1fr; /* Stack into a single column */
+        gap: 10px;
+        padding: 5px; /* Further adjust container padding */
+    }
+
+    .item-wrapper {
+        max-width: 310px; /* Increase max-width for single column, centered */
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 250px; /* Optionally reduce min-height again for very small screens */
     }
 }
-

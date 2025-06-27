@@ -1,62 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title> Research </title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="/static/js/main.js"></script>
-</head>
-<style>
+{{ template "header.html" . }}
 
-</style>
-<body>
-  <!-- ─── HEADER CONTAINER ─── -->
-  <header class="header-container">
-    <!-- 1) Narrow video strip -->
-    <div class="video-strip">
-      <video
-      
-        class="video-element"
-        autoplay
-        muted
-        loop
-        playsinline
-      >    <source src="/aerial.mp4" type="video/mp4" /></video>
-      <!-- 2) Title overlaid on top of the video -->
-      <div class="title-overlay">
-        Advancing technologies, empowering people. 
-        Discover how we shape smarter, safer, more resilient and sustainable systems across industries.
-      </div>
-    </div>
 
-    <!-- 3) Banner under the video strip -->
-<div class="banner">
-  <img src="static/images/logo.png" alt="Company Logo" class="banner-logo">
-  <h1>
-    American Advanced Technology
-  </h1>
-</div>
-
-    <!-- 4) Orange nav bar overlapping the video strip -->
-     <nav class="nav-bar">
-      <a href="/">Home</a>
-      <a href="/service">Service</a>
-      <a href="/project">Project</a>
-      <a href="/research">Research</a>
-      <a href="/training">Training</a>
-      <a href="/product">Product</a>
-      <a href="/contact">Contact</a>
-    <a href="/about">About</a>  
-    </nav>
-  </header>
   <div class="section">
     <h1 class="page-title">Research</h1>
 
     <p class="subtitle" style="margin-bottom: 50px">
-American Advanced Technology and its partners conduct collaborative activities under Innovation Program and Entrepreneurship Program in the following areas to enhance the planning, design, construction, operations, safety, maintenance and management of cities and infrastructure, to optimize financial risk, and to leverage people’s health and safety benefits. Publications are accessible from
-      <a href="https://scholar.google.com/citations?user=3--Q9q4AAAAJ&hl=en" target="_blank">
+American Advanced Technology and its partners conduct collaborative research, development and innovation activities to enhance the planning, design, construction, operations, safety, maintenance and management of cities and infrastructure, to optimize financial risk and investment, and to leverage people’s health and safety benefits. Publications resulted from such efforts are accessible from
+
+
+<a href="https://scholar.google.com/citations?user=3--Q9q4AAAAJ&hl=en" target="_blank">
+
+  
         Google Scholar</a>.
+        American Advanced Technology also sponsor research, development and innovation activities under two programs: Research & Development Program and Entrepreneurship Program in specific areas as follows.
     </p>
 
         <p class="up-three"></p>
@@ -83,7 +39,7 @@ with a subject “Proposal Submission”.
     </p>
     <!-- <div class="newspaper-columns"> -->
     <div>
-      <div class="up-four"> </div>
+      <div class="up-two"> </div>
 
 
       <div >
@@ -180,19 +136,6 @@ with a subject “Proposal Submission”.
   <!-- ─── FOOTER (bottom bar) ─── -->
 </section>
 </section>
-  <div class="bottom-bar">
-    <div class="company-name">
+ 
 
-      <a href="/">American Advanced Technology</a>
-    </div>
-
-    <footer class="site-footer">
-      <a href="/tou">Terms of Use</a> |
-      <a href="/privacy">Privacy</a> |
-      <a href="/icp" class="small-link">Indirect Cost Policy</a>|
-      <a href="/non" class="small-link">Nondiscrimination</a>
-    </footer>
-  </div>
-</body>
-</html>
-
+{{ template "footer.html" . }}

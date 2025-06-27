@@ -1,80 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title> Contact </title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="/static/js/main.js"></script>
-</head>
+{{ template "header.html" . }}
 
-<body>
-  <!-- ─── HEADER CONTAINER ─── -->
-  <header class="header-container">
-    <!-- 1) Narrow video strip -->
-    <div class="video-strip">
-      <video
-      
-        class="video-element"
-        autoplay
-        muted
-        loop
-        playsinline
-      >    <source src="/aerial.mp4" type="video/mp4" /></video>
-      <!-- 2) Title overlaid on top of the video -->
-      <div class="title-overlay">
-        Advancing technologies, empowering people. 
-        Discover how we shape smarter, safer, more resilient and sustainable systems across industries.
-      </div>
-    </div>
 
-    <!-- 3) Banner under the video strip -->
-<div class="banner">
-  <img src="static/images/logo.png" alt="Company Logo" class="banner-logo">
-  <h1>
-    American Advanced Technology
-  </h1>
-</div>
+    <style>
+  .section {
+    padding: 2rem 1rem; /* vertical and horizontal padding */
+  }
+  .page-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--header-bg-color);
+    text-align: center;
+  }
+  .policy-text {
+    max-width: 800px;
+    margin: 0 auto;       /* center horizontally */
+    padding: 1.5rem 2rem; /* generous left/right padding */
+    background: var(--primary-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+  }
+  .policy-text pre {
+    margin: 0;
+    white-space: pre-wrap;   /* wrap long lines */
+    word-break: break-word;
+    font-family: inherit;
+    line-height: 1.6;
+    color: var(--text-black);
+  }
+</style>
+  
+<div class="section">
+  <section>
+    <h1 class="page-title">Contact</h1>
+    <div class="policy-text">
+      <section class="terms-of-use">
 
-    <!-- 4) Orange nav bar overlapping the video strip -->
-    <nav class="nav-bar">
-      <a href="/">Home</a>
-      <a href="/service">Service</a>
-      <a href="/project">Project</a>
-      <a href="/research">Research</a>
-      <a href="/training">Training</a>
-      <a href="/product">Product</a>
-      <a href="/contact">Contact</a>
-    <a href="/about">About</a>  
-    </nav>
-  </header>
-  <div class="section">
-        <h1 class="page-title" style = "margin-bottom: 50px">Contact</h1>
-        <p class="subtitle">
-          American Advanced Technology<br>
+        <p class="subtitle">American Advanced Technology<br>
           Suite T‑ST, 7801 Norfolk Ave.<br>
           Bethesda, MD 20814<br>
           Office: 240‑338‑8915<br>
           Email: <a href="mailto:customer_service@usaaat.com" class="subtitle">customer_service@usaaat.com</a>
         </p>
+
   </div>
-    </div>
-  <!-- ─── FOOTER (bottom bar) ─── -->
+</div>
+
 </section>
+
+
 </section>
-  <div class="bottom-bar">
-    <div class="company-name">
+  
 
-      <a href="/">American Advanced Technology</a>
-    </div>
-
-    <footer class="site-footer">
-      <a href="/tou">Terms of Use</a> |
-      <a href="/privacy">Privacy</a> |
-      <a href="/icp" class="small-link">Indirect Cost Policy</a>|
-      <a href="/non" class="small-link">Nondiscrimination</a>
-    </footer>
-  </div>
-</body>
-</html>
-
+{{ template "footer.html" . }}
