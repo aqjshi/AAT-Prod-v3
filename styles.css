@@ -380,7 +380,8 @@ header h1 {
 .banner h1 {
   margin: 0; /* Remove default margin from h1 to prevent extra space */
   color: #ffffff; /* Example text color */
-  font-size: 2.5vw; /* Adjust font size as needed */
+  font-size: 2vw; /* Adjust font size as needed */
+  padding: 2px;
 }
   .banner p {
     margin: 0;
@@ -463,6 +464,7 @@ line-height: 1.4;      /* give the multiline text some spacing */
     align-items: center; /* Vertically align logo and company name */
     text-decoration: none; /* Remove underline from the whole logo-link */
     color: var(--text-color); /* Inherit or set default text color */
+    padding:1px;
 }
 
 .banner-logo {
@@ -494,10 +496,10 @@ line-height: 1.4;      /* give the multiline text some spacing */
     position: static; /* **CRUCIAL: Remove problematic 'relative' and 'top' offset** */
     color: var(--white);
     text-decoration: none; /* Default no underline */
-    font-size: 1em; /* Standard font size for nav links */
+    font-size: 3vh;
     font-weight: bold;
-    margin-left: 0.5rem; /* Maintains a consistent gap between links */
-    margin-right: 0.5rem; 
+    margin-left: 0.2rem; /* Maintains a consistent gap between links */
+    margin-right: 0.2rem; 
     padding: .35rem;
     border-radius: 6px; /* Slight rounded corners for nav items */
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
@@ -762,7 +764,7 @@ line-height: 1.4;      /* give the multiline text some spacing */
     }
 
 
-    .company-name, .hero-content h2, .page-title {
+    .hero-content h2, .page-title {
         font-size: 2em;
     }
     
@@ -843,11 +845,10 @@ line-height: 1.4;      /* give the multiline text some spacing */
     }
 
     .nav-bar a {
-      
-        margin: .2em 0em; /* Space between stacked links */
-        width: 100%; /* Make links take full width for easier tapping */
-        text-align: center; /* Center the link text */
-        font-size: 1.5vh; /* Slightly larger tap target */
+      margin: .2em 0em;
+      width: 100%;
+      text-align: center;
+      font-size: 3vh;
     }
 
     .mission-section  .page-title {
