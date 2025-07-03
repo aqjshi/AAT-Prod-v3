@@ -22,3 +22,46 @@ High-Performance Computing	https://www.sciencedirect.com/science/article/abs/pii
 Cognitive and Neurobehavior of Driving	https://onlinelibrary.wiley.com/doi/epdf/10.1002/atr.1232
 Connected and Autonomous Vehicles	https://doi.org/10.1016/j.physa.2019.123829  
 Sustainable and Low Carbon Transportation Infrastructure	https://ascelibrary.org/doi/10.1061/%28ASCE%29MT.1943-5533.0001750
+
+
+
+
+
+
+,
+  
+  {
+    "id": 42,
+    "keyword_title": "Energy Sector",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "home_42_0.png"
+    ],
+    "image_credits": [
+      "https://quizlet.com/ca/353811312/geothermal-energy-diagram/"
+    ], 
+    "Link": "/project_item.html?id=13"
+  },
+  
+  
+  
+    {
+    "id": 46,
+    "keyword_title": "AI Quantitative Trading",
+    "texts": [],
+    "nextpage_texts": [],
+    "nextpage_image_paths": [],
+    "nextpage_image_credits": [],
+    "image_paths": [
+      "quant.png"
+    ],
+    "image_credits": [
+      ""
+    ], 
+    "Link": "https://github.com/aqjshi/Quantitivative_Public"
+  }
+
+  

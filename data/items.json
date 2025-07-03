@@ -728,40 +728,6 @@
       "https://apps.apple.com/us/app/raleigh-incidents/id1525141357"
     ], 
     "Link": "/project_item.html?id=1"
-  },
-  
-  {
-    "id": 42,
-    "keyword_title": "Energy Sector",
-    "texts": [],
-    "nextpage_texts": [],
-    "nextpage_image_paths": [],
-    "nextpage_image_credits": [],
-    "image_paths": [
-      "home_42_0.png"
-    ],
-    "image_credits": [
-      "https://quizlet.com/ca/353811312/geothermal-energy-diagram/"
-    ], 
-    "Link": "/project_item.html?id=13"
-  },
-  
-  
-  
-    {
-    "id": 46,
-    "keyword_title": "AI Quantitative Trading",
-    "texts": [],
-    "nextpage_texts": [],
-    "nextpage_image_paths": [],
-    "nextpage_image_credits": [],
-    "image_paths": [
-      "quant.png"
-    ],
-    "image_credits": [
-      ""
-    ], 
-    "Link": "https://github.com/aqjshi/Quantitivative_Public"
   }
 
 

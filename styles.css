@@ -470,7 +470,9 @@ line-height: 1.4;      /* give the multiline text some spacing */
 .banner-logo {
     height: 60px; /* Desktop logo size */
     width: auto;
-    margin-right: 15px; /* Space between logo and name */
+    margin-left: 15px; /* Space between logo and name */
+
+    margin-right: 5px; /* Space between logo and name */
 
     outline: none;
 }
@@ -563,9 +565,8 @@ line-height: 1.4;      /* give the multiline text some spacing */
 
 
 .item-wrapper {
-    max-width: 35vh; /* *** Forces each card to be a maximum of 200px wide *** */
-                      
-    display: flex;
+    display: block;
+
     flex-direction: column;
     height: 100%; /* Important for consistent card height in a row */
     min-height: 310px; /* Minimum height for cards */
@@ -583,9 +584,9 @@ line-height: 1.4;      /* give the multiline text some spacing */
 /* Make the cards narrower by reducing minmax width */
 .home-scroll-container {
     display: grid;
-    grid-template-columns: repeat(4, 2fr); /* Default for desktop (e.g., 4 columns) */
-    gap: 30px; /* Gap between cards on desktop */
-    padding: 20px;
+    grid-template-columns: repeat(3, 1fr); /* Default for desktop (e.g., 4 columns) */
+    gap: 15px; /* Gap between cards on desktop */
+    padding: 40px;
 }
 
 /* --- Item Wrapper General Styles --- */
@@ -635,13 +636,8 @@ line-height: 1.4;      /* give the multiline text some spacing */
     color: #555;
     padding: 0 15px 15px; /* Padding top, sides, bottom */
     margin: 0; /* Remove default margin */
-    line-height: 1.5;
+    line-height: 1;
     flex-grow: 1; /* Allows description to take up available vertical space */
-    overflow: hidden; /* Hide overflow if text is too long */
-    text-overflow: ellipsis; /* Add ellipsis for overflow */
-    display: -webkit-box; /* For multi-line ellipsis */
-    -webkit-line-clamp: 8; /* Limit to 8 lines before ellipsis, adjust as needed */
-    -webkit-box-orient: vertical;
     opacity: .4;
 }
 
@@ -893,13 +889,7 @@ line-height: 1.4;      /* give the multiline text some spacing */
     padding: 0 8px 8px;
     margin: 0;
     line-height: 1;
-    flex-grow: 1;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 8;
-    -webkit-box-orient: vertical;
-    opacity: 1;
+    flex-grow: 1; /* Allows description to push credits down */
 }
 
 
