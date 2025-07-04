@@ -71,12 +71,13 @@
 American Advanced Technology’s mission is to make the world a better place to live by advancing technologies and empowering people and community. Our services and products benefit our customers and the society by enhancing their capability, health, safety, economy, efficiency, reliability, resilience, sustainability and satisfaction.
     </p>
   </section>
-  <section id="projects" class="showcase-section">
+<section id="services" class="showcase-section">
       <h2 class="page-title">Our Service</h2>
       <div class="home-scroll-container">
     {{ range .Items }}
       <a href="{{ .Link }}" class="item-link"
-         onclick="goToItem(this); return false;"> <div class="item-wrapper">
+         onclick="goToItem(this); return false;"> 
+         <div class="item-wrapper">
           <div class="image-wrapper">
             <img src="/static/images/{{ .ResolvedImage }}" alt="{{ .KeywordTitle }}">
           </div>

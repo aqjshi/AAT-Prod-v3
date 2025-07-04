@@ -57,13 +57,14 @@ body {
 
 
 .item-link {
-    text-decoration: none; /* Remove underline from links */
-    color: inherit; /* Inherit text color */
-    display: block; /* Make the entire card clickable */
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth hover effect */
-    justify-content: center;
-    align-items: center;
-  }
+    text-decoration: none;
+    color: inherit;
+    display: flex; /* Make item-link a flex container for its wrapper */
+    justify-content: center; /* Center horizontally if item-wrapper is smaller */
+    align-items: stretch; /* Make all item-links stretch to fill grid cell height */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
 
 .item-link:hover {
     transform: translateY(-5px); /* Lift card on hover */
@@ -332,6 +333,7 @@ color: var(--text-light);
     color: #122141;
   }
   .mission-section  .subtitle {
+    margin: 15px;
     font-size: 30px;
     font-family: "Arial";
   }
@@ -368,7 +370,7 @@ header h1 {
   .banner {
     background-color: var(--header-bg);
     text-align: left;
-    height: 70px;
+    height: 60px;
     box-sizing: border-box;
     /* Font size scales with viewport width, minimum 0.8rem, maximum 1.2rem */
     display: flex;
@@ -498,7 +500,7 @@ line-height: 1.4;      /* give the multiline text some spacing */
     position: static; /* **CRUCIAL: Remove problematic 'relative' and 'top' offset** */
     color: var(--white);
     text-decoration: none; /* Default no underline */
-    font-size: 3vh;
+    font-size: 2.2vh;
     font-weight: bold;
     margin-left: 0.2rem; /* Maintains a consistent gap between links */
     margin-right: 0.2rem; 
@@ -563,22 +565,22 @@ line-height: 1.4;      /* give the multiline text some spacing */
   
 
 
-
 .item-wrapper {
-    display: block;
-
+    display: flex; /* Make item-wrapper a flex container */
     flex-direction: column;
-    height: 100%; /* Important for consistent card height in a row */
-    min-height: 310px; /* Minimum height for cards */
+    height: 100%; /* Important: makes the item-wrapper fill the height of its item-link parent */
+    /* Remove min-height here; let content and aspect-ratio dictate it, or set a fixed height if desired */
+    min-height: 310px; /* Re-add if you have a hard minimum height, but grid/flex might handle this */
+    min-width: 291px;
     background-color: rgb(249, 249, 249);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(221, 221, 221);
-    border-image: initial;
+    border: 1px solid rgb(221, 221, 221);
     border-radius: 8px;
     overflow: hidden;
+    /* Flex properties for content distribution within the card */
+    flex-grow: 1; /* Allow the wrapper to grow if its flex-link parent has more space */
 }
+
 
 
 /* Make the cards narrower by reducing minmax width */
@@ -632,7 +634,7 @@ line-height: 1.4;      /* give the multiline text some spacing */
 }
 
 .credits {
-    font-size: 0.85em; /* **Smaller font size for credits/description** */
+    font-size: 0.7em; /* **Smaller font size for credits/description** */
     color: #555;
     padding: 0 15px 15px; /* Padding top, sides, bottom */
     margin: 0; /* Remove default margin */
@@ -834,17 +836,31 @@ line-height: 1.4;      /* give the multiline text some spacing */
     }
 
     .nav-bar {
-        flex-direction:row; /* Stack nav items vertically */
-        align-items: center; /* Center nav items horizontally */
-        width: 100%; /* Make nav take up more width on mobile */
-        max-width: 600px; /* Optional: limit max width of nav bar for very large phones */
+        /*
+        The flex-direction: row; you had for mobile means they stay in a single row.
+        To make them wrap into multiple rows, keep flex-direction: row;
+        but add flex-wrap: wrap;
+        */
+        flex-direction: row; /* Keep them flowing horizontally */
+        flex-wrap: wrap;    /* <--- THIS IS THE KEY: allows items to go to next line */
+        justify-content: center; /* Center items within each row */
+        align-items: center;
+        width: 100%;
+        /* You might want to adjust max-width or remove it if you want it to fill the phone screen */
+        /* max-width: 600px; */ /* If you keep this, it limits how wide the nav bar itself can get */
     }
 
     .nav-bar a {
-      margin: .2em 0em;
-      width: 100%;
-      text-align: center;
-      font-size: 3vh;
+        /*
+        To get 2 items per row, each item needs to be roughly 50% width.
+        You'll also need to account for any horizontal margins/gaps.
+        */
+        flex-basis: calc(22% - 1em); /* <--- Distribute space for 2 items per row (50% minus half the total gap per item) */
+        max-width: calc(22% - 1em); /* Prevent items from becoming too wide */
+        margin: .1em; /* <--- Use consistent margin for spacing between items */
+        text-align: center;
+        font-size: 1.6vh; /* Adjust font size for mobile readability */
+        box-sizing: border-box; /* Ensure padding/border don't break width calculations */
     }
 
     .mission-section  .page-title {
@@ -862,13 +878,6 @@ line-height: 1.4;      /* give the multiline text some spacing */
         padding: 10px; /* Adjust container padding for mobile */
     }
 
-    .item-wrapper {
-        max-width: 40vh; /* *** Forces each card to be a maximum of 200px wide *** */
-                        /* Adjust this value (e.g., 180px, 220px) to find what fits best on typical phones. */
-        margin-left: auto; /* Centers the card within its grid column */
-        margin-right: auto;/* Centers the card within its grid column */
-        min-height: 510px; /* Optionally reduce min-height for mobile to fit content better */
-    }
     .page-title {
         font-size: 1.2rem;
         justify-content: center;
