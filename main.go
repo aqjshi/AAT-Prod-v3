@@ -19,19 +19,10 @@ type ServiceCategory struct {
     Services []string
 }
 
-// Global variable to hold your service data
 var serviceCategories []ServiceCategory
 
-// (Keep all your existing structs like StringOrSlice, Item, ProjectFromJSON, Project, etc.)
-
-// (Keep your existing var HEADERS, FOOTER, base, IMAGE_EXTS, tmpl)
-
-// (Keep all your existing loadItems, loadProjectItems, findImagesForProject, loadProjects functions)
-
-// New function to load service categories (call this in main())
 func loadServiceCategories() {
-    // Manually populate the data from your provided HTML snippet
-    // In a real application, this would come from a JSON file or database
+
     serviceCategories = []ServiceCategory{
         {
             Title: "Optics, Imaging and Electronics",
@@ -213,14 +204,13 @@ var FOOTER = map[string]map[string]string{
 }
 var base *template.Template
 
-// IMAGE_EXTS is the list of file extensions to try when resolving “home_{id}_0.*”
 var IMAGE_EXTS = []string{"jpg", "jpeg", "png"}
 
 var tmpl *template.Template
 
 type StringOrSlice []string
 
-// UnmarshalJSON is the custom decoder for our StringOrSlice type.
+
 func (s *StringOrSlice) UnmarshalJSON(data []byte) error {
 	// Try to unmarshal as a single string.
 	var str string
@@ -229,7 +219,6 @@ func (s *StringOrSlice) UnmarshalJSON(data []byte) error {
 		return nil
 	}
 
-	// If not a string, try as a slice of strings.
 	var slice []string
 	if err := json.Unmarshal(data, &slice); err == nil {
 		*s = slice
@@ -238,8 +227,6 @@ func (s *StringOrSlice) UnmarshalJSON(data []byte) error {
 
 	return fmt.Errorf("cannot unmarshal JSON value %s into StringOrSlice", string(data))
 }
-
-// Item represents one entry from data/items.json
 type Item struct {
 	ID                   int      `json:"id"`
 	KeywordTitle         string   `json:"keyword_title"`
@@ -255,7 +242,6 @@ type Item struct {
 	Link          string   // **NEW**: This will hold the URL for each item
 }
 
-// ProjectFromJSON maps directly to the structure of each object in your projects.json file.
 type ProjectFromJSON struct {
 	ID            int      `json:"id"`
 	KeywordTitle  string   `json:"keyword_title"`
